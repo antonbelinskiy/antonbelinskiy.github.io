@@ -1,0 +1,79 @@
+body {
+	background: #81856c url(../images/bg.jpg) repeat left top;
+	padding: 12px 0;
+	margin: 0%;
+}
+.logo {
+	padding: 11px 29px;
+	
+	
+}
+
+.logo-txt {
+	font: 50px "Times New Roman" ;
+	color: black;
+	margin-left: 32px;
+	float: right;
+	
+}
+span {
+	font-size: 24px;
+}
+
+.mainwrapper{
+	border-radius: 8px;
+	margin: 0 auto;
+	width: 900px;
+	background: white;
+}
+p {
+	margin: 0%;
+	
+}
+.mainblock {
+	padding: 0 16px;
+	
+}
+
+.content {
+	
+	width: 570px;
+}
+
+.sidebar {
+	background: white;
+	margin-right: -16px;
+
+	width: 300px;	
+}
+.green-line,
+.footer {
+	border-radius: 8px;
+	line-height: 24px;
+	font-size: 18px;
+	color: #fff;
+	background: #31420b;
+	padding: 12px 15px;
+}
+.footer a {
+text-decoration: none;
+color: white;
+float: right;
+
+}
+.sidebar h2{
+color: white;
+background: #31420b;
+
+
+
+
+
+
+
+
+
+
+
+
+
