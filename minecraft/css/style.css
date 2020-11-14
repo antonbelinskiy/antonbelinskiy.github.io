@@ -1,0 +1,364 @@
+body {
+	margin: 0;
+	font: normal 14px/19px Arial, Helvetica, sans-serif;
+}
+
+.clearfix:after,
+.phones p:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.resize {
+	margin: 0 auto;
+	width: 980px;
+}
+/* МЕНЮ */
+nav {
+	background: linear-gradient(to bottom, #45bc5c, #309444);
+}
+nav menu {
+	display: table;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	width: 979px;
+	border-left: 1px solid #57e974;
+	border-right: 1px solid #247634;
+}
+nav li {
+	position: relative;
+	display: table-cell;
+	border-left: 1px solid #247634;
+	border-right: 1px solid #57e974;
+}
+nav a {
+	display: block;
+	padding: 10px 0 11px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
+}
+nav li.active a,
+nav li:hover a {
+	background: linear-gradient(to bottom, #45d862, #2da045);
+}
+nav ul {
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav ul ul {
+	left: 100%;
+	top: -1px;
+}
+nav ul li {
+	display: block;
+	white-space: nowrap;
+	border-left: none;
+	border-right: none;
+	border-top: 1px solid #247634;
+	border-bottom: 1px solid #57e974;
+}
+nav ul a {
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: left;
+}
+nav li:hover ul a {
+	background: #37a14c;
+}
+nav li:hover ul a:hover {
+	background: linear-gradient(to bottom, #45d862, #2da045);
+}
+nav li:hover > ul {
+	display: block;
+}
+/* ИНФО */
+
+.green-line {
+	padding: 8px 0;
+	background: #37a14c;
+}
+.green-line p {
+	margin: 0;
+	padding-top: 6px;
+	float: left;
+	color: #fff;
+}
+.green-line .social {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.green-line .social li {
+	display: inline-block;
+}
+.green-line .social a {
+	display: block;
+	width: 28px;
+	height: 28px;
+	text-indent: -9000px;
+	background: url(../images/sprite.png) no-repeat;
+}
+.green-line .social a:hover {
+	opacity: .8;
+}
+
+.green-line .social a.vk {
+	background-position: 0 0;
+}
+.green-line .social a.fb {
+	background-position: -30px 0;
+}
+.green-line .social a.en {
+	background-position: -60px 0;
+}
+
+
+header .logo {
+	float: left;
+	margin-top: 14px;
+	margin-right: 24px;
+}
+header .logo img {
+	display: block;
+}
+
+
+.phones {
+	float: left;
+	margin-right: 24px;
+	padding: 8px 0;
+	width: 270px;
+	color: #0f680e;
+	font-size: 16px;
+	line-height: 20px;
+}
+.phones p {
+	margin: 0;
+	padding: 2px 0;
+	line-height: 25px;
+}
+.phones p.skype {
+	color: #000;
+	line-height: 20px;
+}
+.phones a {
+	position: relative;
+	float: right;
+	width: 180px;
+	font-size: 20px;
+	line-height: 25px;
+	color: #0f680e;
+}
+.phones p:not(.skype) a {
+	text-decoration: none;
+}
+.phones p:not(.skype) a:before {
+	content: "";
+	position: absolute;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+	height: 1px;
+	background: #0f680e;
+}
+.phones p.skype a {
+	color: #1200ff;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 20px;
+	text-decoration: none;
+}
+.phones p.skype a:before {
+	content: "";
+	position: absolute;
+	left: -26px;
+	top: 0;
+	width: 17px;
+	height: 18px;
+	background: url(../images/sprite.png) no-repeat -90px 0;
+}
+
+header .buttons {
+	float: left;
+	margin-right: 24px;
+	padding-top: 20px;
+}
+header .buttons a {
+	display: block;
+	margin-bottom: 12px;
+	padding: 8px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	text-decoration: none;
+	background: #fecc0a;
+	border-radius: 4px;
+	box-shadow:
+		0 2px 2px #0008,
+		0 2px 1px #f3ec19 inset;
+}
+header .buttons a:hover {
+	background: #f1c310;
+}
+
+header .logo-right {
+	float: left;
+	margin-top: 32px;
+}
+header .logo-right img {
+	display: block;
+}
+/* САЙД БАР */
+.content__sidebar {
+	min-width: 235px;
+	margin-right: 12px;
+}
+
+.content__sidebar menu {
+	padding: 0;
+	list-style: none;
+	font-size: 20px;
+	line-height: 26px;
+}
+.content__sidebar menu li {
+	border-bottom: 1px solid #e7e7e7;
+}
+.content__sidebar menu ul {
+	margin: 0%;
+	margin-top: 16px;
+	margin-bottom: 13px;
+}
+.content__sidebar .sidebar a {
+	display: inline-block;
+	padding: 14px 0 14px 0;
+	text-decoration: none;
+	color: #010101;
+}
+.content__sidebar menu ul li {
+	border: none;
+	padding: 0;
+	list-style: none;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.content__sidebar menu ul li a {
+	padding: 0 !important;
+	height: 0%;
+	color: #ff2626 !important;
+	
+}
+.content__sidebar menu ul li a::before{
+	content: "- " ;
+}
+/* КОНТЕНТ */
+.content {
+	margin-bottom: 32px;
+}
+.content__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.content__main-info p {
+	padding-bottom: 20px;
+	border-bottom: 1px solid  #e7e7e7;
+}
+.content__news {
+	max-width: 733px;
+	width: 100%;
+}
+.news__items {
+	display: flex;
+	justify-content: space-between;
+}
+.news__item {
+	width: 232px;
+	margin-bottom: 0;
+}
+.news__item a {
+	text-decoration: none;
+}
+.news__info {
+	height: 90px;
+	background: linear-gradient(to bottom, #329545, #45bc5c);
+	color: #fff;
+	padding: 15px 0 0 8px;
+	margin: 0;
+	border-bottom: 1px solid #57e974;
+}
+.news__info span {
+	color: #000;
+	font-weight: 600;
+}
+.news__info img {
+	border-top: 1px solid #247634;
+}
+.footer__top {
+	background: linear-gradient(to bottom, #fec50d, #f1b107);
+	height: 96px;
+}
+.footer__top-content {
+	margin: 0 auto;
+	width: 980px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer__top-content {
+	font-size: 20px;
+	color: #fff;	
+	
+}
+.footer__top .phones {
+	color: #000;
+}
+.footer__top .phones p a {
+	color: #000;
+}
+.footer__top .phones p a::before {
+	content: "";
+	width: 0;
+	height: 0;
+}
+.footer__center {
+	background: linear-gradient(to bottom, #45bb5c, #3d9b50);
+	height: 90px;
+}
+.footer__logos {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__logos a {
+	display: block;
+	height: 69px;
+	width: 222px;
+	margin-top: 10px;
+}
+.footer__logos .footer__logo-1 {
+	background-image: url(../images/logo1.png);
+}
+.footer__logo-2 {
+	background-image: url(../images/logo2.png);
+}
+.footer__logo-3 {
+	background-image: url(../images/logo3.png);
+}
+.footer__logo-4 {
+	background-image: url(../images/logo4.png);
+}
+.footer__copy {
+	height: 55px;
+}
+.footer__copy p {
+	padding-top: 15px;
+}
