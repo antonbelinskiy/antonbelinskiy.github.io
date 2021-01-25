@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zkteco</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <a href="#" class="menu_btn">
+                    <svg width="24" class="animate__animated animate__bounceIn" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 6C0 5.44772 0.447715 5 1 5H23.0588C23.6111 5 24.0588 5.44772 24.0588 6C24.0588 6.55228 23.6111 7 23.0588 7H1C0.447715 7 0 6.55228 0 6ZM0 12C0 11.4477 0.447715 11 1 11H23.0588C23.6111 11 24.0588 11.4477 24.0588 12C24.0588 12.5523 23.6111 13 23.0588 13H1C0.447715 13 0 12.5523 0 12ZM1 17C0.447715 17 0 17.4477 0 18C0 18.5523 0.447715 19 1 19H23.0588C23.6111 19 24.0588 18.5523 24.0588 18C24.0588 17.4477 23.6111 17 23.0588 17H1Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#" id="close_btn">
+                    <svg class="animate__animated animate__bounceIn" width="18" height="18" viewBox="0 0 18 18"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.93759 0.493943C1.54706 0.103419 0.913899 0.103419 0.523375 0.493943C0.13285 0.884467 0.13285 1.51763 0.523375 1.90816L7.61524 9.00003L0.523362 16.0919C0.132837 16.4824 0.132838 17.1156 0.523362 17.5061C0.913887 17.8966 1.54705 17.8966 1.93758 17.5061L9.02946 10.4142L16.1213 17.5061C16.5118 17.8966 17.145 17.8966 17.5355 17.5061C17.9261 17.1156 17.9261 16.4824 17.5355 16.0919L10.4437 9.00003L17.5355 1.90818C17.926 1.51765 17.926 0.884489 17.5355 0.493965C17.145 0.103441 16.5118 0.103441 16.1213 0.493965L9.02946 7.58581L1.93759 0.493943Z"
+                            fill="white" />
+                    </svg>
+                </a>
+                <a href="#" class="header_logo" style="background-image: url(./img/logo.svg);">
+                    <!-- <img src="./img/logo.svg" alt="logo"> -->
+                </a>
+                <nav class="header_nav">
+                    <menu>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Поддержка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </menu>
+                </nav>
+                <div class="header_form-search">
+                    <form>
+                        <input class="search" type="text" placeholder="Я ищу...">
+                        <button type="submit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="animate__animated animate__bounceIn" fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M4 11C4 15.4183 7.58172 19 12 19C13.8487 19 15.551 18.3729 16.9056 17.3199L20.2929 20.7071C20.6834 21.0976 21.3166 21.0976 21.7071 20.7071C22.0976 20.3166 22.0976 19.6834 21.7071 19.2929L18.3199 15.9056C19.3729 14.551 20 12.8487 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11ZM6 11C6 14.3137 8.68629 17 12 17C15.3137 17 18 14.3137 18 11C18 7.68629 15.3137 5 12 5C8.68629 5 6 7.68629 6 11Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="header_contacts">
+                    <a href="tel:84951323133" class="tel">8 495 132-31-33</a>
+                </div>
+                <a href="#" class="header_callback-btn" data-toggle="modal" data-target="#callback-modal">Обратный
+                    звонок</a>
+                <p class="hello">Привет, <a class="name" href="#">Андрей</a></p>
+                <div class="header_tools">
+                    <div class="header_tools-account">
+                        <a href="#">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13 5C13 7.76142 10.7614 10 8 10C5.23858 10 3 7.76142 3 5C3 2.23858 5.23858 0 8 0C10.7614 0 13 2.23858 13 5ZM11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5Z"
+                                    fill="white" />
+                                <path
+                                    d="M3.02448 10.2903C3.16276 10.1835 3.33034 10.1177 3.50495 10.1118C4.01604 10.0945 4.27556 10.2136 4.47518 10.4393C4.86035 10.8748 4.60724 11.5818 4.1542 11.9462C3.32132 12.616 2.67734 13.4973 2.30604 14.4998H13.693C13.3218 13.4975 12.678 12.6164 11.8454 11.9466C11.3924 11.5822 11.1394 10.875 11.5246 10.4395C11.7243 10.2137 11.9838 10.0947 12.4948 10.1121C12.6693 10.1181 12.8368 10.1839 12.975 10.2906C14.5963 11.5427 15.7152 13.3928 15.9862 15.502C16.0566 16.0498 15.6021 16.4998 15.0499 16.4998H0.949191C0.396906 16.4998 -0.0575638 16.0498 0.0128305 15.502C0.283899 13.3927 1.40298 11.5424 3.02448 10.2903Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header_tools-weight">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13 4C13 3.44772 12.5523 3 12 3C11.4477 3 11 3.44772 11 4V5L7.02327 5C7.00774 4.99963 6.99216 4.99963 6.97656 5H6.5C6.41355 5 6.32965 5.01097 6.24964 5.0316C5.76955 4.90708 5.26035 5.15597 5.0713 5.6286L3.07514 10.619C3.06371 10.6467 3.05349 10.6751 3.04454 10.704C3.01087 10.8122 2.9966 10.9225 3 11.0308V11.5C3 13.433 4.567 15 6.5 15C8.433 15 10 13.433 10 11.5V11.0308C10.0034 10.9225 9.98913 10.8122 9.95545 10.7039C9.94651 10.675 9.93629 10.6467 9.92486 10.619L8.47726 7L11 7V18H9.5C8.94772 18 8.5 18.4477 8.5 19C8.5 19.5523 8.94772 20 9.5 20H15C15.5523 20 16 19.5523 16 19C16 18.4477 15.5523 18 15 18H13V7L15.5227 7L14.0752 10.619C14.0637 10.6468 14.0534 10.6752 14.0445 10.7043C14.0108 10.8124 13.9966 10.9226 14 11.0308V11.5C14 13.433 15.567 15 17.5 15C19.433 15 21 13.433 21 11.5V11.0308C21.0034 10.9224 20.9891 10.812 20.9554 10.7037C20.9465 10.6749 20.9363 10.6467 20.9249 10.619L18.9327 5.63863C18.9242 5.6166 18.9149 5.59495 18.9049 5.57372C18.8158 5.38424 18.6735 5.23464 18.5033 5.13573C18.3451 5.04377 18.1628 4.99562 17.9766 5H17.0234C17.0078 4.99963 16.9923 4.99963 16.9767 5L13 5V4ZM6.5 7.44202L7.52319 10H5.47681L6.5 7.44202ZM5.08535 12C5.29127 12.5826 5.84689 13 6.5 13C7.15311 13 7.70873 12.5826 7.91465 12H5.08535ZM17.5 7.44202L16.4768 10H18.5232L17.5 7.44202ZM16.0854 12C16.2913 12.5826 16.8469 13 17.5 13C18.1531 13 18.7087 12.5826 18.9146 12H16.0854Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header_tools-cart">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 6C3 5.44772 3.44772 5 4 5H7C7.44361 5 7.83419 5.29225 7.95937 5.71783L10.2482 13.5H17.2192L18.2192 9.5H12C11.4477 9.5 11 9.05228 11 8.5C11 7.94772 11.4477 7.5 12 7.5H19.5C19.8079 7.5 20.0987 7.64187 20.2882 7.88459C20.4777 8.1273 20.5448 8.44379 20.4701 8.74254L18.9701 14.7425C18.8589 15.1877 18.4589 15.5 18 15.5H9.5C9.05639 15.5 8.66581 15.2077 8.54063 14.7822L6.25176 7H4C3.44772 7 3 6.55228 3 6Z"
+                                    fill="white" />
+                                <path
+                                    d="M11 18C11 19.1046 10.1046 20 9 20C7.89543 20 7 19.1046 7 18C7 16.8954 7.89543 16 9 16C10.1046 16 11 16.8954 11 18Z"
+                                    fill="white" />
+                                <path
+                                    d="M18 20C19.1046 20 20 19.1046 20 18C20 16.8954 19.1046 16 18 16C16.8954 16 16 16.8954 16 18C16 19.1046 16.8954 20 18 20Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="dropdown_menu animate__animated animate__fadeInDown animate__faster">
+        <div class="container">
+            <div class="dropdown_menu-inner">
+                <div class="dropdown_form-search">
+                    <form>
+                        <input class="search" type="text" placeholder="Я ищу...">
+                        <button type="submit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="animate__animated animate__bounceIn" fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M4 11C4 15.4183 7.58172 19 12 19C13.8487 19 15.551 18.3729 16.9056 17.3199L20.2929 20.7071C20.6834 21.0976 21.3166 21.0976 21.7071 20.7071C22.0976 20.3166 22.0976 19.6834 21.7071 19.2929L18.3199 15.9056C19.3729 14.551 20 12.8487 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11ZM6 11C6 14.3137 8.68629 17 12 17C15.3137 17 18 14.3137 18 11C18 7.68629 15.3137 5 12 5C8.68629 5 6 7.68629 6 11Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="dropdown_menu-main">
+                    <ul class="dropdown_list">
+                        <li class="dropdown_list-title">Меню</li>
+                        <li><a href="#">О ZKTeco</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li><a href="#">Скачать</a></li>
+                        <ul class="dropdown_hidden-menu">
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Поддержка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="dropdown_menu-row">
+                    <ul class="dropdown_list">
+                        <li class="dropdown_menu-subtitle">
+                            Каталог
+                        </li>
+                        <li><a href="#">Учет рабочего времени</a></li>
+                        <li><a href="#">Умный замок</a></li>
+                        <li><a href="#">Системы контроля доступа (СКУД)</a></li>
+                        <li><a href="#">Системы контроля прохода</a></li>
+                        <ul class="dropdown_added-hidden_list">
+                            <li><a href="#">Встраиваемые модули</a></li>
+                            <li><a href="#">Видеонаблюдение</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="dropdown_menu-added">
+                    <!-- ДОБАВЛЯТЬ ДО 4 ССЫЛОК -->
+                    <ul class="dropdown_added-list">
+                        <li><a href="#">Встраиваемые модули</a></li>
+                        <li><a href="#">Видеонаблюдение</a></li>
+                    </ul>
+                    <a href="tel:84951323133" class="dropdown_added-tel">8 495 132-31-33</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slider_inner">
+            <div class="slider_item" style="background-image: url(./img/slider_bg-1.jpg)">
+                <a href="#" class="slider_item-1-btn slider_btn">
+                    Подробнее
+                    <svg class="animate__animated animate__infinite animate__slower animate__fadeInLeft" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+            <div class="slider_item" style="background-image: url(./img/slider_bg-2.jpg)">
+
+                <a href="#" class="slider_item-2-btn slider_btn">
+                    Подробнее
+                    <svg class="animate__animated animate__infinite animate__slower animate__fadeInLeft" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+            <div class="slider_item" style="background-image: url(./img/slider_bg-3.jpg)">
+                <a href="#" class="slider_item-3-btn slider_btn">
+                    Подробнее
+                    <svg class="animate__animated animate__infinite animate__slower animate__fadeInLeft" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+            <div class="slider_item" style="background-image: url(./img/slider_bg-2.jpg)">
+                <a href="#" class="slider_item-2-btn slider_btn">
+                    Подробнее
+                    <svg class="animate__animated animate__infinite animate__slower animate__fadeInLeft" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <section class="product_list">
+            <div class="container">
+            <div class="product_list-inner">
+                    <a href="#" class="product_list-item">
+                        <div class="product_item-img">
+                            <img src="./img/product_item-1.png" alt="Учет рабочего времени">
+                        </div>
+                        <div class="product_item-title">Учет рабочего времени</div>
+                    </a>
+                    <a href="#" class="product_list-item">
+                        <div class="product_item-img">
+                            <img src="./img/product_item-2.png" alt="Учет рабочего времени">
+                        </div>
+                        <div class="product_item-title">Умный замок</div>
+                    </a>
+                    <a href="#" class="product_list-item">
+                        <div class="product_item-img">
+                            <img src="./img/product_item-3.png" alt="Учет рабочего времени">
+                        </div>
+                        <div class="product_item-title">Системы контроля доступа (СКУД)</div>
+                    </a>
+                    <a href="#" class="product_list-item">
+                        <div class="product_item-img">
+                            <img src="./img/product_item-4.png" alt="Учет рабочего времени">
+                        </div>
+                        <div class="product_item-title">Системы контроля прохода</div>
+                    </a>
+                    <a href="#" class="product_list-item">
+                        <div class="product_item-img">
+                            <img src="./img/product_item-5.png" alt="Учет рабочего времени">
+                        </div>
+                        <div class="product_item-title">Встраиваемые модули</div>
+                    </a>
+                    <a href="#" class="product_list-item">
+                        <div class="product_item-img">
+                            <img src="./img/product_item-6.png" alt="Учет рабочего времени">
+                        </div>
+                        <div class="product_item-title">Видеонаблюдение</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="popular_products">
+            <div class="popular_products-title">Популярная продукция <br>
+                <span class="popular_products-subtitle">то, что выбирает большинство, и мы рекомендуем</span>
+            </div>
+            <div class="container">
+                <div class="popular_products-list">
+                    <div class="popular_products-item">
+                        <div class="popular_item-name">
+                            BR1200 [FBE]
+                        </div>
+                        <div class="popular_item-description">
+                            BR1200 является новаторским автономным терминалом со считывателем QR-кода
+                        </div>
+                        <div class="popular_item-price">
+                            от 7 654 Р.
+                        </div>
+                        <div class="popular_item-img">
+                            <img src="./img/popular-1.png" alt="br1200">
+                        </div>
+                    </div>
+                    <div class="popular_products-item">
+                        <div class="popular_item-name">
+                            BS-852O12K / BS-852O13K
+                        </div>
+                        <div class="popular_item-description">
+                            P-камера 2MP оснащена передовым сенсором для передачи качественного изображения.
+                        </div>
+                        <div class="popular_item-price">
+                            от 3 321 Р.
+                        </div>
+                        <div class="popular_item-img">
+                            <img src="./img/popular-2.png" alt="br1200">
+                        </div>
+                        <div class="popular_item-best">
+                            <img src="./img/star.svg" alt="star">
+                            <svg class="popular_item-icon_like" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.0319 8.64047L12.6007 11H14.9993H16.6306C17.0408 11 17.5862 11.2244 18.1035 11.9347C18.6195 12.6433 19 13.7206 19 15C19 16.2795 18.6195 17.3567 18.1035 18.0653C17.5862 18.7757 17.0408 19 16.6306 19H9.00001V10.9148L9.48336 9.78911L11.2019 5.78677C11.3144 5.61539 11.5705 5.39753 11.9979 5.27755C12.4679 5.1456 12.8661 5.21258 13.0681 5.32027C13.363 5.47746 13.4733 5.5964 13.5057 5.63689C13.5293 5.66637 13.5326 5.67768 13.5373 5.70122C13.5458 5.74402 13.5556 5.84279 13.5319 6.04007C13.507 6.24785 13.4583 6.47318 13.3842 6.80466L13.3812 6.81838C13.3434 6.9873 13.2978 7.19096 13.2594 7.39575L13.2593 7.39575L13.2576 7.4055L13.0319 8.64047ZM14.0089 3.55537C12.5208 2.7621 10.2259 3.36066 9.40938 4.89231L7.64561 9.00002L7 9.00001H4C3.44772 9.00001 3 9.44773 3 10V20C3 20.5523 3.44772 21 4 21L7.00001 21H9.00001H16.6306C19.0437 21 21 18.3137 21 15C21 11.8702 19.2549 9.30017 17.0279 9.02449C16.8971 9.00829 16.7645 9.00002 16.6306 9.00002H14.9993L15.225 7.76504C15.2571 7.59424 15.2962 7.41906 15.336 7.241L15.3361 7.24055C15.3539 7.1609 15.3719 7.08068 15.3894 7.00002C15.6481 5.80622 15.8091 4.51499 14.0089 3.55537ZM5 19V11H7V19H5Z"
+                                    fill="white" />
+                            </svg>
+                            <a href="#" class="popular_item-link">
+                                Лучший выбор!
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="popular_products-item">
+                        <div class="popular_item-name">
+                            ProFace X [CH/TD]
+                        </div>
+                        <div class="popular_item-description">
+                            ProFace X TD может помочь в мониторинге вирусных заболеваний.
+                        </div>
+                        <div class="popular_item-price">
+                            от 6 456 Р.
+                        </div>
+                        <div class="popular_item-img">
+                            <img src="./img/popular-3.png" alt="br1200">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="popular_products-button" href="#">Каталог продукции
+                <svg class="animate__animated animate__infinite animate__slower animate__fadeInLeft" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="#21232E" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="#21232E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M15 7L20.25 12L15 17" stroke="#21232E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+        </section>
+        <section class="discount_items">
+            <div class="container">
+                <div class="discount_items-inner">
+                    <div class="discount_item">
+                        <div class="discount_item-text">
+                            <div class="discount_item-title">
+                                MKW-H
+                            </div>
+                            <div class="discount_item-description">
+                                MKW-V и MKW-H - это водонепроницаемые автономные устройства контроля доступа с
+                                металлическим корпусом IP65 и клавиатурой.
+                            </div>
+                            <a href="#" class="discount_item-link">
+                                купить
+                            </a>
+                        </div>
+                        <div class="discount_item-img">
+                            <img src="./img/discount-item1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="discount_item">
+                        <div class="discount_item-text">
+                            <div class="discount_item-title">
+                                ZN-T3
+                            </div>
+                            <div class="discount_item-description">
+                                Wi-Fi камера для измерения температуры тела.
+                            </div>
+                            <div class="discount_item-price">10 321 P.</div>
+                            <a href="#" class="discount_item-link discount_item-link_green">
+                                купить
+                            </a>
+                        </div>
+                        <div class="discount_item-img">
+                            <img src="./img/discount-item2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <p class="info_title">Vel scelerisque tortor.</p>
+            <p class="info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris etiam tincidunt id
+                diam nullam. Ipsum, eget aenean egestas lorem ultrices blandit velit. At dolor nascetur feugiat
+                ornare. Tincidunt leo in orci libero. Egestas amet consequat, in nunc. At etiam faucibus molestie
+                senectus neque nunc. Dolor, pellentesque risus habitant eget enim. Vitae, maecenas arcu ut pharetra
+                lacus dignissim non leo, odio. Nisl ut eget ornare aenean. Egestas nunc scelerisque fames quis eget.
+                Ac pharetra at tincidunt tempus lorem massa elit id rhoncus.
+                A, amet id arcu sed sit. Tristique gravida tortor turpis congue porttitor velit ut. Mi erat nisl est
+                nunc fames nunc egestas. Amet aliquam quis praesent vehicula consectetur odio nulla. In faucibus
+                vulputate potenti mattis.
+                Velit vestibulum nulla netus etiam pellentesque egestas commodo consectetur. In nullam fames quis
+                vestibulum enim risus eget elementum. Pretium.</p>
+            <p class="info_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi in placeat nihil impedit officiis labore
+                sint inventore eos, quod sequi, eum odit voluptatum asperiores dolorem eaque iure nulla quo. Porro.
+            </p>
+            <p class="info_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi in placeat nihil impedit officiis
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="footer_info">
+                    <a href="#" class="footer_logo" style="background-image: url(./img/logo.svg);">
+                    </a>
+                    <div class="footer_info-txt">
+                        <p class="footer_info-location">Москва, м. Дмитровская, ул. Новодмитровская 2, корп. 1, БЦ
+                            Савеловский Сити
+                        </p>
+                        <p class="footer_info-media">
+                            ООО “КМП” <br>
+                            Российская федерация, Санкт-Петербург, ул. Салова, 53, корпус 1
+                        </p>
+                        </p>
+                        <a href="tel:84957419006" class="footer_info-tel">
+                            8(495)741-90-06
+                        </a>
+                        <p class="footer_info-schedule">
+                            Режим работы: <br> ПН-ПТ: 9:00 до 18:00
+                        </p>
+                        <a href="mailto:info@tiandy-russia.ru" class="footer_info-email">
+                            info@tiandy-russia.ru</a>
+                        <div class="footer_info-social">
+                            <a href="#"><img src="./img/bxl-facebook.svg.svg" alt="facebook icon"></a>
+                            <a href="#"><img src="./img/bxl-instagram.svg.svg" alt="instagram icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_info-row">
+                    <ul class="footer_row">
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Каталог</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Проекты</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Прайс-лист</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Поддержка</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer_info-row">
+                    <ul class="footer_row">
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">О ZKTeco</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Доставка и оплата</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Прайс-лист</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Скачать</a></li>
+                    </ul>
+                </div>
+                <div class="footer_info-row">
+                    <ul class="footer_row">
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Учет рабочего времени</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Умный замок</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Системы контроля доступа
+                                (СКУД)</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Системы контроля прохода</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_info-row">
+                    <ul class="footer_row">
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Встраиваемые модули</a></li>
+                        <li class="footer_row-item"><a class="footer_row-link" href="#">Видеонаблюдение</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #5F626B;" class="line"></div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="footer_bottom-inner">
+                    <div class="footer_bottom-left">
+                    <span>&copy;2020, ZKTeco. Все права защищены</span>
+                    <a class="footer_bottom-pay_systems" href="#"><img src="./img/pay-system.png" alt="pay systems"></a>
+                </div>
+                <div class="footer_bottom-right">
+                    <a href="#"><img src="./img/Group-5.svg" alt="web-systems logo"></a>
+                    <div class="footer_input"><input name="name" type="text" class="footer_form"
+                            placeholder="Напишите нам, мы онлайн"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
