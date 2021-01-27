@@ -36,7 +36,7 @@
                             d="M1.93759 0.493943C1.54706 0.103419 0.913899 0.103419 0.523375 0.493943C0.13285 0.884467 0.13285 1.51763 0.523375 1.90816L7.61524 9.00003L0.523362 16.0919C0.132837 16.4824 0.132838 17.1156 0.523362 17.5061C0.913887 17.8966 1.54705 17.8966 1.93758 17.5061L9.02946 10.4142L16.1213 17.5061C16.5118 17.8966 17.145 17.8966 17.5355 17.5061C17.9261 17.1156 17.9261 16.4824 17.5355 16.0919L10.4437 9.00003L17.5355 1.90818C17.926 1.51765 17.926 0.884489 17.5355 0.493965C17.145 0.103441 16.5118 0.103441 16.1213 0.493965L9.02946 7.58581L1.93759 0.493943Z"
                             fill="white" />
                     </svg>
-                </a>    
+                </a>
                 <a href="/" class="header_logo" style="background-image: url(./img/logo.svg);">
                     <!-- <img src="./img/logo.svg" alt="logo"> -->
                 </a>
@@ -113,22 +113,22 @@
         </div>
     </header>
     <section class="dropdown_menu animate__animated animate__fadeInDown animate__faster">
+        <div class="dropdown_form-search">
+            <form>
+                <input class="search" type="text" placeholder="Я ищу...">
+                <button type="submit">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="animate__animated animate__bounceIn" fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4 11C4 15.4183 7.58172 19 12 19C13.8487 19 15.551 18.3729 16.9056 17.3199L20.2929 20.7071C20.6834 21.0976 21.3166 21.0976 21.7071 20.7071C22.0976 20.3166 22.0976 19.6834 21.7071 19.2929L18.3199 15.9056C19.3729 14.551 20 12.8487 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11ZM6 11C6 14.3137 8.68629 17 12 17C15.3137 17 18 14.3137 18 11C18 7.68629 15.3137 5 12 5C8.68629 5 6 7.68629 6 11Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </form>
+        </div>
         <div class="container">
             <div class="dropdown_menu-inner">
-                <div class="dropdown_form-search">
-                    <form>
-                        <input class="search" type="text" placeholder="Я ищу...">
-                        <button type="submit">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path class="animate__animated animate__bounceIn" fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M4 11C4 15.4183 7.58172 19 12 19C13.8487 19 15.551 18.3729 16.9056 17.3199L20.2929 20.7071C20.6834 21.0976 21.3166 21.0976 21.7071 20.7071C22.0976 20.3166 22.0976 19.6834 21.7071 19.2929L18.3199 15.9056C19.3729 14.551 20 12.8487 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11ZM6 11C6 14.3137 8.68629 17 12 17C15.3137 17 18 14.3137 18 11C18 7.68629 15.3137 5 12 5C8.68629 5 6 7.68629 6 11Z"
-                                    fill="white" />
-                            </svg>
-                        </button>
-                    </form>
-                </div>
                 <div class="dropdown_menu-main">
                     <ul class="dropdown_list">
                         <li class="dropdown_list-title">Меню</li>
@@ -234,7 +234,7 @@
     <main class="main">
         <section class="product_list">
             <div class="container">
-            <div class="product_list-inner">
+                <div class="product_list-inner">
                     <a href="#" class="product_list-item">
                         <div class="product_item-img">
                             <img src="./img/product_item-1.png" alt="Учет рабочего времени">
@@ -275,10 +275,10 @@
             </div>
         </section>
         <section class="popular_products">
+            <div class="container">
             <div class="popular_products-title">Популярная продукция <br>
                 <span class="popular_products-subtitle">то, что выбирает большинство, и мы рекомендуем</span>
             </div>
-            <div class="container">
                 <div class="popular_products-list">
                     <div class="popular_products-item">
                         <div class="popular_item-name">
@@ -366,9 +366,9 @@
                                 купить
                             </a>
                         </div>
-                        <div class="discount_item-img">
-                            <img src="./img/discount-item1.png" alt="">
-                        </div>
+
+                        <img src="./img/discount-item1.png" alt="">
+
                     </div>
                     <div class="discount_item">
                         <div class="discount_item-text">
@@ -383,9 +383,9 @@
                                 купить
                             </a>
                         </div>
-                        <div class="discount_item-img">
-                            <img src="./img/discount-item2.png" alt="">
-                        </div>
+
+                        <img src="./img/discount-item2.png" alt="">
+
                     </div>
                 </div>
             </div>
@@ -441,38 +441,42 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer_info-row">
-                    <ul class="footer_row">
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Каталог</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Проекты</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Прайс-лист</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Поддержка</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="footer_info-row">
-                    <ul class="footer_row">
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">О ZKTeco</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Доставка и оплата</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Прайс-лист</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Скачать</a></li>
-                    </ul>
-                </div>
-                <div class="footer_info-row">
-                    <ul class="footer_row">
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Учет рабочего времени</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Умный замок</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Системы контроля доступа
-                                (СКУД)</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Системы контроля прохода</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer_info-row">
-                    <ul class="footer_row">
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Встраиваемые модули</a></li>
-                        <li class="footer_row-item"><a class="footer_row-link" href="#">Видеонаблюдение</a></li>
-                    </ul>
+                <div class="footer_info-rows">
+                    <div class="footer_info-row">
+                        <ul class="footer_row">
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Каталог</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Проекты</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Прайс-лист</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Поддержка</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_info-row">
+                        <ul class="footer_row">
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">О ZKTeco</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Доставка и оплата</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Проекты</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Прайс-лист</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Скачать</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_info-row">
+                        <ul class="footer_row">
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Учет рабочего времени</a>
+                            </li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Умный замок</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Системы контроля доступа
+                                    (СКУД)</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Системы контроля прохода</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_info-row">
+                        <ul class="footer_row">
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Встраиваемые модули</a></li>
+                            <li class="footer_row-item"><a class="footer_row-link" href="#">Видеонаблюдение</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -481,16 +485,17 @@
             <div class="container">
                 <div class="footer_bottom-inner">
                     <div class="footer_bottom-left">
-                    <span>&copy;2020, ZKTeco. Все права защищены</span>
-                    <a class="footer_bottom-pay_systems" href="#"><img src="./img/pay-system.png" alt="pay systems"></a>
-                </div>
-                <div class="footer_bottom-right">
-                    <a href="#"><img src="./img/Group-5.svg" alt="web-systems logo"></a>
-                    <div class="footer_input"><input name="name" type="text" class="footer_form"
-                            placeholder="Напишите нам, мы онлайн"></div>
+                        <span>&copy;2020, ZKTeco. Все права защищены</span>
+                        <a class="footer_bottom-pay_systems" href="#"><img src="./img/pay-system.png"
+                                alt="pay systems"></a>
+                    </div>
+                    <div class="footer_bottom-right">
+                        <a href="#"><img src="./img/Group-5.svg" alt="web-systems logo"></a>
+                        <div class="footer_input"><input name="name" type="text" class="footer_form"
+                                placeholder="Напишите нам, мы онлайн"></div>
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
 
 
