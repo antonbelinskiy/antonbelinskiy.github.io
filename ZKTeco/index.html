@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container">
             <div class="header_inner">
-                <a href="#" class="menu_btn">
+                <div class="menu_btn">
                     <svg width="24" class="animate__animated animate__bounceIn" height="24" viewBox="0 0 24 24"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
@@ -28,15 +28,15 @@
                             </clipPath>
                         </defs>
                     </svg>
-                </a>
-                <a href="#" id="close_btn">
+                </div>
+                <div id="close_btn">
                     <svg class="animate__animated animate__bounceIn" width="18" height="18" viewBox="0 0 18 18"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M1.93759 0.493943C1.54706 0.103419 0.913899 0.103419 0.523375 0.493943C0.13285 0.884467 0.13285 1.51763 0.523375 1.90816L7.61524 9.00003L0.523362 16.0919C0.132837 16.4824 0.132838 17.1156 0.523362 17.5061C0.913887 17.8966 1.54705 17.8966 1.93758 17.5061L9.02946 10.4142L16.1213 17.5061C16.5118 17.8966 17.145 17.8966 17.5355 17.5061C17.9261 17.1156 17.9261 16.4824 17.5355 16.0919L10.4437 9.00003L17.5355 1.90818C17.926 1.51765 17.926 0.884489 17.5355 0.493965C17.145 0.103441 16.5118 0.103441 16.1213 0.493965L9.02946 7.58581L1.93759 0.493943Z"
                             fill="white" />
                     </svg>
-                </a>
+                </div>
                 <a href="/" class="header_logo" style="background-image: url(./img/logo.svg);">
                 </a>
                 <nav class="header_nav">
@@ -64,7 +64,7 @@
                 <div class="header_contacts">
                     <a href="tel:84951323133" class="tel">8 495 132-31-33</a>
                 </div>
-                <a href="#" class="header_callback-btn" data-toggle="modal" data-target="#callback-modal">Обратный
+                <a href="#" class="header_callback-btn">Обратный
                     звонок</a>
                 <p class="hello">Привет, <a class="name" href="#">Андрей</a></p>
                 <div class="header_tools">
@@ -110,76 +110,75 @@
                 </div>
             </div>
         </div>
-    </header>
-    <!-- HEADER  -->
+        <!-- HEADER  -->
 
-    <!-- DROPDOWN MENU  -->
-    <section class="dropdown_menu animate__animated animate__fadeInDown animate__faster">
-        <div class="dropdown_form-search">
-            <form>
-                <input class="search" type="text" placeholder="Я ищу...">
-                <button type="submit">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path class="animate__animated animate__bounceIn" fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M4 11C4 15.4183 7.58172 19 12 19C13.8487 19 15.551 18.3729 16.9056 17.3199L20.2929 20.7071C20.6834 21.0976 21.3166 21.0976 21.7071 20.7071C22.0976 20.3166 22.0976 19.6834 21.7071 19.2929L18.3199 15.9056C19.3729 14.551 20 12.8487 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11ZM6 11C6 14.3137 8.68629 17 12 17C15.3137 17 18 14.3137 18 11C18 7.68629 15.3137 5 12 5C8.68629 5 6 7.68629 6 11Z"
-                            fill="white" />
-                    </svg>
-                </button>
-            </form>
-        </div>
-        <div class="container">
-            <div class="dropdown_menu-inner">
-                <div class="dropdown_menu-main">
-                    <ul class="dropdown_list">
-                        <li class="dropdown_list-title">Меню</li>
-                        <li><a href="#">О ZKTeco</a></li>
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">Прайс-лист</a></li>
-                        <li><a href="#">Скачать</a></li>
-                        <ul class="dropdown_hidden-menu">
-                            <li><a href="#">Каталог</a></li>
-                            <li><a href="#">Проекты</a></li>
-                            <li><a href="#">Поддержка</a></li>
-                            <li><a href="#">Контакты</a></li>
+        <!-- DROPDOWN MENU  -->
+        <section class="dropdown_menu animate__animated animate__fadeInDown animate__faster">
+            <div class="dropdown_form-search">
+                <form>
+                    <input class="search" type="text" placeholder="Я ищу...">
+                    <button type="submit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="animate__animated animate__bounceIn" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 11C4 15.4183 7.58172 19 12 19C13.8487 19 15.551 18.3729 16.9056 17.3199L20.2929 20.7071C20.6834 21.0976 21.3166 21.0976 21.7071 20.7071C22.0976 20.3166 22.0976 19.6834 21.7071 19.2929L18.3199 15.9056C19.3729 14.551 20 12.8487 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11ZM6 11C6 14.3137 8.68629 17 12 17C15.3137 17 18 14.3137 18 11C18 7.68629 15.3137 5 12 5C8.68629 5 6 7.68629 6 11Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="container">
+                <div class="dropdown_menu-inner">
+                    <div class="dropdown_menu-main">
+                        <ul class="dropdown_list">
+                            <li class="dropdown_list-title">Меню</li>
+                            <li><a href="#">О ZKTeco</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Прайс-лист</a></li>
+                            <li><a href="#">Скачать</a></li>
+                            <ul class="dropdown_hidden-menu">
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="#">Поддержка</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
                         </ul>
-                    </ul>
-                </div>
-                <div class="dropdown_menu-row">
-                    <ul class="dropdown_list">
-                        <li class="dropdown_menu-subtitle">
-                            Каталог
-                        </li>
-                        <li><a href="#">Учет рабочего времени</a></li>
-                        <li><a href="#">Умный замок</a></li>
-                        <li><a href="#">Системы контроля доступа (СКУД)</a></li>
-                        <li><a href="#">Системы контроля прохода</a></li>
-                        <ul class="dropdown_added-hidden_list">
+                    </div>
+                    <div class="dropdown_menu-row">
+                        <ul class="dropdown_list">
+                            <li class="dropdown_menu-subtitle">
+                                Каталог
+                            </li>
+                            <li><a href="#">Учет рабочего времени</a></li>
+                            <li><a href="#">Умный замок</a></li>
+                            <li><a href="#">Системы контроля доступа (СКУД)</a></li>
+                            <li><a href="#">Системы контроля прохода</a></li>
+                            <ul class="dropdown_added-hidden_list">
+                                <li><a href="#">Встраиваемые модули</a></li>
+                                <li><a href="#">Видеонаблюдение</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="dropdown_menu-added">
+                        <!-- ДОБАВЛЯТЬ ДО 4 ССЫЛОК -->
+                        <ul class="dropdown_added-list">
                             <li><a href="#">Встраиваемые модули</a></li>
                             <li><a href="#">Видеонаблюдение</a></li>
                         </ul>
-                    </ul>
-                </div>
-                <div class="dropdown_menu-added">
-                    <!-- ДОБАВЛЯТЬ ДО 4 ССЫЛОК -->
-                    <ul class="dropdown_added-list">
-                        <li><a href="#">Встраиваемые модули</a></li>
-                        <li><a href="#">Видеонаблюдение</a></li>
-                    </ul>
-                    <a href="tel:84951323133" class="dropdown_added-tel">8 495 132-31-33</a>
+                        <a href="tel:84951323133" class="dropdown_added-tel">8 495 132-31-33</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
+
     <!-- DROPDOWN MENU  -->
 
     <!-- SLIDER  -->
     <section class="slider">
         <div class="slider_inner">
             <div class="slider_item" style="background-image: url(./img/slider_bg.jpg)">
-            <img class="dekstop_slider" src="./img/slider-1.png" alt="slider">
-            <img class="media_slider" src="./img/media_slider.png" alt="media slider">
+                <img class="dekstop_slider" src="./img/slider-1.png" alt="slider">
+                <img class="media_slider" src="./img/media_slider.png" alt="media slider">
                 <a href="#" class="slider_item-1-btn slider_btn">
                     Подробнее
                     <svg class="animate__animated animate__infinite animate__slower animate__fadeInLeft" width="24"
@@ -285,9 +284,9 @@
         </section>
         <section class="popular_products">
             <div class="container">
-            <div class="popular_products-title">Популярная продукция <br>
-                <span class="popular_products-subtitle">то, что выбирает большинство, и мы рекомендуем</span>
-            </div>
+                <div class="popular_products-title">Популярная продукция <br>
+                    <span class="popular_products-subtitle">то, что выбирает большинство, и мы рекомендуем</span>
+                </div>
                 <div class="popular_products-list">
                     <div class="popular_products-item">
                         <div class="popular_item-name">
@@ -510,7 +509,41 @@
             </div>
     </footer>
     <!-- FOOTER  -->
-
+    <!-- POPUPS  -->
+    <div class="callback_popup">
+        <div class="callback_popup-inner">
+            <div class="callback_popup-content">
+                <a href="#" class="callback_popup-close">
+                
+                </a>
+                <form class="callback_popup-form">
+                    <p class="callback_popup-title">
+                        Обратный звонок
+                    </p>
+                    <p class="callback_popup-text">
+                        Укажите свой телефон и мы вам перезвоним в ближайшее время
+                    </p>
+                    <div class="callback_input-desc">Ваше имя</div>
+                    <input type="text" name="name" id="name" placeholder="Например Иван">
+                    <div class="callback_input-desc">Телефон</div>
+                    <input type="tel" name="tel" id="tel">
+                    <button class="modal_btn" type="submit">Отправить
+                        <svg class="animate__animated animate__infinite animate__slower animate__fadeInLeft" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="callback_popup-hide"></div>
+    </div>
+    <!-- POPUPS  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
