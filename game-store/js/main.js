@@ -4,9 +4,48 @@ $(function () {
 		arrows: false,
 		infinite: true,
 		autoplaySpeed: 2000,
+		responsive: [{
+			breakpoint: 720,
+			settings: {
+				dots: true
+			},
+			breakpoint: 480,
+			settings: "unslick"
+		}]
 	})
 });
-if (document.documentElement.clientWidth > 920) {
+
+var sliderBool = false,
+    sliderBreakpoint = 480,
+    sliderSettings = {
+        mobileFirst: true,
+        arrows: false,
+        dots: true,
+        responsive: [{
+            breakpoint: sliderBreakpoint,
+            settings: "unslick"
+        }]
+    };
+
+function sliderInit(sliderElem) {
+    if (window.innerWidth <= sliderBreakpoint) {
+        if (sliderBool == false) {
+            $("" + sliderElem + "").slick(sliderSettings);
+            sliderBool = true;
+        }
+    } else {
+        sliderBool = false;
+    }
+}
+
+// init
+sliderInit(".team_members");
+
+// resize
+$(window).resize(function () {
+    sliderInit(".team_members");
+});
+if (document.documentElement.clientWidth > 1000) {
 
 
 	$(function () {
@@ -39,12 +78,12 @@ if (document.documentElement.clientWidth > 920) {
 		});
 	})(jQuery);
 };
-$(".footer_menu li a").click(function() {
-    $("html, body").animate({
-      scrollTop: $($(this).attr("href")).offset().top + "px"
-    }, {
-      duration: 800,
-      easing: "swing"
-    });
-    return false;
-  });
+$(".footer_menu li a").click(function () {
+	$("html, body").animate({
+		scrollTop: $($(this).attr("href")).offset().top + "px"
+	}, {
+		duration: 800,
+		easing: "swing"
+	});
+	return false;
+});
