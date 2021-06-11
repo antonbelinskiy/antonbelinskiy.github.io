@@ -56,7 +56,9 @@ $('.flaunch__title').on('click', function(e) {
   e.preventDefault();
 });
 
-
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
 
 //animations
 

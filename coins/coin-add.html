@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crypter</title>
-  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body>
@@ -59,7 +60,13 @@
         <input type="name" id="name" placeholder="Name token"> 
         <input type="text" id="symbol" placeholder="Symbol">
         <!-- load image -->
-        <input name="picture" type="file" /> 
+        <div class="field__wrapper">
+          <input name="file" type="file" name="file" id="field__file-2" class="field field__file" multiple> 
+          <label class="field__file-wrapper" for="field__file-2">
+            <div class="field__file-fake">No files selected</div>
+            <span class="field__file-button">Choose file</span>
+          </label>
+       </div>
         <!-- description  -->
         <textarea name="description" id="description" placeholder="Description"></textarea>
         <!-- socials -->
@@ -92,15 +99,21 @@
         <label for="influencers">Influencers</label>
       </div>
       </div>
-        <label for="date">Launch date</label>
-        <input type="date" id="date">
+        <label for="datepicker">Launch date</label>
+        <input placeholder="Date" type="text" id="datepicker">
         <button type="submit">submit</button>
       </form>
       <form class="flaunch__form" action="POST">
         <input type="name" id="name" placeholder="Name token"> 
         <input type="text" id="symbol" placeholder="Symbol">
         <!-- load image -->
-        <input name="picture" type="file" /> 
+        <div class="field__wrapper">
+          <input name="file" type="file" name="file" id="field__file-2" class="field field__file" multiple> 
+          <label class="field__file-wrapper" for="field__file-2">
+            <div class="field__file-fake">No files selected</div>
+            <span class="field__file-button">Choose file</span>
+          </label>
+       </div>
         <!-- description  -->
         <textarea name="description" id="description" placeholder="Description"></textarea>
         <!-- socials -->
@@ -131,8 +144,8 @@
         <label for="influencers-flaunch">Influencers</label>
       </div>
       </div>
-        <label for="date-flaunch">Launch date</label>
-        <input type="date" id="date-flaunch">
+        <label for="datepicker">Launch date</label>
+        <input placeholder="Date" type="text" id="datepicker">
         <button type="submit">submit</button>
       </form>
       </div>
@@ -153,9 +166,9 @@
         </ul>
       </div>
       <div class="footer__social-icons social__icons">
-        <a class="twitter" href="#"><img src="./img/Twitter.svg" alt="twitter"></a><a class="telegram" href="#"><img src="./img/Telegram.svg"
-          alt="Telegram"></a><a class="reddit" href="#"><img src="./img/Reddit.svg" alt="Reddit"></a><a class="discord" href="#"><img
-          src="./img/Discord.svg" alt="Discord"></a><a class="youtube" href="#"><img src="./img/Youtube.svg" alt="Youtube"></a>
+        <a target="_blank" class="twitter" href="#"><img src="./img/Twitter.svg" alt="twitter"></a><a target="_blank" class="telegram" href="#"><img src="./img/Telegram.svg"
+            alt="Telegram"></a><a target="_blank" class="reddit" href="#"><img src="./img/Reddit.svg" alt="Reddit"></a><a target="_blank" class="discord" href="#"><img
+            src="./img/Discord.svg" alt="Discord"></a><a target="_blank" class="youtube" href="#"><img src="./img/Youtube.svg" alt="Youtube"></a>
       </div>
     </div>
   </div>
@@ -172,8 +185,27 @@
 </section>
 
   <script src="./js/libs.min.js"></script>
-  <!-- <script src="./js/main.min.js"></script> -->
-  <script src="./js/main.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="./js/main.min.js"></script>
+  <!-- <script src="./js/main.js"></script> -->
+  <script>
+    let fields = document.querySelectorAll('.field__file');
+    Array.prototype.forEach.call(fields, function (input) {
+      let label = input.nextElementSibling,
+        labelVal = label.querySelector('.field__file-fake').innerText;
+  
+      input.addEventListener('change', function (e) {
+        let countFiles = '';
+        if (this.files && this.files.length >= 1)
+          countFiles = this.files.length;
+  
+        if (countFiles)
+          label.querySelector('.field__file-fake').innerText = 'Selected files: ' + countFiles;
+        else
+          label.querySelector('.field__file-fake').innerText = labelVal;
+      });
+    });
+</script>
 
 </body>
 
