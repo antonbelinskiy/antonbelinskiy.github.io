@@ -45,21 +45,77 @@ $('.presale__title').on('click', function(e) {
   $(this).addClass("active");
   $('.presale__form').addClass('active');
   $(".form__choose > a").not(this).removeClass("active");
-  $(".flaunch__form").removeClass("active");
+  $(".form form").not('.presale__form').removeClass("active");
   e.preventDefault();
 });
 $('.flaunch__title').on('click', function(e) {
   $(this).addClass("active");
   $('.flaunch__form').addClass('active');
   $(".form__choose > a").not(this).removeClass("active");
-  $('.presale__form').removeClass('active');
+  $(".form form").not('.flaunch__form').removeClass("active");
   e.preventDefault();
 });
-
+$('.stealth__title').on('click', function(e) {
+  $(this).addClass("active");
+  $('.stealth__form').addClass('active');
+  $(".form__choose > a").not(this).removeClass("active");
+  $(".form form").not('.stealth__form').removeClass("active");
+  e.preventDefault();
+});
+$('.ido__title').on('click', function(e) {
+  $(this).addClass("active");
+  $('.ido__form').addClass('active');
+  $(".form__choose > a").not(this).removeClass("active");
+  $(".form form").not('.ido__form').removeClass("active");
+  e.preventDefault();
+});
 $( function() {
   $( "#datepicker" ).datepicker();
+  $( "#presale-date" ).datepicker();
+  $( "#ido-date" ).datepicker();
+  $( "#flaunch-date" ).datepicker();
+  $( "#stealth-date" ).datepicker();
+  $( "#ivent-date" ).datepicker();
 } );
 
+$('.add').on('click', add);
+$('.remove').on('click', remove);
+
+function add() {
+  var new_chq_no = parseInt($('#total_partnerships').val()) + 1;
+  var new_input = "<input placeholder='Name of the company' type='text' id='partnerships_" + new_chq_no + "'>";
+
+  $('#new_partnerships').append(new_input);
+
+  $('#total_partnerships').val(new_chq_no);
+}
+
+function remove() {
+  var last_chq_no = $('#total_partnerships').val();
+
+  if (last_chq_no > 1) {
+    $('#partnerships_' + last_chq_no).remove();
+    $('#total_partnerships').val(last_chq_no - 1);
+  }
+}
+
+
+let fields = document.querySelectorAll('.field__file');
+    Array.prototype.forEach.call(fields, function (input) {
+      let label = input.nextElementSibling,
+        labelVal = label.querySelector('.field__file-fake').innerText;
+  
+      input.addEventListener('change', function (e) {
+        let countFiles = '';
+        if (this.files && this.files.length >= 1)
+          countFiles = this.files.length;
+  
+        if (countFiles)
+          label.querySelector('.field__file-fake').innerText = 'Selected files: ' + countFiles;
+        else
+          label.querySelector('.field__file-fake').innerText = labelVal;
+      });
+    });
 //animations
 
 const animItems = document.querySelectorAll('.anim_item');

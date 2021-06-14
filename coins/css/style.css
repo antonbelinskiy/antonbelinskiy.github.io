@@ -4435,24 +4435,30 @@ header.fixed .header__inner {
 .footer__inner .header__menu menu li .menu__link,
 .form .header__menu menu li .menu__link {
   position: relative;
-  margin-right: 40px;
   padding-left: 25px;
   text-decoration: none;
   color: gray;
   transition: 0.3s ease;
 }
 
-.header__inner .header__menu menu li .menu__link::before,
-.footer__inner .header__menu menu li .menu__link::before,
-.form .header__menu menu li .menu__link::before {
-  content: "";
-  -o-object-fit: cover;
-     object-fit: cover;
+.header__inner .header__menu menu li .menu__link svg path,
+.footer__inner .header__menu menu li .menu__link svg path,
+.form .header__menu menu li .menu__link svg path {
+  transition: 0.3s ease-in-out;
+}
+
+.header__inner .header__menu menu li .menu__link svg,
+.footer__inner .header__menu menu li .menu__link svg,
+.form .header__menu menu li .menu__link svg {
   position: absolute;
   top: 0;
   left: 0;
-  height: auto;
-  width: 20px;
+}
+
+.header__inner .header__menu menu li .menu__link:hover svg path,
+.footer__inner .header__menu menu li .menu__link:hover svg path,
+.form .header__menu menu li .menu__link:hover svg path {
+  fill: #364bb8;
 }
 
 .header__inner .header__menu menu li .add__link,
@@ -4506,24 +4512,6 @@ header.fixed .header__inner {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.header__inner .header__menu menu li .promote__link::before,
-.footer__inner .header__menu menu li .promote__link::before,
-.form .header__menu menu li .promote__link::before {
-  content: url(../img/Promote_Icon.svg);
-}
-
-.header__inner .header__menu menu li .newsletter__link::before,
-.footer__inner .header__menu menu li .newsletter__link::before,
-.form .header__menu menu li .newsletter__link::before {
-  content: url(../img/newsletter.svg);
-}
-
-.header__inner .header__menu menu li .login__link::before,
-.footer__inner .header__menu menu li .login__link::before,
-.form .header__menu menu li .login__link::before {
-  content: url(../img/Login_Icon.svg);
 }
 
 .footer__logo {
@@ -4635,11 +4623,6 @@ header.fixed .header__inner {
 .coins__table-head ul li a.active {
   color: #fff;
   background: #364bb8;
-}
-
-.coins__table-head ul li a:hover {
-  color: #364bb8;
-  background-color: rgba(54, 75, 184, 0.4);
 }
 
 .coins__table-title {
@@ -4880,6 +4863,61 @@ header.fixed .header__inner {
   height: 100%;
 }
 
+.partnerships__btns {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.partnerships__btn {
+  width: auto !important;
+  cursor: pointer;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 2rem;
+  background-color: #364bb8;
+  color: #fff !important;
+}
+
+.partnerships__btn:hover {
+  background-color: #000;
+}
+
+#new_partnerships {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partnerships__btn:first-child {
+  margin-left: 0;
+}
+
+.coins__item-symbol.coin__platform {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#platform-eth {
+  background-color: #a5fcf6bf;
+  color: #81A8F8;
+}
+
+#platform-bnb {
+  background-color: #f0bb0bbd;
+  color: rgba(53, 51, 51, 0.412);
+}
+
+.coin__symbol {
+  margin-right: 5px;
+}
+
+#datepicker {
+  cursor: pointer;
+}
+
 #email,
 #telegram,
 #twitter,
@@ -4887,6 +4925,7 @@ header.fixed .header__inner {
 #youtube,
 #reddit,
 #website,
+#binance,
 #ethereum {
   padding-left: 60px;
 }
@@ -4924,6 +4963,10 @@ header.fixed .header__inner {
   background-image: url(../img/eth-form.svg);
 }
 
+#binance {
+  background-image: url(../img/coin.svg);
+}
+
 .form__choose {
   display: flex;
   flex-wrap: wrap;
@@ -4948,11 +4991,19 @@ header.fixed .header__inner {
   margin: 0 auto;
 }
 
+.coin__platform {
+  background-color: #364BB8;
+  color: #fff;
+  font-weight: 400;
+}
+
 main.form form {
   display: none;
 }
 
-main.form form.active {
+main.form form.active,
+main.listing form,
+main.ivents form {
   display: flex;
   opacity: 1;
   transform: translateY(0%);
@@ -4961,29 +5012,57 @@ main.form form.active {
 }
 
 main.form form.active p.presale__title,
-main.form form.active p.flaunch__title {
+main.form form.active p.flaunch__title,
+main.form form.active p.checkbox__title,
+main.listing form p.presale__title,
+main.listing form p.flaunch__title,
+main.listing form p.checkbox__title,
+main.ivents form p.presale__title,
+main.ivents form p.flaunch__title,
+main.ivents form p.checkbox__title {
   color: #0a033c;
   font-size: 2rem;
 }
 
-main.form form.active * {
-  width: 100%;
-  margin-bottom: 10px;
-  font-size: 1.2em;
+main.form form.active *::-moz-placeholder, main.listing form *::-moz-placeholder, main.ivents form *::-moz-placeholder {
   color: #7b8da5;
 }
 
-main.form form.active .field__wrapper {
+main.form form.active *:-ms-input-placeholder, main.listing form *:-ms-input-placeholder, main.ivents form *:-ms-input-placeholder {
+  color: #7b8da5;
+}
+
+main.form form.active *::placeholder,
+main.listing form *::placeholder,
+main.ivents form *::placeholder {
+  color: #7b8da5;
+}
+
+main.form form.active *,
+main.listing form *,
+main.ivents form * {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+main.form form.active .field__wrapper,
+main.listing form .field__wrapper,
+main.ivents form .field__wrapper {
   height: 50px;
   width: 100%;
   position: relative;
 }
 
-main.form form.active .field__wrapper .field__file {
+main.form form.active .field__wrapper .field__file,
+main.listing form .field__wrapper .field__file,
+main.ivents form .field__wrapper .field__file {
   display: none;
 }
 
-main.form form.active .field__wrapper label {
+main.form form.active .field__wrapper label,
+main.listing form .field__wrapper label,
+main.ivents form .field__wrapper label {
   display: inline-flex;
   justify-content: space-between;
   align-self: center;
@@ -5001,12 +5080,16 @@ main.form form.active .field__wrapper label {
   font-weight: 400;
 }
 
-main.form form.active .field__wrapper label .field__file-fake {
+main.form form.active .field__wrapper label .field__file-fake,
+main.listing form .field__wrapper label .field__file-fake,
+main.ivents form .field__wrapper label .field__file-fake {
   color: #7b8da5;
   padding-left: 30px;
 }
 
-main.form form.active .field__wrapper label span {
+main.form form.active .field__wrapper label span,
+main.listing form .field__wrapper label span,
+main.ivents form .field__wrapper label span {
   padding: 10px 20px;
   border-radius: 8px;
   margin-bottom: 0;
@@ -5019,13 +5102,21 @@ main.form form.active .field__wrapper label span {
   margin-right: 30px;
 }
 
-main.form form.active .field__wrapper label span:hover {
+main.form form.active .field__wrapper label span:hover,
+main.listing form .field__wrapper label span:hover,
+main.ivents form .field__wrapper label span:hover {
   background-color: #000;
 }
 
 main.form form.active .field__wrapper,
 main.form form.active input,
-main.form form.active textarea {
+main.form form.active textarea,
+main.listing form .field__wrapper,
+main.listing form input,
+main.listing form textarea,
+main.ivents form .field__wrapper,
+main.ivents form input,
+main.ivents form textarea {
   background-size: 18px 20px;
   background-position: 30px center;
   background-repeat: no-repeat;
@@ -5037,37 +5128,55 @@ main.form form.active textarea {
 
 main.form form.active .field__wrapper:focus,
 main.form form.active input:focus,
-main.form form.active textarea:focus {
+main.form form.active textarea:focus,
+main.listing form .field__wrapper:focus,
+main.listing form input:focus,
+main.listing form textarea:focus,
+main.ivents form .field__wrapper:focus,
+main.ivents form input:focus,
+main.ivents form textarea:focus {
   border: 3px solid #364bb8;
   box-shadow: 0px 4px 8px rgba(54, 75, 184, 0.25);
 }
 
-main.form form.active .field__wrapper:focus::-moz-placeholder, main.form form.active input:focus::-moz-placeholder, main.form form.active textarea:focus::-moz-placeholder {
+main.form form.active .field__wrapper:focus::-moz-placeholder, main.form form.active input:focus::-moz-placeholder, main.form form.active textarea:focus::-moz-placeholder, main.listing form .field__wrapper:focus::-moz-placeholder, main.listing form input:focus::-moz-placeholder, main.listing form textarea:focus::-moz-placeholder, main.ivents form .field__wrapper:focus::-moz-placeholder, main.ivents form input:focus::-moz-placeholder, main.ivents form textarea:focus::-moz-placeholder {
   opacity: 0;
 }
 
-main.form form.active .field__wrapper:focus:-ms-input-placeholder, main.form form.active input:focus:-ms-input-placeholder, main.form form.active textarea:focus:-ms-input-placeholder {
+main.form form.active .field__wrapper:focus:-ms-input-placeholder, main.form form.active input:focus:-ms-input-placeholder, main.form form.active textarea:focus:-ms-input-placeholder, main.listing form .field__wrapper:focus:-ms-input-placeholder, main.listing form input:focus:-ms-input-placeholder, main.listing form textarea:focus:-ms-input-placeholder, main.ivents form .field__wrapper:focus:-ms-input-placeholder, main.ivents form input:focus:-ms-input-placeholder, main.ivents form textarea:focus:-ms-input-placeholder {
   opacity: 0;
 }
 
 main.form form.active .field__wrapper:focus::placeholder,
 main.form form.active input:focus::placeholder,
-main.form form.active textarea:focus::placeholder {
+main.form form.active textarea:focus::placeholder,
+main.listing form .field__wrapper:focus::placeholder,
+main.listing form input:focus::placeholder,
+main.listing form textarea:focus::placeholder,
+main.ivents form .field__wrapper:focus::placeholder,
+main.ivents form input:focus::placeholder,
+main.ivents form textarea:focus::placeholder {
   opacity: 0;
 }
 
-main.form form.active label {
+main.form form.active label,
+main.listing form label,
+main.ivents form label {
   padding: 15px 0px 15px 10px;
   font-size: 1.7em;
   color: #000;
   font-weight: 600;
 }
 
-main.form form.active .input_price {
+main.form form.active .input_price,
+main.listing form .input_price,
+main.ivents form .input_price {
   width: 42%;
 }
 
-main.form form.active button {
+main.form form.active button,
+main.listing form button,
+main.ivents form button {
   margin-top: 20px;
   border: 0;
   border-radius: 10px;
@@ -5081,11 +5190,15 @@ main.form form.active button {
   transition: 0.3s ease-in-out;
 }
 
-main.form form.active button:hover {
+main.form form.active button:hover,
+main.listing form button:hover,
+main.ivents form button:hover {
   background-color: #000;
 }
 
-main.form form.active textarea {
+main.form form.active textarea,
+main.listing form textarea,
+main.ivents form textarea {
   height: 100px;
 }
 
@@ -5392,25 +5505,37 @@ main.form form.active textarea {
   padding: 20px 0 10px 0;
 }
 
-main.form form .form__checkbox {
+.form__checkbox-inner.platform__inner {
+  justify-content: flex-start;
+}
+
+main.form form .form__checkbox,
+main.ivents form .form__checkbox,
+main.listing form .form__checkbox {
   width: auto;
   cursor: pointer;
 }
 
-main.form form .form__checkbox label {
+main.form form .form__checkbox label,
+main.ivents form .form__checkbox label,
+main.listing form .form__checkbox label {
   font-size: 1.7rem;
   width: auto;
   margin-right: 10px;
 }
 
-main.form form .form__checkbox input {
+main.form form .form__checkbox input,
+main.ivents form .form__checkbox input,
+main.listing form .form__checkbox input {
   width: auto;
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-main.form form .form__checkbox input + label {
+main.form form .form__checkbox input + label,
+main.ivents form .form__checkbox input + label,
+main.listing form .form__checkbox input + label {
   display: inline-flex;
   align-items: center;
   -webkit-user-select: none;
@@ -5420,7 +5545,9 @@ main.form form .form__checkbox input + label {
   cursor: pointer;
 }
 
-main.form form .form__checkbox input + label::before {
+main.form form .form__checkbox input + label::before,
+main.ivents form .form__checkbox input + label::before,
+main.listing form .form__checkbox input + label::before {
   content: "";
   display: inline-block;
   width: 1em;
@@ -5436,7 +5563,9 @@ main.form form .form__checkbox input + label::before {
   transition: 0.3s ease-in-out;
 }
 
-main.form form .form__checkbox input:checked + label::before {
+main.form form .form__checkbox input:checked + label::before,
+main.ivents form .form__checkbox input:checked + label::before,
+main.listing form .form__checkbox input:checked + label::before {
   border-color: #364bb8;
   background-color: #364bb8;
 }
@@ -5523,11 +5652,13 @@ main.form form .form__checkbox input:checked + label::before {
   margin-bottom: 30px;
 }
 
-.newsletter__inner {
+.newsletter__inner,
+.ivents__inner {
   padding: 30px 30px 50px 30px;
   box-shadow: 0px 10px 40px #d6ddef;
   border-radius: 30px;
   border: 1px solid #f0f6fd;
+  margin-bottom: 40px;
 }
 
 .title {
@@ -5624,6 +5755,7 @@ main.form form .form__checkbox input:checked + label::before {
 
 .promote__inner,
 .privacy_policy-inner,
+.listing__inner,
 .terms__inner {
   padding: 30px 30px 50px 30px;
   box-shadow: 0px 10px 40px #d6ddef;
@@ -5786,6 +5918,68 @@ input[type=number]::-webkit-outer-spin-button {
   list-style: none;
 }
 
+.coins__table-price__salled {
+  border: 0;
+}
+
+.ivents .coins__table-price {
+  width: 70%;
+}
+
+#ivent.coins__price-item {
+  padding-left: 20px;
+  border-left: 1px solid #e2e9f0;
+}
+
+.table__item-ivent {
+  font-size: 1.6rem;
+}
+
+.ivents .coins__table-item {
+  justify-content: flex-start;
+}
+
+.ivents .coins__table-price {
+  border-right: 0;
+}
+
+.listing__table-title,
+.ivents__table-title {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.listing__table-title h3,
+.ivents__table-title h3 {
+  color: #0a033c;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.checkbox__title {
+  font-size: 1.7em;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.ivents .coins__table-name {
+  width: 30%;
+}
+
+.listing .coins__table-name {
+  width: 50%;
+}
+
+.listing .coins__table-price {
+  border-right: 0;
+}
+
 @media (max-width: 1601px) {
   .container {
     max-width: 1380px;
@@ -5836,7 +6030,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1em;
   }
 
-  .coins__table-price .coins__price-date {
+  .coins__table-price .coins__price-date,
+  .table__item-ivent {
     font-size: 1em;
   }
 
@@ -5862,6 +6057,20 @@ input[type=number]::-webkit-outer-spin-button {
   .terms .subtitle,
   .privacy__policy .subtitle {
     font-size: 2.2rem;
+  }
+
+  .listing .coins__table-name {
+    width: 50%;
+  }
+
+  .listing__table-title {
+    padding-left: 0;
+  }
+
+  .listing__table-title h3 {
+    font-size: 2rem;
+    margin-right: 0;
+    text-align: center;
   }
 
   .coins__table-name {
@@ -5918,6 +6127,12 @@ input[type=number]::-webkit-outer-spin-button {
     padding-bottom: 10px;
   }
 
+  .coins__table-titles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .header__menu.active {
     right: 0;
   }
@@ -5962,6 +6177,10 @@ input[type=number]::-webkit-outer-spin-button {
 
   .coins__table-price {
     flex-wrap: wrap;
+  }
+
+  .ivents .coins__table-price-info {
+    justify-content: flex-start;
   }
 
   .coins__table-price-info {
@@ -6082,6 +6301,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 760px) {
+  .coins__table-head {
+    padding-left: 0;
+  }
+
   .promote__contact-block {
     width: 100%;
   }
@@ -6089,6 +6312,12 @@ input[type=number]::-webkit-outer-spin-button {
   .promote__contact-img {
     width: 100%;
     max-width: none;
+  }
+
+  .listing .coins__table-name,
+  .ivents .coins__table-name,
+  .ivents .coins__table-price {
+    width: 100%;
   }
 
   .promote__contact-form {
@@ -6349,6 +6578,18 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
   }
 
+  .listing .coins__table .coins__table-price-info,
+  .listing .coins__table .coins__price-item,
+  #ivent.coins__price-item {
+    margin-bottom: 0;
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  #ivent.coins__price-item {
+    flex-wrap: wrap;
+  }
+
   .coins__table .coins__price-item {
     display: flex;
     margin-right: 0;
@@ -6362,14 +6603,14 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .coins__table-head .coins__table-titles {
-    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .coins__table-types ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -6383,17 +6624,29 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 10px;
   }
 
-  main.form form.active .field__wrapper label {
+  main.form form.active .field__wrapper label,
+  main.listing form .field__wrapper label,
+  main.ivents form .field__wrapper label {
     flex-direction: column;
   }
 
-  main.form form.active .field__wrapper label .field__file-fake {
+  main.form form.active .field__wrapper,
+  main.listing form .field__wrapper,
+  main.ivents form .field__wrapper {
+    padding-bottom: 30px;
+  }
+
+  main.form form.active .field__wrapper label .field__file-fake,
+  main.listing form .field__wrapper label .field__file-fake,
+  main.ivents form .field__wrapper label .field__file-fake {
     width: auto;
     padding-left: 0;
     text-align: center;
   }
 
-  main.form form.active .field__wrapper label span {
+  main.form form.active .field__wrapper label span,
+  main.listing form .field__wrapper label span,
+  main.ivents form .field__wrapper label span {
     width: 200px;
     margin: 0 auto;
   }
@@ -6410,6 +6663,10 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 10px 5px;
     max-width: 75%;
     margin: 0 auto;
+  }
+
+  .form__checkbox-inner.platform__inner {
+    justify-content: space-between;
   }
 }
 
@@ -6430,8 +6687,8 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 auto;
   }
 
-  .coins__table-head {
-    padding-left: 0;
+  .checkbox__title {
+    font-size: 1.8rem;
   }
 
   .coins__table-title {
@@ -6465,6 +6722,13 @@ input[type=number]::-webkit-outer-spin-button {
 
   .single__inner-socials ul li:last-child a::before {
     left: 32%;
+  }
+
+  main.form form.active .field__wrapper label span,
+  main.listing form .field__wrapper label span,
+  main.ivents form .field__wrapper label span {
+    width: 100px;
+    margin: 0 auto;
   }
 }
 

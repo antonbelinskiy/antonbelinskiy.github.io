@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crypter</title>
-  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
   <!DOCTYPE html>
 <html lang="en">
 
@@ -68,26 +57,223 @@
     </div>
   </header>
   <div class="mobile__menu-bg"></div>
-  <main class="main signin">
+  <main class="main ivents">
     <div class="container">
-      <div class="signin__inner">
-        <h1 class="signin__title title">Sign In</h1>
-        <h2 class="signin__subtitle subtitle">Welcome back, you’ve been mised!</h2>
-        <a href="">Sign in with Google</a>
-        <p>OR</p>
-        <form action="#" method="POST">
-          <input type="mail">
-          <input type="password">
-          <div class="from__bottom">
-          <div class="rememberme">
-            <input type="checkbox" id="remember">
-            <label for="remember">Remember me</label>
+      <div class="ivents__inner">
+        <h1 class="title ivents__title">Ivents</h1>
+        <h2 class="subtitle ivents__subtitle">Subtitle of page</h2>
+          <div class="form__inner">
+            <form action="post">
+              <input type="name" id="name" placeholder="Name token">
+              <input type="text" id="symbol" placeholder="Symbol">
+              <div class="field__wrapper">
+                <input name="file" type="file" name="file" id="field__file-2" class="field field__file" multiple>
+                <label class="field__file-wrapper" for="field__file-2">
+                  <div class="field__file-fake">Choose token`s logo</div>
+                  <span class="field__file-button">Choose file</span>
+                </label>
+              </div>
+              <p class="checkbox__title">Your token platform</p>
+              <div class="form__checkbox-inner platform__inner">
+              <div class="form__checkbox">
+                <input type="checkbox" id="bnb-check">
+                <label for="bnb-check">BNB</label>
+              </div>
+              <div class="form__checkbox">
+                <input type="checkbox" id="eth-check">
+                <label for="eth-check">ETH</label>
+              </div>
+              </div>
+              <input type="text" id="ivent-name" autocomplete="off" placeholder="Add your ivent">
+              <input type="text" id="ivent-date" autocomplete="off" placeholder="Date">
+              <button type="submit">submit</button>
+            </form>
           </div>
-          <a href="#">Forgot Password?</a>
         </div>
-        <button type="submit">sign in</button>
-        </form>
-        <p>Don’t have an account yet? <a href="#">Sign Up</a></p>
+        <div class="ivents__table coins__table">
+          <div class="ivents__table-head">
+            <div class="ivents__table-title">
+              <h3>Ivents</h3>
+            </div>
+          </div>
+          <div class="ivents__table-inner">
+            <div class="coins__table-item">
+              <div class="coins__table-name">
+                <!--<a class="coins__table-save" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.5 16.8637V6.07579C14.5 3.99472 13.0378 2.20351 11.0077 1.7977C9.02201 1.40077 6.97799 1.40077 4.99225 1.7977C2.96219 2.20351 1.5 3.99472 1.5 6.07579V16.8637C1.5 18.1258 2.8627 18.9113 3.94601 18.2737L6.90533 16.5317C7.58144 16.1337 8.41856 16.1337 9.09467 16.5317L12.054 18.2737C13.1373 18.9113 14.5 18.1258 14.5 16.8637Z"
+                      fill="#D7E0EB" fill-opacity="0.15" stroke="#D7E0EB" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a> -->
+                <a class="coins__item-link" href="./single-page.html">
+                  <div class="coins__item-icon"><img src="./img/raven-avatar.jpg" alt="avatar of the coin"></div>
+                  Raven X
+                  <span class="coins__item-symbol">RX</span>
+                  <span id="platform-bnb" class="coins__item-symbol coin__platform">bnb</span>
+                </a>
+              </div>
+              <div class="coins__table-price">
+                <div class="coins__table-price-info">
+                  <div id="ivent_date" class="coins__price-item">
+                    <p class="coins__price-desc">
+                      Ivent date
+                    </p>
+                    <p class="coins__price-date"><span id="month">May</span> <span id="day">6</span>, <span
+                        id="year">2021</span></p>
+                  </div>
+                  <div id="ivent" class="coins__price-item">
+                    <p class="coins__price-desc">
+                      Ivent
+                    </p>
+                   <p class="table__item-ivent">This is custom ivent</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="coins__table-item">
+              <div class="coins__table-name">
+                <!--<a class="coins__table-save" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.5 16.8637V6.07579C14.5 3.99472 13.0378 2.20351 11.0077 1.7977C9.02201 1.40077 6.97799 1.40077 4.99225 1.7977C2.96219 2.20351 1.5 3.99472 1.5 6.07579V16.8637C1.5 18.1258 2.8627 18.9113 3.94601 18.2737L6.90533 16.5317C7.58144 16.1337 8.41856 16.1337 9.09467 16.5317L12.054 18.2737C13.1373 18.9113 14.5 18.1258 14.5 16.8637Z"
+                      fill="#D7E0EB" fill-opacity="0.15" stroke="#D7E0EB" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a> -->
+                <a class="coins__item-link" href="./single-page.html">
+                  <div class="coins__item-icon"><img src="./img/raven-avatar.jpg" alt="avatar of the coin"></div>
+                  Raven X
+                  <span class="coins__item-symbol">RX</span>
+                  <span id="platform-bnb" class="coins__item-symbol coin__platform">bnb</span>
+                </a>
+              </div>
+              <div class="coins__table-price">
+                <div class="coins__table-price-info">
+                  <div id="ivent_date" class="coins__price-item">
+                    <p class="coins__price-desc">
+                      Ivent date
+                    </p>
+                    <p class="coins__price-date"><span id="month">May</span> <span id="day">6</span>, <span
+                        id="year">2021</span></p>
+                  </div>
+                  <div id="ivent" class="coins__price-item">
+                    <p class="coins__price-desc">
+                      Ivent
+                    </p>
+                   <p class="table__item-ivent">This is custom ivent</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="coins__table-item">
+              <div class="coins__table-name">
+                <!--<a class="coins__table-save" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.5 16.8637V6.07579C14.5 3.99472 13.0378 2.20351 11.0077 1.7977C9.02201 1.40077 6.97799 1.40077 4.99225 1.7977C2.96219 2.20351 1.5 3.99472 1.5 6.07579V16.8637C1.5 18.1258 2.8627 18.9113 3.94601 18.2737L6.90533 16.5317C7.58144 16.1337 8.41856 16.1337 9.09467 16.5317L12.054 18.2737C13.1373 18.9113 14.5 18.1258 14.5 16.8637Z"
+                      fill="#D7E0EB" fill-opacity="0.15" stroke="#D7E0EB" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a> -->
+                <a class="coins__item-link" href="./single-page.html">
+                  <div class="coins__item-icon"><img src="./img/raven-avatar.jpg" alt="avatar of the coin"></div>
+                  Raven X
+                  <span class="coins__item-symbol">RX</span>
+                  <span id="platform-bnb" class="coins__item-symbol coin__platform">bnb</span>
+                </a>
+              </div>
+              <div class="coins__table-price">
+                <div class="coins__table-price-info">
+                  <div id="ivent_date" class="coins__price-item">
+                    <p class="coins__price-desc">
+                      Ivent date
+                    </p>
+                    <p class="coins__price-date"><span id="month">May</span> <span id="day">6</span>, <span
+                        id="year">2021</span></p>
+                  </div>
+                  <div id="ivent" class="coins__price-item">
+                    <p class="coins__price-desc">
+                      Ivent
+                    </p>
+                   <p class="table__item-ivent">This is custom ivent</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="coins__table-item">
+              <div class="coins__table-name">
+                <!--<a class="coins__table-save" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.5 16.8637V6.07579C14.5 3.99472 13.0378 2.20351 11.0077 1.7977C9.02201 1.40077 6.97799 1.40077 4.99225 1.7977C2.96219 2.20351 1.5 3.99472 1.5 6.07579V16.8637C1.5 18.1258 2.8627 18.9113 3.94601 18.2737L6.90533 16.5317C7.58144 16.1337 8.41856 16.1337 9.09467 16.5317L12.054 18.2737C13.1373 18.9113 14.5 18.1258 14.5 16.8637Z"
+                      fill="#D7E0EB" fill-opacity="0.15" stroke="#D7E0EB" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a> -->
+                <a class="coins__item-link" href="./single-page.html">
+                  <div class="coins__item-icon"><img src="./img/raven-avatar.jpg" alt="avatar of the coin"></div>
+                  Raven X
+                  <span class="coins__item-symbol">RX</span>
+                  <span id="platform-bnb" class="coins__item-symbol coin__platform">bnb</span>
+                </a>
+              </div>
+              <div class="coins__table-price">
+                <div class="coins__table-price-info">
+                  <div id="ivent_date" class="coins__price-item">
+                    <p class="coins__price-desc">
+                      Ivent date
+                    </p>
+                    <p class="coins__price-date"><span id="month">May</span> <span id="day">6</span>, <span
+                        id="year">2021</span></p>
+                  </div>
+                  <div id="ivent" class="coins__price-item">
+                    <p class="coins__price-desc">
+                      Ivent
+                    </p>
+                   <p class="table__item-ivent">This is custom ivent</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="coins__table-item">
+              <div class="coins__table-name">
+                <!--<a class="coins__table-save" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.5 16.8637V6.07579C14.5 3.99472 13.0378 2.20351 11.0077 1.7977C9.02201 1.40077 6.97799 1.40077 4.99225 1.7977C2.96219 2.20351 1.5 3.99472 1.5 6.07579V16.8637C1.5 18.1258 2.8627 18.9113 3.94601 18.2737L6.90533 16.5317C7.58144 16.1337 8.41856 16.1337 9.09467 16.5317L12.054 18.2737C13.1373 18.9113 14.5 18.1258 14.5 16.8637Z"
+                      fill="#D7E0EB" fill-opacity="0.15" stroke="#D7E0EB" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a> -->
+                <a class="coins__item-link" href="./single-page.html">
+                  <div class="coins__item-icon"><img src="./img/raven-avatar.jpg" alt="avatar of the coin"></div>
+                  Raven X
+                  <span class="coins__item-symbol">RX</span>
+                  <span id="platform-bnb" class="coins__item-symbol coin__platform">bnb</span>
+                </a>
+              </div>
+              <div class="coins__table-price">
+                <div class="coins__table-price-info">
+                  <div id="ivent_date" class="coins__price-item">
+                    <p class="coins__price-desc">
+                      Ivent date
+                    </p>
+                    <p class="coins__price-date"><span id="month">May</span> <span id="day">6</span>, <span
+                        id="year">2021</span></p>
+                  </div>
+                  <div id="ivent" class="coins__price-item">
+                    <p class="coins__price-desc">
+                      Ivent
+                    </p>
+                   <p class="table__item-ivent">This is custom ivent</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -117,8 +303,9 @@
 
 
   <script src="./js/libs.min.js"></script>
-  <!-- <script src="./js/main.min.js"></script> -->
-  <script src="./js/main.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="./js/main.min.js"></script>
+  <!-- <script src="./js/main.js"></script> -->
 
 </body>
 
