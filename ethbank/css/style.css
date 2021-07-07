@@ -4316,7 +4316,7 @@ li {
   overflow: hidden;
   position: relative;
   background-image: url(../img/intro-bg.png);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -4530,7 +4530,7 @@ li {
 
 .roadmap__phases .roadmap__phase-inner::after {
   content: '';
-  background-image: url(../img/facts-bg.svg);
+  background-image: url(../img/facts-bg.png);
   position: absolute;
   top: 0;
   left: 120px;
