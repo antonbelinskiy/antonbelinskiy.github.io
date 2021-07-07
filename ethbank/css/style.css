@@ -4312,7 +4312,6 @@ li {
 }
 
 .intro {
-  z-index: 10;
   overflow: hidden;
   position: relative;
   background-image: url(../img/intro-bg.png);
@@ -4339,7 +4338,7 @@ li {
 }
 
 .intro__word {
-  z-index: 1;
+  z-index: 34;
   color: #171C24;
   font-family: 'Gilroy-SemiBold', sans-serif;
   position: absolute;
@@ -4356,6 +4355,7 @@ li {
 
 .intro__inner-content {
   padding-top: 100px;
+  z-index: 100;
 }
 
 .intro__title {
@@ -4681,6 +4681,9 @@ li {
 
 .howtobuy__list-item .icon-p::before {
   content: '1';
+  font-size: 0.7em;
+  line-height: 18px;
+  vertical-align: bottom;
   top: -3px;
   left: 0;
   width: 20px;
