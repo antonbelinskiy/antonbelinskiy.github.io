@@ -4682,7 +4682,7 @@ li {
 .howtobuy__list-item .icon-p::before {
   content: '1';
   font-size: 0.7em;
-  line-height: 18px;
+  line-height: 20px;
   vertical-align: bottom;
   top: -3px;
   left: 0;
