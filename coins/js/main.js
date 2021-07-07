@@ -16,6 +16,11 @@ $('.mobile__menu-bg').on('click', function() {
 
 $('.notification__close-button').on('click', function(){
   $('.notification').removeClass('active');
+  $('.notification__bg').removeClass('active');
+});
+$('.notification__bg').on('click', function(){
+  $('.notification').removeClass('active');
+  $(this).removeClass('active');
 });
 
 //tables on main page
@@ -36,6 +41,10 @@ $('.coins__table-showall').on('click', function(e) {
   e.preventDefault();
 });
 
+
+$('.main__menu li a').filter(function(){
+  return this.href === location.href;
+}).addClass('current');
 //по умолчанию
 $('.presale__title').addClass('active');
 $('.presale__form').addClass('active');
