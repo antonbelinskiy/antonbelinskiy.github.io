@@ -4575,7 +4575,7 @@ li {
 .phases__bg .phases__strokes::after {
   content: '';
   z-index: 20;
-  width: 30px;
+  width: 31px;
   height: 30px;
   background-image: url(../img/round.svg);
   background-size: cover;
