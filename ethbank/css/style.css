@@ -4773,7 +4773,14 @@ li {
 }
 
 @media (max-width: 1899px) {
-  .phases__strokes {
+  .phases__bg .phases__strokes {
+    height: 250px;
+    top: -120px;
+  }
+}
+
+@media (max-width: 1845px) {
+  .phases__bg .phases__strokes {
     display: none;
   }
 }
