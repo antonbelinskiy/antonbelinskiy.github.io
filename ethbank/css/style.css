@@ -4779,7 +4779,7 @@ li {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
   .phases__bg .phases__strokes {
     display: none;
   }
