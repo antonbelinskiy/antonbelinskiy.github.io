@@ -4263,6 +4263,8 @@ body {
   font-family: 'Gilroy-Medium', sans-serif;
   font-weight: 400;
   color: #fff;
+  min-width: 1900px;
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -4292,6 +4294,7 @@ li {
   background-image: url(../img/wrapper-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   font-size: 10px;
 }
 
@@ -4343,7 +4346,7 @@ li {
   font-family: 'Gilroy-SemiBold', sans-serif;
   position: absolute;
   top: 100px;
-  right: -2000px;
+  right: 0px;
   text-transform: uppercase;
   font-size: 700px;
   text-shadow: -33px -33px 66px #2A313C, 33px 26px 99px #171C24;
@@ -4561,7 +4564,7 @@ li {
   position: absolute;
   height: 230px;
   width: 1px;
-  border: 1px dashed #D4FE79;
+  border: 2px dashed #D4FE79;
   border-left: 0;
   border-top: 0;
   border-bottom: 0;
@@ -4770,19 +4773,6 @@ li {
 
 .howtobuy__list-item:nth-child(11) .icon-p::before {
   content: '11';
-}
-
-@media (max-width: 1899px) {
-  .phases__bg .phases__strokes {
-    height: 250px;
-    top: -120px;
-  }
-}
-
-@media (max-width: 1500px) {
-  .phases__bg .phases__strokes {
-    display: none;
-  }
 }
 
 @media print, (prefers-reduced-motion: reduce) {
