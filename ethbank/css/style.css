@@ -4788,6 +4788,12 @@ li {
 }
 
 @media (max-width: 1400px) {
+  .intro__inner-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+
   .container {
     max-width: 1110px;
   }
