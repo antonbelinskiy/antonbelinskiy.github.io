@@ -4774,10 +4774,26 @@ li {
   content: '11';
 }
 
+@media (min-width: 2001px) {
+  .phases__bg .phases__strokes {
+    display: none;
+  }
+}
+
+@media (max-width: 2000px) {
+  .phases__bg {
+    bottom: -520px;
+  }
+}
+
 @media (max-width: 1899px) {
   .phases__bg .phases__strokes {
     height: 250px;
     top: -120px;
+  }
+
+  .phases__bg {
+    bottom: -490px;
   }
 }
 
@@ -4788,6 +4804,14 @@ li {
 }
 
 @media (max-width: 1400px) {
+  .howtobuy {
+    padding-top: 150px;
+  }
+
+  .phases__bg {
+    bottom: -250px;
+  }
+
   .intro__inner-img img {
     -o-object-fit: cover;
        object-fit: cover;
@@ -4851,7 +4875,7 @@ li {
   }
 
   .phases__bg {
-    bottom: -350px;
+    bottom: -200px;
   }
 }
 
