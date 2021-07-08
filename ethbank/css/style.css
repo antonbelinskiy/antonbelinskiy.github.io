@@ -4774,6 +4774,19 @@ li {
   content: '11';
 }
 
+@media (max-width: 1899px) {
+  .phases__bg .phases__strokes {
+    height: 250px;
+    top: -120px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .phases__bg .phases__strokes {
+    display: none;
+  }
+}
+
 @media print, (prefers-reduced-motion: reduce) {
   .animate__animated {
     -webkit-animation-duration: 1ms !important;
