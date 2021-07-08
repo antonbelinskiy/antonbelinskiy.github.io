@@ -4787,6 +4787,68 @@ li {
   }
 }
 
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1110px;
+  }
+
+  .roadmap__phases {
+    justify-content: space-around;
+  }
+
+  .roadmap__phases .roadmap__phase {
+    width: 35%;
+    margin-bottom: 30px;
+  }
+
+  .intro__title {
+    font-size: 7em;
+  }
+
+  .intro__inner-content,
+  .intro__inner-img {
+    width: 52%;
+  }
+
+  .hand__img {
+    width: 300px;
+  }
+
+  .hand__img:first-child {
+    top: 280px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .intro__word {
+    font-size: 550px;
+  }
+
+  .hand__img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .container {
+    max-width: 992px;
+  }
+
+  .intro__inner-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+
+  .facts__inner-img img {
+    height: 75%;
+  }
+
+  .phases__bg {
+    bottom: -350px;
+  }
+}
+
 @media print, (prefers-reduced-motion: reduce) {
   .animate__animated {
     -webkit-animation-duration: 1ms !important;
