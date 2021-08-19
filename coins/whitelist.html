@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
   <!DOCTYPE html>
@@ -62,38 +61,196 @@
     </div>
   </header>
   <div class="mobile__menu-bg"></div>
-  <main class="main promote">
-    <div class="container">
-      <div class="promote__inner">
-        <div class="promote__illustration-img">
-          <img src="./img/promote-Illustration.png" alt="intro image">
-        </div>
-        <h1 class="promote__title title">
-          Promote your token
-        </h1>
-        <h2 class="promote__subtitle subtitle">
-          Get the visibility you need.<br>
-          By promoting on coinhunt, your coin will be visible on top of all other coins.
-        </h2>
-        <div class="promote__contact-block">
-          <div class="promote__contact-form">
-            <p>To promote your coin</p>
-            <a href="mailto:contact@coinhunt.cc"><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.60724 0.497725C7.18331 0.167425 8.8167 0.167425 10.3928 0.497725L10.7225 0.56682C12.0826 0.85186 13.2648 1.57182 14.0979 2.56871C14.2339 2.73143 14.1882 2.96606 14.0086 3.08501L9.0307 6.38132C8.41184 6.79113 7.58815 6.79113 6.96929 6.38132L1.99144 3.08502C1.81181 2.96606 1.76609 2.73144 1.90208 2.56872C2.73518 1.57182 3.91743 0.851861 5.27754 0.56682L5.60724 0.497725ZM1.49365 4.13901C1.2852 4.00098 0.994631 4.08011 0.915718 4.30894C0.871645 4.43674 0.832216 4.56661 0.797618 4.69839C0.400794 6.20984 0.400794 7.79017 0.797618 9.30161C1.34105 11.3715 3.07639 12.9719 5.27754 13.4332L5.60724 13.5023C7.18331 13.8326 8.81669 13.8326 10.3928 13.5023L10.7225 13.4332C12.9236 12.9719 14.6589 11.3715 15.2024 9.30161C15.5992 7.79016 15.5992 6.20984 15.2024 4.6984C15.1678 4.56661 15.1284 4.43673 15.0843 4.30893C15.0054 4.0801 14.7148 4.00097 14.5064 4.139L9.71783 7.30993C8.6864 7.99294 7.31358 7.99294 6.28215 7.30993L1.49365 4.13901Z" fill="white"/>
-              </svg>
-              contact@coinhunt.cc</a>
+  <main class="main whitelist">
+      <div class="container">
+        <div class="listing__inner">
+          <h1 class="title listing__title">Whitelists</h1>
+          <h2 class="subtitle listing__subtitle">Subtitle of page</h2>
+            <div class="form__inner">
+              <form action="post">
+                <input type="name" id="name" placeholder="Name token">
+                <input type="text" id="symbol" placeholder="Symbol">
+                <div class="field__wrapper">
+                  <input name="file" type="file" name="file" id="field__file-2" class="field field__file" multiple>
+                  <label class="field__file-wrapper" for="field__file-2">
+                    <div class="field__file-fake">Choose token`s logo</div>
+                    <span class="field__file-button">Choose file</span>
+                  </label>
+                </div>
+                <input type="url" id="whitelst-link" placeholder="Whitelist link">
+                <input type="text" id="whitelst-date" autocomplete="off" placeholder="Date">
+                <button type="submit">submit</button>
+              </form>
+            </div>
           </div>
-          <div class="promote__contact-notification">
-            Do never pay anyone for a promotion on our platform, unless you have received a confirmation email from this address.
+          <div class="listing__table coins__table">
+            <div class="listing__table-head">
+              <div class="listing__table-title">
+                <h3>Vesting</h3>
+              </div>
+            </div>
+            <div class="listing__table-inner">
+              <div class="coins__table-item">
+                <div class="coins__table-name">
+                  <!--<a class="coins__table-save" href="#">
+                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.5 16.8637V6.07579C14.5 3.99472 13.0378 2.20351 11.0077 1.7977C9.02201 1.40077 6.97799 1.40077 4.99225 1.7977C2.96219 2.20351 1.5 3.99472 1.5 6.07579V16.8637C1.5 18.1258 2.8627 18.9113 3.94601 18.2737L6.90533 16.5317C7.58144 16.1337 8.41856 16.1337 9.09467 16.5317L12.054 18.2737C13.1373 18.9113 14.5 18.1258 14.5 16.8637Z"
+                        fill="#D7E0EB" fill-opacity="0.15" stroke="#D7E0EB" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a> -->
+                  <a class="coins__item-link" href="./single-page.html">
+                    <div class="coins__item-icon"><img src="./img/raven-avatar.jpg" alt="avatar of the coin"></div>
+                    Raven X
+                    <span class="coins__item-symbol">RX</span>
+                  </a>
+                </div>
+                <div class="coins__table-price">
+                  <div class="coins__table-price-info">
+                    <div id="listing_date" class="coins__price-item">
+                      <p class="coins__price-desc">
+                        Whitelist date
+                      </p>
+                      <p class="coins__price-date"><span id="month">May</span> <span id="day">6</span>, <span
+                          id="year">2021</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="coins__table-button">
+                  <a href="#">Whitelist</a>
+                </div>
+              </div>
+              <div class="coins__table-item">
+                <div class="coins__table-name">
+                  <!--<a class="coins__table-save" href="#">
+                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.5 16.8637V6.07579C14.5 3.99472 13.0378 2.20351 11.0077 1.7977C9.02201 1.40077 6.97799 1.40077 4.99225 1.7977C2.96219 2.20351 1.5 3.99472 1.5 6.07579V16.8637C1.5 18.1258 2.8627 18.9113 3.94601 18.2737L6.90533 16.5317C7.58144 16.1337 8.41856 16.1337 9.09467 16.5317L12.054 18.2737C13.1373 18.9113 14.5 18.1258 14.5 16.8637Z"
+                        fill="#D7E0EB" fill-opacity="0.15" stroke="#D7E0EB" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a> -->
+                  <a class="coins__item-link" href="./single-page.html">
+                    <div class="coins__item-icon"><img src="./img/raven-avatar.jpg" alt="avatar of the coin"></div>
+                    Raven X
+                    <span class="coins__item-symbol">RX</span>
+                  </a>
+                </div>
+                <div class="coins__table-price">
+                  <div class="coins__table-price-info">
+                    <div id="listing_date" class="coins__price-item">
+                      <p class="coins__price-desc">
+                        Whitelist date
+                      </p>
+                      <p class="coins__price-date"><span id="month">May</span> <span id="day">6</span>, <span
+                          id="year">2021</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="coins__table-button">
+                  <a href="#">Whitelist</a>
+                </div>
+              </div>
+              <div class="coins__table-item">
+                <div class="coins__table-name">
+                  <!--<a class="coins__table-save" href="#">
+                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.5 16.8637V6.07579C14.5 3.99472 13.0378 2.20351 11.0077 1.7977C9.02201 1.40077 6.97799 1.40077 4.99225 1.7977C2.96219 2.20351 1.5 3.99472 1.5 6.07579V16.8637C1.5 18.1258 2.8627 18.9113 3.94601 18.2737L6.90533 16.5317C7.58144 16.1337 8.41856 16.1337 9.09467 16.5317L12.054 18.2737C13.1373 18.9113 14.5 18.1258 14.5 16.8637Z"
+                        fill="#D7E0EB" fill-opacity="0.15" stroke="#D7E0EB" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a> -->
+                  <a class="coins__item-link" href="./single-page.html">
+                    <div class="coins__item-icon"><img src="./img/raven-avatar.jpg" alt="avatar of the coin"></div>
+                    Raven X
+                    <span class="coins__item-symbol">RX</span>
+                  </a>
+                </div>
+                <div class="coins__table-price">
+                  <div class="coins__table-price-info">
+                    <div id="listing_date" class="coins__price-item">
+                      <p class="coins__price-desc">
+                        Whitelist date
+                      </p>
+                      <p class="coins__price-date"><span id="month">May</span> <span id="day">6</span>, <span
+                          id="year">2021</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="coins__table-button">
+                  <a href="#">Whitelist</a>
+                </div>
+              </div>
+              <div class="coins__table-item">
+                <div class="coins__table-name">
+                  <!--<a class="coins__table-save" href="#">
+                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.5 16.8637V6.07579C14.5 3.99472 13.0378 2.20351 11.0077 1.7977C9.02201 1.40077 6.97799 1.40077 4.99225 1.7977C2.96219 2.20351 1.5 3.99472 1.5 6.07579V16.8637C1.5 18.1258 2.8627 18.9113 3.94601 18.2737L6.90533 16.5317C7.58144 16.1337 8.41856 16.1337 9.09467 16.5317L12.054 18.2737C13.1373 18.9113 14.5 18.1258 14.5 16.8637Z"
+                        fill="#D7E0EB" fill-opacity="0.15" stroke="#D7E0EB" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a> -->
+                  <a class="coins__item-link" href="./single-page.html">
+                    <div class="coins__item-icon"><img src="./img/raven-avatar.jpg" alt="avatar of the coin"></div>
+                    Raven X
+                    <span class="coins__item-symbol">RX</span>
+                  </a>
+                </div>
+                <div class="coins__table-price">
+                  <div class="coins__table-price-info">
+                    <div id="listing_date" class="coins__price-item">
+                      <p class="coins__price-desc">
+                        Whitelist date
+                      </p>
+                      <p class="coins__price-date"><span id="month">May</span> <span id="day">6</span>, <span
+                          id="year">2021</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="coins__table-button">
+                  <a href="#">Whitelist</a>
+                </div>
+              </div>
+              <div class="coins__table-item">
+                <div class="coins__table-name">
+                  <!--<a class="coins__table-save" href="#">
+                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.5 16.8637V6.07579C14.5 3.99472 13.0378 2.20351 11.0077 1.7977C9.02201 1.40077 6.97799 1.40077 4.99225 1.7977C2.96219 2.20351 1.5 3.99472 1.5 6.07579V16.8637C1.5 18.1258 2.8627 18.9113 3.94601 18.2737L6.90533 16.5317C7.58144 16.1337 8.41856 16.1337 9.09467 16.5317L12.054 18.2737C13.1373 18.9113 14.5 18.1258 14.5 16.8637Z"
+                        fill="#D7E0EB" fill-opacity="0.15" stroke="#D7E0EB" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a> -->
+                  <a class="coins__item-link" href="./single-page.html">
+                    <div class="coins__item-icon"><img src="./img/raven-avatar.jpg" alt="avatar of the coin"></div>
+                    Raven X
+                    <span class="coins__item-symbol">RX</span>
+                  </a>
+                </div>
+                <div class="coins__table-price">
+                  <div class="coins__table-price-info">
+                    <div id="listing_date" class="coins__price-item">
+                      <p class="coins__price-desc">
+                        Whitelist date
+                      </p>
+                      <p class="coins__price-date"><span id="month">May</span> <span id="day">6</span>, <span
+                          id="year">2021</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="coins__table-button">
+                  <a href="#">Whitelist</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="promote__contact-img">
-          <img src="./img/promote-intro.jpg" alt="image of main page">
         </div>
       </div>
-    </div>
   </main>
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="footer__inner">
       <div class="footer__logo">
@@ -117,10 +274,10 @@
 </footer>
 
 
-
-  <script src="./js/libs.min.js"></script>
-  <script src="./js/main.min.js"></script>
-  <!-- <script src="./js/main.js"></script> -->
+<script src="./js/libs.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./js/main.min.js"></script>
+<!-- <script src="./js/main.js"></script> -->
 
 </body>
 

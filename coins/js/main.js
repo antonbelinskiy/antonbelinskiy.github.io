@@ -78,10 +78,19 @@ $('.ido__title').on('click', function(e) {
   $(".form form").not('.ido__form').removeClass("active");
   e.preventDefault();
 });
+$('.launched__title').on('click', function(e) {
+  $(this).addClass("active");
+  $('.launched__form').addClass('active');
+  $(".form__choose > a").not(this).removeClass("active");
+  $(".form form").not('.launched__form').removeClass("active");
+  e.preventDefault();
+});
 $( function() {
   $( "#datepicker" ).datepicker();
   $( "#presale-date" ).datepicker();
   $( "#ido-date" ).datepicker();
+  $( "#whitelst-date" ).datepicker();
+  $( "#launched-date" ).datepicker();
   $( "#flaunch-date" ).datepicker();
   $( "#stealth-date" ).datepicker();
   $( "#ivent-date" ).datepicker();

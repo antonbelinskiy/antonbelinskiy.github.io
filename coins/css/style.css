@@ -4268,6 +4268,10 @@ body {
   color: #141736;
 }
 
+main {
+  min-height: 80vh;
+}
+
 .container {
   max-width: 1620px;
   margin: 0 auto;
@@ -4575,10 +4579,15 @@ header.fixed .header__inner {
 }
 
 .coins__table {
+  min-height: 100px;
   border-radius: 30px;
   box-shadow: 0px 10px 40px #d6ddef;
   padding: 25px 20px;
   margin-bottom: 60px;
+}
+
+.coins__table h1 {
+  padding-left: 20px;
 }
 
 .coins__table-save svg path {
@@ -4699,8 +4708,8 @@ header.fixed .header__inner {
 .coins__table .coins__item-link .coins__item-icon img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
 }
 
 .coins__table .coins__item-link .coins__item-symbol {
@@ -4718,6 +4727,7 @@ header.fixed .header__inner {
 }
 
 .coins__table .coins__item-symbol {
+  white-space: nowrap;
   padding: 2px 3px;
   background-color: #ffe497;
   color: #e4ac61;
@@ -4727,7 +4737,8 @@ header.fixed .header__inner {
 }
 
 .coins__table-price {
-  width: 42%;
+  width: 38%;
+  margin-right: 10px;
   padding: 0 20px;
   border-right: 1px solid #e2e9f0;
   border-left: 1px solid #e2e9f0;
@@ -4867,7 +4878,8 @@ header.fixed .header__inner {
 }
 
 .show_form__btn:hover {
-  background-color: #000;
+  background-color: rgba(123, 141, 165, 0.6);
+  color: #000;
 }
 
 .g-recaptcha {
@@ -4936,7 +4948,8 @@ header.fixed .header__inner {
 }
 
 .partnerships__btn:hover {
-  background-color: #000;
+  background-color: rgba(123, 141, 165, 0.6);
+  color: #000;
 }
 
 #new_partnerships {
@@ -4977,14 +4990,24 @@ header.fixed .header__inner {
 
 #email,
 #telegram,
+#whitelst-link,
 #twitter,
 #discord,
 #youtube,
 #reddit,
 #website,
 #binance,
+#matic,
 #ethereum {
   padding-left: 60px;
+}
+
+#whitelst-link {
+  background-image: url(../img/website.svg);
+}
+
+#matic {
+  background-image: url(../img/matic-logo.svg);
 }
 
 #email {
@@ -5059,11 +5082,22 @@ header.fixed .header__inner {
   height: 23px;
 }
 
+form span {
+  color: #364bb8;
+  padding-left: 10px;
+  font-size: 1rem !important;
+}
+
+main.form form.active.launched__form .input_price {
+  width: 100%;
+}
+
 main.form form {
   display: none;
 }
 
 main.form form.active,
+main.whitelist form,
 main.listing form,
 main.ivents form {
   display: flex;
@@ -5076,6 +5110,9 @@ main.ivents form {
 main.form form.active p.presale__title,
 main.form form.active p.flaunch__title,
 main.form form.active p.checkbox__title,
+main.whitelist form p.presale__title,
+main.whitelist form p.flaunch__title,
+main.whitelist form p.checkbox__title,
 main.listing form p.presale__title,
 main.listing form p.flaunch__title,
 main.listing form p.checkbox__title,
@@ -5086,21 +5123,23 @@ main.ivents form p.checkbox__title {
   font-size: 2rem;
 }
 
-main.form form.active *::-moz-placeholder, main.listing form *::-moz-placeholder, main.ivents form *::-moz-placeholder {
+main.form form.active *::-moz-placeholder, main.whitelist form *::-moz-placeholder, main.listing form *::-moz-placeholder, main.ivents form *::-moz-placeholder {
   color: #7b8da5;
 }
 
-main.form form.active *:-ms-input-placeholder, main.listing form *:-ms-input-placeholder, main.ivents form *:-ms-input-placeholder {
+main.form form.active *:-ms-input-placeholder, main.whitelist form *:-ms-input-placeholder, main.listing form *:-ms-input-placeholder, main.ivents form *:-ms-input-placeholder {
   color: #7b8da5;
 }
 
 main.form form.active *::placeholder,
+main.whitelist form *::placeholder,
 main.listing form *::placeholder,
 main.ivents form *::placeholder {
   color: #7b8da5;
 }
 
 main.form form.active *,
+main.whitelist form *,
 main.listing form *,
 main.ivents form * {
   width: 100%;
@@ -5109,6 +5148,7 @@ main.ivents form * {
 }
 
 main.form form.active .field__wrapper,
+main.whitelist form .field__wrapper,
 main.listing form .field__wrapper,
 main.ivents form .field__wrapper {
   height: 50px;
@@ -5117,12 +5157,14 @@ main.ivents form .field__wrapper {
 }
 
 main.form form.active .field__wrapper .field__file,
+main.whitelist form .field__wrapper .field__file,
 main.listing form .field__wrapper .field__file,
 main.ivents form .field__wrapper .field__file {
   display: none;
 }
 
 main.form form.active .field__wrapper label,
+main.whitelist form .field__wrapper label,
 main.listing form .field__wrapper label,
 main.ivents form .field__wrapper label {
   display: inline-flex;
@@ -5143,6 +5185,7 @@ main.ivents form .field__wrapper label {
 }
 
 main.form form.active .field__wrapper label .field__file-fake,
+main.whitelist form .field__wrapper label .field__file-fake,
 main.listing form .field__wrapper label .field__file-fake,
 main.ivents form .field__wrapper label .field__file-fake {
   color: #7b8da5;
@@ -5150,9 +5193,10 @@ main.ivents form .field__wrapper label .field__file-fake {
 }
 
 main.form form.active .field__wrapper label span,
+main.whitelist form .field__wrapper label span,
 main.listing form .field__wrapper label span,
 main.ivents form .field__wrapper label span {
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 8px;
   margin-bottom: 0;
   transition: .3s;
@@ -5165,14 +5209,19 @@ main.ivents form .field__wrapper label span {
 }
 
 main.form form.active .field__wrapper label span:hover,
+main.whitelist form .field__wrapper label span:hover,
 main.listing form .field__wrapper label span:hover,
 main.ivents form .field__wrapper label span:hover {
-  background-color: #000;
+  background-color: rgba(123, 141, 165, 0.6);
+  color: #000;
 }
 
 main.form form.active .field__wrapper,
 main.form form.active input,
 main.form form.active textarea,
+main.whitelist form .field__wrapper,
+main.whitelist form input,
+main.whitelist form textarea,
 main.listing form .field__wrapper,
 main.listing form input,
 main.listing form textarea,
@@ -5191,6 +5240,9 @@ main.ivents form textarea {
 main.form form.active .field__wrapper:focus,
 main.form form.active input:focus,
 main.form form.active textarea:focus,
+main.whitelist form .field__wrapper:focus,
+main.whitelist form input:focus,
+main.whitelist form textarea:focus,
 main.listing form .field__wrapper:focus,
 main.listing form input:focus,
 main.listing form textarea:focus,
@@ -5202,6 +5254,7 @@ main.ivents form textarea:focus {
 }
 
 main.form form.active label,
+main.whitelist form label,
 main.listing form label,
 main.ivents form label {
   padding: 15px 0px 15px 10px;
@@ -5211,12 +5264,21 @@ main.ivents form label {
 }
 
 main.form form.active .input_price,
+main.whitelist form .input_price,
 main.listing form .input_price,
 main.ivents form .input_price {
   width: 42%;
 }
 
+main.form form.active .input_price.liquidity__price,
+main.whitelist form .input_price.liquidity__price,
+main.listing form .input_price.liquidity__price,
+main.ivents form .input_price.liquidity__price {
+  width: 100%;
+}
+
 main.form form.active button,
+main.whitelist form button,
 main.listing form button,
 main.ivents form button {
   margin-top: 20px;
@@ -5233,15 +5295,18 @@ main.ivents form button {
 }
 
 main.form form.active button:hover,
+main.whitelist form button:hover,
 main.listing form button:hover,
 main.ivents form button:hover {
   background-color: #000;
 }
 
 main.form form.active textarea,
+main.whitelist form textarea,
 main.listing form textarea,
 main.ivents form textarea {
-  height: 100px;
+  min-height: 100px;
+  max-height: 500px;
 }
 
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
@@ -5255,6 +5320,11 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
 input:focus::placeholder,
 textarea:focus::placeholder {
   opacity: 0;
+}
+
+main form p.contact__title {
+  font-size: 2rem !important;
+  font-weight: 600;
 }
 
 .form__choose {
@@ -5277,8 +5347,8 @@ textarea:focus::placeholder {
 }
 
 .form__choose a:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: rgba(123, 141, 165, 0.6);
+  color: #000;
 }
 
 .form__choose a:first-child {
@@ -5428,7 +5498,10 @@ textarea:focus::placeholder {
 .single__inner-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .single__coin-card {
@@ -5495,11 +5568,13 @@ textarea:focus::placeholder {
 .single__aside-price,
 .single__aside-softcap,
 .single__aside-info,
+.single__aside-liquidity,
 .single__aside-hardcap {
   font-family: "PoppinsMedium";
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .single__aside-info.check1 {
@@ -5655,7 +5730,8 @@ main.listing form .form__checkbox input:checked + label::before {
 }
 
 .picture__button:hover {
-  background: #000;
+  background-color: rgba(123, 141, 165, 0.6);
+  color: #000;
 }
 
 .signin {
@@ -5679,6 +5755,10 @@ main.listing form .form__checkbox input:checked + label::before {
   font-family: 'PoppinsSemiBold';
 }
 
+#table_promoted .coins__table-title:hover {
+  opacity: 1;
+}
+
 .notification {
   z-index: 1000;
   opacity: 0;
@@ -5689,7 +5769,7 @@ main.listing form .form__checkbox input:checked + label::before {
   top: 0;
   right: 0;
   margin: auto;
-  width: 50%;
+  width: 500px;
   height: 130px;
   transition: .3s;
   background-color: #fff;
@@ -6035,6 +6115,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .coins__table-price__salled {
+  white-space: nowrap;
   border: 0;
 }
 
@@ -6108,7 +6189,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .coins__table-social {
-    width: 21%;
+    width: 16%;
   }
 
   main.form form.active .input_price {
@@ -6117,8 +6198,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 1150px) {
+  .coins__table-name {
+    width: 22%;
+  }
+
   .coins__table-social {
-    width: 25%;
+    width: 19%;
   }
 
   .promote__contact-block {
@@ -6130,6 +6215,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .coins__table .coins__table-button a {
+    white-space: nowrap;
     padding: 10px 20px 10px 5px;
   }
 
@@ -6165,6 +6251,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 996px) {
+  main {
+    min-height: none;
+  }
+
   #ivent .coins__price-desc {
     margin-right: 5px;
   }
@@ -6273,10 +6363,6 @@ input[type=number]::-webkit-outer-spin-button {
     background: rgba(0, 0, 0, 0.5);
   }
 
-  .notification__text {
-    font-size: 1em;
-  }
-
   .header__inner .header__menu menu li,
   .footer__inner .header__menu menu li,
   .form .header__menu menu li {
@@ -6323,7 +6409,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .coins__table-price__salled::before {
-    left: 100px;
+    left: 95px;
   }
 
   .footer__inner {
@@ -6395,11 +6481,12 @@ input[type=number]::-webkit-outer-spin-button {
   .single__aside-market,
   .single__aside-price,
   .single__aside-softcap,
+  .single__aside-liquidity,
   .single__aside-info,
   .single__aside-hardcap {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 22%;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .aside_small-text {
@@ -6408,11 +6495,6 @@ input[type=number]::-webkit-outer-spin-button {
 
   .single__aside-info.check1 {
     margin-top: 0;
-  }
-
-  .notification {
-    width: 70%;
-    height: 130px;
   }
 
   .single__aside-button {
@@ -6429,12 +6511,22 @@ input[type=number]::-webkit-outer-spin-button {
 
   .single__aside-info.check1,
   .single__aside-info.check2,
-  .single__aside-info.check3 {
+  .single__aside-info.check3,
+  .single__aside-info.check4 {
     padding-top: 20px;
   }
 }
 
 @media (max-width: 760px) {
+  .notification__text {
+    font-size: 1em;
+  }
+
+  .coins__table-price {
+    border-left: 0;
+    border-right: 0;
+  }
+
   .coins__table-head {
     padding-left: 0;
   }
@@ -6446,6 +6538,11 @@ input[type=number]::-webkit-outer-spin-button {
   .promote__contact-img {
     width: 100%;
     max-width: none;
+  }
+
+  .notification {
+    width: 70%;
+    height: 130px;
   }
 
   .listing .coins__table-name,
@@ -6489,6 +6586,7 @@ input[type=number]::-webkit-outer-spin-button {
   .coins__table-item > * {
     width: 100%;
     margin-bottom: 10px;
+    margin-right: 0%;
   }
 
   .coins__table-item .coins__table-price__salled {
@@ -6636,7 +6734,10 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1rem;
   }
 
-  main.form form.active * {
+  main.form form.active *,
+  main.events form *,
+  main.whilelists form *,
+  main.listing form * {
     font-size: 1.2rem;
   }
 
@@ -6696,17 +6797,6 @@ input[type=number]::-webkit-outer-spin-button {
 
   .single__inner-info {
     flex-direction: column;
-  }
-
-  .single__aside-date,
-  .single__aside-market,
-  .single__aside-price,
-  .single__aside-softcap,
-  .single__aside-info,
-  .single__aside-hardcap {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
   }
 
   .single__inner-socials ul {
@@ -6815,18 +6905,21 @@ input[type=number]::-webkit-outer-spin-button {
 
   main.form form.active .field__wrapper label,
   main.listing form .field__wrapper label,
+  main.whitelist form .field__wrapper label,
   main.ivents form .field__wrapper label {
     flex-direction: column;
   }
 
   main.form form.active .field__wrapper,
   main.listing form .field__wrapper,
+  main.whitelist form .field__wrapper,
   main.ivents form .field__wrapper {
     padding-bottom: 30px;
   }
 
   main.form form.active .field__wrapper label .field__file-fake,
   main.listing form .field__wrapper label .field__file-fake,
+  main.whitelist form .field__wrapper label .field__file-fake,
   main.ivents form .field__wrapper label .field__file-fake {
     width: auto;
     padding-left: 0;
@@ -6835,6 +6928,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   main.form form.active .field__wrapper label span,
   main.listing form .field__wrapper label span,
+  main.whitelist form .field__wrapper label span,
   main.ivents form .field__wrapper label span {
     width: 200px;
     margin: 0 auto;
@@ -6850,7 +6944,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   .single__coin-card .coin__chain {
     padding: 10px 5px;
-    max-width: 75%;
+    width: 85%;
     margin: 0 auto;
   }
 
@@ -6869,7 +6963,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .coins__table-item .coins__table-price__salled::before {
-    left: 80px;
+    left: 86px;
   }
 
   #table_promoted .coins__table-title {
@@ -6915,6 +7009,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   main.form form.active .field__wrapper label span,
   main.listing form .field__wrapper label span,
+  main.whitelist form .field__wrapper label span,
   main.ivents form .field__wrapper label span {
     width: 100px;
     margin: 0 auto;
