@@ -2,3 +2,4 @@ scss
 .idea
 debug.log
 node_modules
+sourcemaps
