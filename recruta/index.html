@@ -29,7 +29,7 @@
   <div class="header__inner flex">
     <div class="header__leftside flex">
       <div class="header__logo">
-        <a class="header__logo-link --svg__logo" href="#">
+        <a class="header__logo-link --svg__logo" href="/">
         </a>
       </div>
       <p class="header__desc">Первый цифровой международный
@@ -49,15 +49,35 @@
       <a class="header__phone-link" href="tel:88005113768">8 (800) 511-37-68</a>
       <a class="button login__btn" href="#">Войти</a>
     </div>
+    <div class="header__media-rightside media flex --just-space">
+      <a class="media header__media-phone__btn" href="tel:88005113768"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="50" height="50" rx="7" fill="url(#paint0_linear)"/>
+        <g clip-path="url(#clip0)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1809 17.6667C19.1809 16.2744 20.3095 15.1458 21.7017 15.1458H29.0351C30.4273 15.1458 31.5559 16.2744 31.5559 17.6667V32.3333C31.5559 33.7256 30.4273 34.8542 29.0351 34.8542H21.7017C20.3095 34.8542 19.1809 33.7256 19.1809 32.3333V17.6667ZM21.7017 16.5208C21.0689 16.5208 20.5559 17.0338 20.5559 17.6667V32.3333C20.5559 32.9662 21.0689 33.4792 21.7017 33.4792H29.0351C29.6679 33.4792 30.1809 32.9662 30.1809 32.3333V17.6667C30.1809 17.0338 29.6679 16.5208 29.0351 16.5208H21.7017Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6184 15.1458C22.2387 15.1458 21.9309 15.4536 21.9309 15.8333V16.75C21.9309 17.6359 22.6491 18.3542 23.5351 18.3542H27.2017C28.0877 18.3542 28.8059 17.6359 28.8059 16.75V15.8333C28.8059 15.4536 28.4981 15.1458 28.1184 15.1458H22.6184Z" fill="white"/>
+        </g>
+        <defs>
+        <linearGradient id="paint0_linear" x1="38.1757" y1="48.3108" x2="13.8514" y2="12.1622" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#2641D1"/>
+        <stop offset="1" stop-color="#3333A3"/>
+        </linearGradient>
+        <clipPath id="clip0">
+        <rect width="12.7368" height="22" fill="white" transform="translate(19 14)"/>
+        </clipPath>
+        </defs>
+        </svg>
+        </a>
+      <button class="media header__media-menu__btn">
+        <span class="bar-top"></span>
+        <span class="bar-mid"></span>
+        <span class="bar-bot"></span>
+      </button>
+    </div>
   </div>
-  <a class="media header__media-phone__btn" href="tel:88005113768"></a>
-  <button class="media header__media-menu__btn">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+  
   <nav class="media header__media-nav">
     <ul>
+      <li><a class="--svg__logonotext" href="/"></a></li>
       <li><a href="#">О компании</a></li>
       <li><a href="#">Услуги</a></li>
       <li><a href="#">Sirius</a></li>
@@ -67,7 +87,7 @@
     </ul>
   </nav>
 </header>
-
+<div class="header__media-nav__bg"></div>
   <div class="wrapper">
 	<main class="main ">
     <section class="intro">
@@ -81,21 +101,6 @@
             до $260 с каждого полиса, купленного по вашему приглашению.
           </h2>
           <a class="button login__btn" href="#">Попробовать бесплатно</a>
-          <div class="intro__image-info-media media">
-            <!-- <svg class="intro__progressbar-media" width="168" height="168" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M70.7451 129.745C101.673 129.745 126.745 104.673 126.745 73.7455C126.745 42.8175 101.673 17.7455 70.7451 17.7455C58.8315 17.7455 47.7868 21.4658 38.7093 27.808C30.7213 31.9538 14.7451 46.9455 14.7451 73.7455C14.7451 104.673 39.8172 129.745 70.7451 129.745Z" fill="#F4F7FA" stroke="url(#paint0_linear)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-              <defs>
-              <linearGradient id="paint0_linear" x1="135" y1="25.9999" x2="-19.5" y2="53.4999" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#4614E8"/>
-              <stop offset="1" stop-color="#BCA7FF"/>
-              </linearGradient>
-              </defs>
-              <div class="intro__progressbar-text">
-               Доход <p class="-bold"> до $<span class="counter">260</span></p>
-               <p class="-regular">с каждого полиса</p> 
-              </div>
-              </svg> -->
-            </div>
         </div>
         <div class="intro__image">
           <svg class="light__particle round1" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,35 +124,36 @@
           <img src="./img/intro.svg" alt="asd"> 
           <div class="intro__image-info">
           <svg class="intro__progressbar" width="168" height="168" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M70.7451 129.745C101.673 129.745 126.745 104.673 126.745 73.7455C126.745 42.8175 101.673 17.7455 70.7451 17.7455C58.8315 17.7455 47.7868 21.4658 38.7093 27.808C30.7213 31.9538 14.7451 46.9455 14.7451 73.7455C14.7451 104.673 39.8172 129.745 70.7451 129.745Z" fill="#F4F7FA" stroke="url(#paint0_linear)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M70.7451 129.745C101.673 129.745 126.745 104.673 126.745 73.7455C126.745 42.8175 101.673 17.7455 70.7451 17.7455C58.8315 17.7455 47.7868 21.4658 38.7093 27.808C30.7213 31.9538 14.7451 46.9455 14.7451 73.7455C14.7451 104.673 39.8172 129.745 70.7451 129.745Z" fill="#F4F7FA" stroke="url(#paint0)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
             <defs>
-            <linearGradient id="paint0_linear" x1="135" y1="25.9999" x2="-19.5" y2="53.4999" gradientUnits="userSpaceOnUse">
+            <linearGradient id="paint0" x1="135" y1="25.9999" x2="-19.5" y2="53.4999" gradientUnits="userSpaceOnUse">
             <stop stop-color="#4614E8"/>
             <stop offset="1" stop-color="#BCA7FF"/>
             </linearGradient>
             </defs>
             <div class="intro__progressbar-text">
-             Доход <p class="-bold"> до $<span class="count" data-number="260" id="counter">260</span></p>
+             Доход <p class="-bold"> до $<span class="count1" data-number="260" id="counter">260</span></p>
              <p class="-regular">с каждого полиса</p> 
             </div>
             </svg>
           </div>
         </div>
       </div>
-      <svg class="intro__progressbar media" width="168" height="168" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M70.7451 129.745C101.673 129.745 126.745 104.673 126.745 73.7455C126.745 42.8175 101.673 17.7455 70.7451 17.7455C58.8315 17.7455 47.7868 21.4658 38.7093 27.808C30.7213 31.9538 14.7451 46.9455 14.7451 73.7455C14.7451 104.673 39.8172 129.745 70.7451 129.745Z" fill="#F4F7FA" stroke="url(#paint0_linear)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+      <div class="intro__progressbar__media media">
+      <svg class="" width="168" height="168" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M70.7451 129.745C101.673 129.745 126.745 104.673 126.745 73.7455C126.745 42.8175 101.673 17.7455 70.7451 17.7455C58.8315 17.7455 47.7868 21.4658 38.7093 27.808C30.7213 31.9538 14.7451 46.9455 14.7451 73.7455C14.7451 104.673 39.8172 129.745 70.7451 129.745Z" fill="#F4F7FA" stroke="url(#paint2)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
         <defs>
-        <linearGradient id="paint0_linear" x1="135" y1="25.9999" x2="-19.5" y2="53.4999" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paint2" x1="135" y1="25.9999" x2="-19.5" y2="53.4999" gradientUnits="userSpaceOnUse">
         <stop stop-color="#4614E8"/>
         <stop offset="1" stop-color="#BCA7FF"/>
         </linearGradient>
         </defs>
-        <div class="intro__progressbar-text">
-         Доход <p class="-bold"> до $<span class="count" data-number="260" id="counter">260</span></p>
-         <p class="-regular">с каждого полиса</p> 
+      </svg>
+        <div class="intro__progressbar-text_media">
+          Доход <p class="-bold"> до $<span class="count2" data-number="260" id="counter">260</span></p>
+          <p class="-regular">с каждого полиса</p> 
+         </div>
         </div>
-        </svg>
-        
       <div class="intro__advantages">
         <div class="intro__advantages-table">
           <div class="intro__advantage">
@@ -206,7 +212,7 @@
               <div class="team__cards-row">
               <div class="team__info-card card">
                 <div class="team__card-title">
-                  <span>100+</span>тыс
+                  <span class="count3">100+</span>тыс
                 </div>
                 <div class="team__card-text">
                   Клиентов <br> по всему миру 
@@ -214,7 +220,7 @@
               </div>
               <div class="team__info-card card">
                 <div class="team__card-title">
-                  <span>15</span>лет
+                  <span class="count3">15</span>лет
                 </div>
                 <div class="team__card-text">
                   Опытных юристов в штате
@@ -224,7 +230,7 @@
             <div class="team__cards-row">
               <div class="team__info-card card">
                 <div class="team__card-title">
-                  <span>50+</span>
+                  <span class="count3">50+</span>
                 </div>
                 <div class="team__card-text">
                   Опытных юристов в штате
@@ -731,8 +737,8 @@
     <div class="supervisor__inner flex">
       <div class="supervisor__image">
         <picture>
-          <source srcset="./img/supervisor.webp" type="image/webp">
-          <img src="./img/supervisor.png" alt="Руководитель ООО ILC Наталья Гуторова">
+          <source srcset="./img/supervisor.webp 1x, ./img/supervisor@2x.webp 2x, ./img/supervisor@3.webp 3x" type="image/webp">
+          <img src="./img/supervisor.jpg" srcset="./img/supervisor@2x.jpg 2x, ./img/supervisor@3.jpg 3x" alt="Руководитель ООО ILC Наталья Гуторова">
         </picture>
         <div class="supervisor__quote card">
           <p>“</p>
@@ -766,6 +772,7 @@
 </div>
       </div>
   </main>
+  <!-- <button onclick="topFunction()" id="topBtn" title="Go to top"><svg aria-hidden="true" height="24" width="10" focusable="false" data-prefix="fas" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-down fa-w-14 fa-2x"><path fill="#000" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z" class=""></path></svg></button> -->
 	<footer class="footer">
   <div class="footer__inner flex">
     <div class="header__leftside footer__leftside flex">
