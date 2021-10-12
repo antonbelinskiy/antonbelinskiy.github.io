@@ -122,7 +122,7 @@
             </linearGradient>
             </defs>
             <div class="intro__progressbar-text">
-             Доход <p class="-bold"> до $<span class="count1" id="counter">260</span></p>
+             Доход <p class="-bold"> до $<span class="count" id="counter1">260</span></p>
              <p class="-regular">с каждого полиса</p> 
             </div>
             </svg>
@@ -141,7 +141,7 @@
       </svg>
                     <div class="intro__progressbar-text_media">
                         Доход
-                        <p class="-bold"> до $<span class="count2" id="counter">260</span></p>
+                        <p class="-bold"> до $<span class="count2" id="counter2">260</span></p>
                         <p class="-regular">с каждого полиса</p>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                                             <span class="count3">15</span>лет
                                         </div>
                                         <div class="team__card-text">
-                                            Опытных юристов в штате
+                                            Юридической практики
                                         </div>
                                     </div>
                                 </div>
@@ -249,10 +249,7 @@
                         <div class="support__cards">
                             <div class="support__card anim__slide-t  card">
                                 <div class="support__card-image anim_item">
-                                    <picture>
-                                        <source srcset="./img/team1.webp" type="image/webp">
-                                        <img src="./img/team1.png" alt="Team">
-                                    </picture>
+                                    <img src="./img/team1.gif" alt="Team">
                                 </div>
                                 <div class="support__card-title">
                                     Бизнесу
@@ -263,10 +260,7 @@
                             </div>
                             <div class="support__card anim__slide-t  card">
                                 <div class="support__card-image">
-                                    <picture>
-                                        <source srcset="./img/human1.webp" type="image/webp">
-                                        <img src="./img/human1.png" alt="Human">
-                                    </picture>
+                                    <img src="./img/human2.gif" alt="Human">
                                 </div>
                                 <div class="support__card-title">
                                     StartUP проектам
@@ -277,10 +271,7 @@
                             </div>
                             <div class="support__card anim__slide-t  card">
                                 <div class="support__card-image">
-                                    <picture>
-                                        <source srcset="./img/family1.webp" type="image/webp">
-                                        <img src="./img/family1.png" alt="family">
-                                    </picture>
+                                    <img src="./img/family3.gif" alt="family">
                                 </div>
                                 <div class="support__card-title">
                                     Частным клиентам
@@ -313,9 +304,9 @@
                                     <div class="notification__text">
                                         Чем могу вам помочь?
                                     </div>
-                                    <a href="#" class="notification__btn button">
+                                    <span class="notification__btn button">
                   Задайте вопрос
-                </a>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -383,8 +374,8 @@
                 для всех и для каждого
             </div>
             <div class="tariffs__tabs">
-                <button class="tariffs__tab month anim__slide-r anim_item active">1 месяц</button>
-                <button class="tariffs__tab year anim__slide-l anim_item">Год</button>
+                <button id="month" class="tariffs__tab anim__slide-r anim_item active-btn">1 месяц</button>
+                <button id="year" class="tariffs__tab anim__slide-l anim_item">Год</button>
             </div>
             <div class="anim_item _no_hide"></div>
             <div class="tariff__info flex anim__slide-t card">
@@ -418,8 +409,11 @@
                     <div class="tariff__info-desc">
                         Для физических лиц
                     </div>
-                    <div class="tariff__card-price -bold">
+                    <div id="month-p" class="tariff__card-price active month-p -bold">
                         $28/месяц
+                    </div>
+                    <div id="year-p" class="tariff__card-price year-p -bold">
+                        $980/год
                     </div>
                     <div class="tariff__info-subtitle -bold">
                         Для Вас доступно
@@ -442,8 +436,11 @@
                     <div class="tariff__info-desc">
                         Для частных лиц и фрилансеров
                     </div>
-                    <div class="tariff__card-price -bold">
+                    <div id="month-p" class="tariff__card-price active month-p -bold">
                         $38/месяц
+                    </div>
+                    <div id="year-p" class="tariff__card-price year-p -bold">
+                        $980/год
                     </div>
                     <div class="tariff__info-subtitle -bold">
                         Для Вас доступно
@@ -467,8 +464,11 @@
                     <div class="tariff__info-desc">
                         Для среднего бизнеса
                     </div>
-                    <div class="tariff__card-price -bold">
+                    <div id="month-p" class="tariff__card-price active month-p -bold">
                         $49/месяц
+                    </div>
+                    <div id="year-p" class="tariff__card-price year-p -bold">
+                        $980/год
                     </div>
                     <div class="tariff__info-subtitle -bold">
                         Для Вас доступно
@@ -491,8 +491,11 @@
                     <div class="tariff__info-desc">
                         Для ведения бизнеса за рубежом
                     </div>
-                    <div class="tariff__card-price -bold">
+                    <div id="month-p" class="tariff__card-price month-p active -bold">
                         $98/месяц
+                    </div>
+                    <div id="month-p" class="tariff__card-price year-p -bold">
+                        $980/год
                     </div>
                     <div class="tariff__info-subtitle -bold">
                         Для Вас доступно
@@ -660,86 +663,85 @@
     </div>
 </section>
     </div>
-    <section class="prediction">
-  <div class="prediction__inner flex">
-    <div class="prediction__title -bold">
-      Прогнозы партнерской программы на 2021 год
+    <section class="prediction anim_item">
+    <div class="prediction__inner flex">
+        <div class="prediction__title anim__slide-r -bold">
+            Прогнозы партнерской программы на 2021 год
+        </div>
+        <div class="prediction__items flex">
+            <div class="prediction__item anim__slide-l">
+                <div class="prediction__item-value">
+                    $2 млн.
+                </div>
+                <div class="prediction__item-text">
+                    Заработают партнеры ILC
+                </div>
+            </div>
+            <div class="prediction__item anim__slide-l">
+                <div class="prediction__item-value">
+                    <span class="count anim_item" id="counter2">10 000</span>+
+                </div>
+                <div class="prediction__item-text">
+                    Полисов будет оформлено по партнерским ссылкам
+                </div>
+            </div>
+            <div class="prediction__item anim__slide-l">
+                <div class="prediction__item-value">
+                    800+
+                </div>
+                <div class="prediction__item-text">
+                    Партнеров присоединится к нам
+                </div>
+            </div>
+            <div class="prediction__item anim__slide-l">
+                <div class="prediction__item-value">
+                    $1500
+                </div>
+                <div class="prediction__item-text">
+                    Средний доход партнера в месяц
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="prediction__items flex">
-      <div class="prediction__item">
-        <div class="prediction__item-value">
-          $2 млн.
-        </div>
-        <div class="prediction__item-text">
-          Заработают партнеры ILC
-        </div>
-      </div>
-      <div class="prediction__item">
-        <div class="prediction__item-value">
-          10 000+
-        </div>
-        <div class="prediction__item-text">
-          Полисов будет оформлено по партнерским ссылкам
-        </div>
-      </div>
-      <div class="prediction__item">
-        <div class="prediction__item-value">
-          800+
-        </div>
-        <div class="prediction__item-text">
-          Партнеров присоединится к нам
-        </div>
-      </div>
-      <div class="prediction__item">
-        <div class="prediction__item-value">
-          $1500
-        </div>
-        <div class="prediction__item-text">
-          Средний доход партнера в месяц
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
     <div class="wrapper">
         <div class="supervisor">
-  <div class="container">
-    <div class="supervisor__inner flex">
-      <div class="supervisor__image">
-        <picture>
-          <source srcset="./img/supervisor.webp 1x, ./img/supervisor@2x.webp 2x, ./img/supervisor@3.webp 3x" type="image/webp">
-          <img src="./img/supervisor.jpg" srcset="./img/supervisor@2x.jpg 2x, ./img/supervisor@3.jpg 3x" alt="Руководитель ООО ILC Наталья Гуторова">
-        </picture>
-        <div class="supervisor__quote card">
-          <p>“</p>
-          Я лично буду поддерживать вас на всех этапах развития в программе. Обращайтесь ко мне 
-          с любым вопросом email.
+    <div class="container">
+        <div class="supervisor__inner anim_item flex">
+            <div class="supervisor__image anim__slide-t">
+                <picture>
+                    <source srcset="./img/supervisor.webp 1x, ./img/supervisor@2x.webp 2x, ./img/supervisor@3.webp 3x" type="image/webp">
+                    <img src="./img/supervisor.jpg" srcset="./img/supervisor@2x.jpg 2x, ./img/supervisor@3.jpg 3x" alt="Руководитель ООО ILC Наталья Гуторова">
+                </picture>
+                <div class="supervisor__quote anim_item _no_hide card">
+                    <p>“</p>
+                    Я лично буду поддерживать вас на всех этапах развития в программе. Обращайтесь ко мне с любым вопросом email.
+                </div>
+            </div>
+            <div class="supervisor__info anim__slide-r">
+                <div class="supervisor__info-position">
+                    Руководитель ООО ILC
+                </div>
+                <div class="supervisor__info-name -bold">
+                    Наталья Гуторова
+                </div>
+                <div class="supervisor__info-experience -medium">
+                    10 лет в управлении и юриспруденции
+                </div>
+                <p class="supervisor__info-text">
+                    Мы стараемся окружить заботой и создать максимально комфортные условия для развития каждого партнера:
+                    <ul>
+                        <li>личный наставник,</li>
+                        <li>пошаговое обучение,</li>
+                        <li>готовые инструменты для продвижения и мгновенные выплаты бонусов</li>
+                    </ul>
+                    Больше деталей партнерской программы смотрите в личном кабинете после регистрации.
+                </p>
+                <a href="#" class="supervisor__info-btn button">Зарегистрироваться</a>
+            </div>
         </div>
-      </div>
-      <div class="supervisor__info">
-        <div class="supervisor__info-position">
-          Руководитель ООО ILC 
-        </div>
-        <div class="supervisor__info-name -bold">
-          Наталья Гуторова
-        </div>
-        <div class="supervisor__info-experience -medium">
-          10 лет в управлении и юриспруденции
-        </div>
-        <p class="supervisor__info-text">
-          Мы стараемся окружить заботой и создать максимально комфортные условия для развития каждого партнера: 
-          <ul>
-            <li>личный наставник,</li>
-            <li>пошаговое обучение,</li>
-            <li>готовые инструменты для продвижения и мгновенные выплаты бонусов</li>
-          </ul>
-          Больше деталей партнерской программы смотрите в личном кабинете после регистрации.
-        </p>
-        <a href="#" class="supervisor__info-btn button">Зарегистрироваться</a>
-      </div>
     </div>
-  </div>
 </div>
     </div>
     </main>
