@@ -366,8 +366,8 @@
                 для всех и для каждого
             </div>
             <div class="tariffs__tabs">
-                <button class="tariffs__tab anim__slide-r anim_item active-btn">1 месяц</button>
-                <button class="tariffs__tab anim__slide-l anim_item">Год</button>
+                <button id="month"  class="tariffs__tab active-btn ">1 месяц</button>
+                <button  id="year" class="tariffs__tab">Год</button>
             </div>
             <div class="anim_item _no_hide"></div>
             <div class="tariff__info flex anim__slide-t card">
@@ -786,9 +786,9 @@
             <div class="popup__title">
                 Заполните простую форму, чтобы получить доступ
             </div>
-            <form class="popup__form" action="POST">
-                <input class="--svg__user-i" type="text" placeholder="Ваше имя">
-                <input class="--svg__email-i" type="text" placeholder="Ваш e-mail">
+            <form onsubmit="return validateEmail()"  class="popup__form" action="POST">
+                <input id= "name" class="--svg__user-i" type="text" required placeholder="Ваше имя">
+                <input id="email" class="--svg__email-i" type="text" required placeholder="Ваш e-mail">
                 <button class="popup-btn button -regular" type="submit">Получить доступ</button>
             </form>
             <button class="popup__close"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
