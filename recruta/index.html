@@ -14,7 +14,7 @@
 </head>
 
 
-<body>
+<body id="body">
     <header id="header" class="header anim_item">
     <div class="header__inner flex">
         <div class="header__leftside flex">
@@ -36,10 +36,10 @@
         </div>
         <div class="header__rightside flex">
             <a class="header__phone-link" href="tel:88005113768">8 (800) 511-37-68</a>
-            <a class="button login__btn" href="#">Войти</a>
+            <a href="#popup1" class="button login__btn popup-link">Войти</a>
         </div>
         <div class="header__media-rightside media flex --just-space">
-            <a class="media header__media-phone__btn" href="tel:88005113768"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#popup1" class="media popup-link header__media-phone__btn"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="50" height="50" rx="7" fill="url(#paint0_linear)"/>
         <g clip-path="url(#clip0)">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1809 17.6667C19.1809 16.2744 20.3095 15.1458 21.7017 15.1458H29.0351C30.4273 15.1458 31.5559 16.2744 31.5559 17.6667V32.3333C31.5559 33.7256 30.4273 34.8542 29.0351 34.8542H21.7017C20.3095 34.8542 19.1809 33.7256 19.1809 32.3333V17.6667ZM21.7017 16.5208C21.0689 16.5208 20.5559 17.0338 20.5559 17.6667V32.3333C20.5559 32.9662 21.0689 33.4792 21.7017 33.4792H29.0351C29.6679 33.4792 30.1809 32.9662 30.1809 32.3333V17.6667C30.1809 17.0338 29.6679 16.5208 29.0351 16.5208H21.7017Z" fill="white"/>
@@ -80,7 +80,7 @@
 </header>
 <div class="header__media-nav__bg"></div>
     <div class="wrapper">
-        <main class="main ">
+        <main class="main">
             <section class="intro">
                 <div class="intro__inner">
                     <div class="intro__information">
@@ -90,7 +90,7 @@
                         <h2 class="intro__subtitle anim_item anim__slide-r">
                             Ваша личная команда профессиональных юристов, которая всегда под рукой. А также доступ к бонусам партнерской программы — доход <br> до $260 с каждого полиса, купленного по вашему приглашению.
                         </h2>
-                        <a class="button login__btn anim_item anim__slide-r" href="#">Попробовать бесплатно</a>
+                        <a class="button popup-link login__btn anim_item anim__slide-r" href="#popup1">Попробовать бесплатно</a>
                     </div>
                     <div class="intro__image anim_item">
                         <svg class="light__particle round1" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -366,8 +366,8 @@
                 для всех и для каждого
             </div>
             <div class="tariffs__tabs">
-                <button id="month" class="tariffs__tab anim__slide-r anim_item active-btn">1 месяц</button>
-                <button id="year" class="tariffs__tab anim__slide-l anim_item">Год</button>
+                <button class="tariffs__tab anim__slide-r anim_item active-btn">1 месяц</button>
+                <button class="tariffs__tab anim__slide-l anim_item">Год</button>
             </div>
             <div class="anim_item _no_hide"></div>
             <div class="tariff__info flex anim__slide-t card">
@@ -380,7 +380,7 @@
                 <div class="tariff__info-desc">
                     Для ознакомления с сервисом и его возможностями
                 </div>
-                <div class="tariff__info-subtitle -bold">
+                <div class="tariff__info-subtitle">
                     Для Вас доступно
                 </div>
                 <ul class="flex">
@@ -391,7 +391,7 @@
                     <li class="tariff__info-item --svg__list-marker-before">1 устная первичная консультация по правовому запросу</li>
                 </ul>
                 <a class="tariff__info-link --svg__arrow-after" href="#">Подробнее в личном кабинете</a>
-                <a class="button tariff__info-btn" href="#">Оставить заявку</a>
+                <a class="button popup-link tariff__info-btn" href="#popup1">Оставить заявку</a>
             </div>
             <div class="tariff__info-bottom flex">
                 <div class="tariff__bottom-card anim_item anim__slide-r flex card">
@@ -401,13 +401,13 @@
                     <div class="tariff__info-desc">
                         Для физических лиц
                     </div>
-                    <div id="month-p" class="tariff__card-price active month-p -bold">
+                    <div class="tariff__card-price active month-p -bold">
                         $28/месяц
                     </div>
-                    <div id="year-p" class="tariff__card-price year-p -bold">
+                    <div class="tariff__card-price year-p -bold">
                         $980/год
                     </div>
-                    <div class="tariff__info-subtitle -bold">
+                    <div class="tariff__info-subtitle">
                         Для Вас доступно
                     </div>
                     <ul>
@@ -419,7 +419,7 @@
                         <li class="tariff__info-item --svg__list-marker-before">Устные и письменные консультации <br> юристов 24/7</li>
                     </ul>
                     <a class="tariff__info-link --svg__arrow-after" href="#">Подробнее в личном кабинете</a>
-                    <a class="button tariff__info-btn" href="#">Оставить заявку</a>
+                    <a href="#popup1" class="button popup-link tariff__info-btn">Оставить заявку</a>
                 </div>
                 <div class="tariff__bottom-card anim_item anim__slide-l flex card">
                     <div class="tariff__info-title -bold">
@@ -428,13 +428,13 @@
                     <div class="tariff__info-desc">
                         Для частных лиц и фрилансеров
                     </div>
-                    <div id="month-p" class="tariff__card-price active month-p -bold">
+                    <div class="tariff__card-price active month-p -bold">
                         $38/месяц
                     </div>
-                    <div id="year-p" class="tariff__card-price year-p -bold">
+                    <div class="tariff__card-price year-p -bold">
                         $980/год
                     </div>
-                    <div class="tariff__info-subtitle -bold">
+                    <div class="tariff__info-subtitle">
                         Для Вас доступно
                     </div>
                     <ul>
@@ -447,7 +447,7 @@
                         <li class="tariff__info-item --svg__list-marker-before">Устные и письменные консультации <br> юристов 24/7</li>
                     </ul>
                     <a class="tariff__info-link --svg__arrow-after" href="#">Подробнее в личном кабинете</a>
-                    <a class="button tariff__info-btn" href="#">Оставить заявку</a>
+                    <a href="#popup1" class="button popup-link tariff__info-btn">Оставить заявку</a>
                 </div>
                 <div class="tariff__bottom-card anim__slide-r anim_item flex card">
                     <div class="tariff__info-title -bold">
@@ -456,13 +456,13 @@
                     <div class="tariff__info-desc">
                         Для среднего бизнеса
                     </div>
-                    <div id="month-p" class="tariff__card-price active month-p -bold">
+                    <div class="tariff__card-price active month-p -bold">
                         $49/месяц
                     </div>
-                    <div id="year-p" class="tariff__card-price year-p -bold">
+                    <div class="tariff__card-price year-p -bold">
                         $980/год
                     </div>
-                    <div class="tariff__info-subtitle -bold">
+                    <div class="tariff__info-subtitle ">
                         Для Вас доступно
                     </div>
                     <ul>
@@ -474,7 +474,7 @@
                         <li class="tariff__info-item --svg__list-marker-before">Устные и письменные консультации <br> юристов 24/7</li>
                     </ul>
                     <a class="tariff__info-link --svg__arrow-after" href="#">Подробнее в личном кабинете</a>
-                    <a class="button tariff__info-btn" href="#">Оставить заявку</a>
+                    <a href="#popup1" class="button popup-link tariff__info-btn">Оставить заявку</a>
                 </div>
                 <div class="tariff__bottom-card flex anim_item anim__slide-l card">
                     <div class="tariff__info-title -bold">
@@ -483,13 +483,13 @@
                     <div class="tariff__info-desc">
                         Для ведения бизнеса за рубежом
                     </div>
-                    <div id="month-p" class="tariff__card-price month-p active -bold">
+                    <div class="tariff__card-price month-p active -bold">
                         $98/месяц
                     </div>
-                    <div id="month-p" class="tariff__card-price year-p -bold">
+                    <div class="tariff__card-price year-p -bold">
                         $980/год
                     </div>
-                    <div class="tariff__info-subtitle -bold">
+                    <div class="tariff__info-subtitle">
                         Для Вас доступно
                     </div>
                     <ul>
@@ -503,7 +503,7 @@
                         <li class="tariff__info-item --svg__list-marker-before">Сопровождение сделок любой сложности</li>
                     </ul>
                     <a class="tariff__info-link --svg__arrow-after" href="#">Подробнее в личном кабинете</a>
-                    <a class="button tariff__info-btn" href="#">Оставить заявку</a>
+                    <a href="#popup1" class="button popup-link tariff__info-btn">Оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -589,7 +589,7 @@
                     </p>
                 </div>
             </div>
-            <a href="#" class="agitation__btn anim__slide-t button">
+            <a href="#popup1" class="agitation__btn anim__slide-t popup-link button">
     Стать партнером
   </a>
         </div>
@@ -649,7 +649,7 @@
                 <div class="steps__card-text">
                     Зарабатывайте до 35% <br> с каждой покупки полиса <br> по вашей партнерской ссылке с первых дней после регистрации.
                 </div>
-                <a class="steps__card-btn button" href="#">Начать зарабатывать</a>
+                <a class="steps__card-btn popup-link button" href="#popup1">Начать зарабатывать</a>
             </div>
         </div>
     </div>
@@ -726,18 +726,20 @@
                     <ul>
                         <li>личный наставник,</li>
                         <li>пошаговое обучение,</li>
-                        <li>готовые инструменты для продвижения и мгновенные выплаты бонусов</li>
+                        <li>готовые инструменты для продвижения <br> и мгновенные выплаты бонусов</li>
                     </ul>
                     Больше деталей партнерской программы смотрите в личном кабинете после регистрации.
                 </p>
-                <a href="#" class="supervisor__info-btn button">Зарегистрироваться</a>
+                <a href="#popup1" class="supervisor__info-btn popup-link button">Зарегистрироваться</a>
             </div>
         </div>
     </div>
 </div>
     </div>
     </main>
-    <!-- <button onclick="topFunction()" id="topBtn" title="Go to top"><svg aria-hidden="true" height="24" width="10" focusable="false" data-prefix="fas" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-down fa-w-14 fa-2x"><path fill="#000" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z" class=""></path></svg></button> -->
+    <div>
+        <a class="scroll-to-top hide"><svg width="15" height="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-up fa-w-14 fa-2x"><path fill="#273895" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z" class=""></path></svg></a>
+    </div>
     <footer class="footer">
   <div class="footer__inner flex">
     <div class="header__leftside footer__leftside flex">
@@ -778,7 +780,25 @@
   </div>
   </div>
 </footer>
- 
+ <div id="popup1" class="popup">
+    <div class="popup__body">
+        <div class="popup__inner">
+            <div class="popup__title">
+                Заполните простую форму, чтобы получить доступ
+            </div>
+            <form class="popup__form" action="POST">
+                <input class="--svg__user-i" type="text" placeholder="Ваше имя">
+                <input class="--svg__email-i" type="text" placeholder="Ваш e-mail">
+                <button class="popup-btn button -regular" type="submit">Получить доступ</button>
+            </form>
+            <button class="popup__close"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.28262 7.01158L13.7339 1.56009C14.0887 1.20549 14.0887 0.632156 13.7339 0.277559C13.3793 -0.0770372 12.806 -0.0770372 12.4514 0.277559L6.99992 5.72905L1.5486 0.277559C1.19384 -0.0770372 0.620669 -0.0770372 0.266072 0.277559C-0.0886907 0.632156 -0.0886907 1.20549 0.266072 1.56009L5.7174 7.01158L0.266072 12.4631C-0.0886907 12.8177 -0.0886907 13.391 0.266072 13.7456C0.442789 13.9225 0.675146 14.0113 0.907336 14.0113C1.13953 14.0113 1.37172 13.9225 1.5486 13.7456L6.99992 8.2941L12.4514 13.7456C12.6283 13.9225 12.8605 14.0113 13.0927 14.0113C13.3249 14.0113 13.5571 13.9225 13.7339 13.7456C14.0887 13.391 14.0887 12.8177 13.7339 12.4631L8.28262 7.01158Z" fill="#DBDADA"/>
+              </svg>
+              </button>
+        </div>
+
+    </div>
+</div> 
 <script src="js/main.min.js"></script>
 
 
