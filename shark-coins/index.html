@@ -1,0 +1,609 @@
+<!DOCTYPE html5> <html lang="En">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.ico"
+				type="image/x-icon">
+
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-
+				select/1.1.0/js/jquery.nice-select.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+	<title>CryptoSharks</title>
+</head>
+
+
+<body>
+  <div class="fixed">
+    <header class="header">
+        <div class="container">
+            <a href="/"><img src="../../img/logo.svg" alt="Logo"></a>
+        <h1 class="header-title"><span>TOP</span>Crypto Sharks</h1>
+        <div class="header-menu">
+            <nav class="dropdown">
+                <p>Coins</p>
+                <svg class="arrow-down" width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L7.36396 7.36396L13.7279 1" stroke="#245DEE" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+                <div class="dropdown-content">
+                    <a href="/" class="dropdown-links">Today</a>
+                    <a href="#" class="dropdown-links">All Time</a>
+                    <a href="/new.html" class="dropdown-links">New</a>
+                    <a href="#" class="dropdown-links">Marketcap</a>
+                    <a href="#" class="dropdown-links">Presales</a>
+                </div>
+            </nav>
+            <nav class="dropdown">
+                <p>Account</p>
+    <svg class="arrow-down" width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L7.36396 7.36396L13.7279 1" stroke="#245DEE" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>            <div class="dropdown-content second">
+                    <a href="/personal.html" class="dropdown-links">Watchlist</a>
+                    <a href="/login.html" class="dropdown-links">Login</a>
+                    <a href="/register.html" class="dropdown-links">Register</a>
+                </div>
+            </nav>
+            <form  class="search" id="search">
+                <input type="search" placeholder="Search">
+            </form>
+            <a href="/add_coin.html">
+                <button class="submit header-submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.38948 8.984H6.45648C4.42148 8.984 2.77148 10.634 2.77148 12.669V17.544C2.77148 19.578 4.42148 21.228 6.45648 21.228H17.5865C19.6215 21.228 21.2715 19.578 21.2715 17.544V12.659C21.2715 10.63 19.6265 8.984 17.5975 8.984L16.6545 8.984" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.0215 2.19051V14.2315" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.10645 5.1188L12.0214 2.1908L14.9374 5.1188" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>List coin</button>
+            </a>
+            
+
+        </div>
+        </div>
+        <div class="burger">
+            <span></span><span></span><span></span>
+        </div>
+        <div id="tablet-menu" class="tablet-menu">
+            <div class="tablet-menu-columns__wrapper">
+                <form  class="search" id="search">
+                    <input type="search" placeholder="Search">
+                </form>
+                <div class="tablet-menu-column">
+                    <div class="tablet-menu-column--title">
+                        Coins
+                    </div>
+                    <div class="tablet-menu-column--list">
+                        <a href="/" class="tablet-menu-column--list__item">
+                            Today
+                        </a><a href="" class="tablet-menu-column--list__item">All Time</a>
+                        <a href="/new.html" class="tablet-menu-column--list__item">New</a>
+                        <a href="" class="tablet-menu-column--list__item">Marketcap</a>
+                        <a href="" class="tablet-menu-column--list__item">Presales</a>
+                    </div>
+                </div>
+                <div class="tablet-menu-column">
+                    <div class="tablet-menu-column--title">
+                        Account
+                    </div>
+                    <div class="tablet-menu-column--list">
+                       <a href="/personal.html" class="tablet-menu-column--list__item">Watchlist</a>
+                        <a href="/login.html" class="tablet-menu-column--list__item">Login</a>
+                        <a href="/register.html" class="tablet-menu-column--list__item">Register</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="close-btn">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="56" height="56" rx="28" fill="#F84469"/>
+                    <line x1="1" y1="-1" x2="30.0539" y2="-1" transform="matrix(0.708333 -0.705879 0.708333 0.705879 18.0035 38.96)" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="1" y1="-1" x2="30.0539" y2="-1" transform="matrix(0.708333 0.705879 -0.708333 0.705879 17 17)" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+
+            </div>
+        </div>
+    </header>
+</div>
+
+  <main class="main">
+    <section class="promo">
+
+      <div class="container">
+        <div class="round-wrapper">
+          <img src="./img/big-round.webp" alt="round" class="round big-round">
+          <img src="./img/white-round.webp" alt="round" class="round white-round">
+          <img src="./img/middle-round.webp" alt="round" class="round middle-round">
+        </div>
+        <h2 class="promo-title">
+          Best Coins Today
+        </h2>
+        <p class="promo-subtitle">
+          Find the top voted coins of the last 24 hours
+        </p>
+        <div class="adv">
+          <a href="/contact_us.html" class="adv-title">Advertise with us!</a>
+          <a href="">
+            <div class="promo-block">
+              <img class="adv_image" src="./img/adv-image.png" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="promoted">
+      <div class="container">
+        <div class="promoted-header">
+          <p class="promoted-title">
+            Promoted
+          </p>
+          <a href="/contact_us.html" class="adv-title">Your coin here? Contact us!</a>
+        </div>
+        <div class="coins-table--header">
+          <div class="coins-table-col">
+            <a href="" class="coins-table--link">#</a>
+            <a href="" class="name coins-table--link">Name</a>
+          </div>
+          <div class="coins-table-col">
+            <a href="" class="chain coins-table--link">Chain</a>
+            <a href="" class="symbol coins-table--link">Symbol</a>
+            <a href="" class="cap coins-table--link">Market Cap</a>
+            <a href="" class="price coins-table--link">Price</a>
+            <a href="" class="launch coins-table--link">Launch</a>
+            <a href="" class="votes coins-table--link">Votes</a>
+            <a href="" class="vote coins-table--link">Vote</a>
+          </div>
+        </div>
+        <div class="coins-table">
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+    <section class="coins">
+      <div class="container">
+        <div class="coin-filter">
+          <a href="#" class="coin-filter-item active">Today</a>
+          <a href="#" class="coin-filter-item">All Time</a>
+          <a href="#" class="coin-filter-item">New</a>
+          <a href="#" class="coin-filter-item">Marketcap</a>
+          <a href="#" class="coin-filter-item">Presales</a>
+        </div>
+        <div class="coins-table--header">
+          <div class="coins-table-col">
+            <a href="" class="coins-table--link">#</a>
+            <a href="" class="name coins-table--link">Name</a>
+          </div>
+          <div class="coins-table-col">
+            <a href="" class="chain coins-table--link">Chain</a>
+            <a href="" class="symbol coins-table--link">Symbol</a>
+            <a href="" class="cap coins-table--link">Market Cap</a>
+            <a href="" class="price coins-table--link">Price</a>
+            <a href="" class="launch coins-table--link">Launch</a>
+            <a href="" class="votes coins-table--link">Votes</a>
+            <a href="" class="vote coins-table--link">Vote</a>
+          </div>
+        </div>
+        <div class="coins-table">
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="pagination">
+          <p class="pagination-title">Page</p>
+          <div class="pagination-links">
+            <a href="#" class="pagination-item active">1</a>
+            <a href="#" class="pagination-item">2</a>
+            <a href="#" class="pagination-item">3</a>
+            <a href="#" class="pagination-item">4</a>
+            <a href="#" class="pagination-item">5</a>
+            <a href="#" class="pagination-item">6</a>
+            <a href="#" class="pagination-item">7</a>
+            <p class="pagination-delimeter">...</p>
+            <a href="#" class="pagination-item">18</a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <section class="info">
+      <div class="container">
+        <div class="info-card-wrapper">
+          <div class="info-card">
+            <div class="info-card-title">
+              Your Favorite Coin Missing?
+            </div>
+            <div class="info-card-text">
+              Can't find your coin? List your favorite coin now! Get your community to vote for your coin and gain exposure.
+            </div>
+            <a href="/add_coin.html">
+              <div class="info-card-btn">
+                List Coins
+              </div>
+            </a>
+          </div>
+          <div class="info-card">
+            <div class="info-card-title">
+              View New Coins
+            </div>
+            <div class="info-card-text">
+              Click the button below to view the new Listed coins! These coins had at least 500 community votes.
+            </div>
+            <a href="/new.html">
+              <div class="info-card-btn">
+                View new Coins
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="info-subtext">
+          <div class="info-subtext-item">
+            <div class="info-subtext-title">Find the best new cryptocurrency projects</div>
+            <div class="info-subtext-text">Did ever you wonder where people find the best new cryptocurrency projects, coins and tokens like Doge and Shiba Inu? They use websites like TOP crypto Shark.net. Cryptocurrency projects are listed here before CoinMarketCap, CoinGecko and
+              major exchanges. Find the best crypto moonshots on our website. However: before investing always do your own research (DYOR)! Listing on TOP crypto Shark.net does NOT mean we endorse the project, they could be scams. Be careful with your
+              investments.
+            </div>
+          </div>
+          <div class="info-subtext-item">
+            <div class="info-subtext-title">How does TOP crypto Shark work?</div>
+            <div class="info-subtext-text">New cryptocurrency projects can be listed Applying Here. Once applied, they instantly become visible on the New Listings Page. New listings require 500 votes to be officially listed in our top list. After that, anyone can see and vote for
+              the project. Get your community to vote on your project, because votes matter! Our ranking is simple: the highest votes is #1 on our website. The project will get exposure with all our visitors! Note on voting: Unique votes only count once
+              for the "All Time" page, but can count every 24 hours on the "Today" page.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+        <a class="footer-logo" href="/"><img class="cripto-logo" src="../../img/logo.svg" alt="Logo"></a>
+        <p class="footer-title"><span>TOP</span>  Crypto Sharks</p>
+        <div class="links-wrapper">
+            <div class="social-wrapper">
+                <a class="footer-social" href="/"><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.5629 2.60279C26.549 3.04462 25.4601 3.34332 24.3152 3.47757C25.4837 2.79037 26.3789 1.70141 26.8015 0.405353C25.6916 1.05283 24.4768 1.50865 23.21 1.75302C22.1792 0.673796 20.7091 0 19.0827 0C15.961 0 13.4293 2.48552 13.4293 5.55329C13.4293 5.98796 13.4791 6.41203 13.575 6.81917C8.87562 6.58721 4.70934 4.37637 1.92064 1.017C1.43369 1.83746 1.15497 2.79138 1.15497 3.80917C1.15497 5.73558 2.15331 7.43526 3.67028 8.4309C2.77226 8.40357 1.89395 8.16551 1.10877 7.73661V7.80678C1.10877 10.4977 3.0575 12.7414 5.64434 13.2517C5.16914 13.3796 4.67044 13.4464 4.15452 13.4464C3.78975 13.4464 3.43585 13.4125 3.09013 13.3486C3.80967 15.5541 5.89788 17.1596 8.37145 17.2049C6.43628 18.6948 3.9979 19.5829 1.34954 19.5829C0.893393 19.5829 0.442573 19.5562 0 19.5038C2.50268 21.0799 5.47421 22 8.66747 22C19.0673 22 24.7551 13.538 24.7551 6.19964C24.7551 5.95872 24.7497 5.71959 24.7379 5.48133C25.846 4.6941 26.8026 3.71938 27.5629 2.60279Z" fill="#FEFEFE"/>
+                    </svg>
+                     Follow us on Twitter</a>
+                <a class="footer-social" href="/"><svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.9216 2.77738L22.8475 21.4571C22.5402 22.7754 21.7386 23.1035 20.5995 22.4825L14.392 18.0352L11.3966 20.836C11.0652 21.1582 10.7879 21.4278 10.1491 21.4278L10.5951 15.2813L22.1002 5.17386C22.6004 4.74027 21.9917 4.50003 21.3228 4.93363L7.09955 13.6407L0.976332 11.7774C-0.355588 11.3731 -0.379695 10.4825 1.25356 9.86136L25.204 0.89066C26.3129 0.486363 27.2833 1.13089 26.9216 2.77738Z" fill="#245DEE"/>
+                    </svg>
+                    Join our Telegram Group</a>
+
+            </div>
+            <nav class="footer-menu">
+                <a href="" class="footer-links">All Time Rankings</a>
+                <a href="" class="footer-links">Daily Ranking</a>
+                <a href="/new.html" class="footer-links">New Listings</a>
+                <a href="/add_coin.html" class="footer-links">List Coin</a>
+                <a href="/terms.html" class="footer-links">Terms & Conditions</a>
+                <a href="/privacy.html" class="footer-links">Privacy Policy</a>
+                <a href="/contact_us.html" class="footer-links">Contact Us</a>
+                <a href="/contact_us.html" class="footer-links">Advertise </a>
+            </nav>
+        </div>
+        <a class="footer-logo" href="/"><img src="../../img/dmca.svg" alt="dmca Logo"></a>
+
+    </div>
+</footer>
+ <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

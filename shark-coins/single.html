@@ -1,0 +1,588 @@
+<!DOCTYPE html5> <html lang="En">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.ico"
+				type="image/x-icon">
+
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-
+				select/1.1.0/js/jquery.nice-select.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+	<title>CryptoSharks</title>
+</head>
+
+
+<body>
+  <div class="fixed">
+    <header class="header">
+        <div class="container">
+            <a href="/"><img src="../../img/logo.svg" alt="Logo"></a>
+        <h1 class="header-title"><span>TOP</span>Crypto Sharks</h1>
+        <div class="header-menu">
+            <nav class="dropdown">
+                <p>Coins</p>
+                <svg class="arrow-down" width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L7.36396 7.36396L13.7279 1" stroke="#245DEE" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+                <div class="dropdown-content">
+                    <a href="/" class="dropdown-links">Today</a>
+                    <a href="#" class="dropdown-links">All Time</a>
+                    <a href="/new.html" class="dropdown-links">New</a>
+                    <a href="#" class="dropdown-links">Marketcap</a>
+                    <a href="#" class="dropdown-links">Presales</a>
+                </div>
+            </nav>
+            <nav class="dropdown">
+                <p>Account</p>
+    <svg class="arrow-down" width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L7.36396 7.36396L13.7279 1" stroke="#245DEE" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>            <div class="dropdown-content second">
+                    <a href="/personal.html" class="dropdown-links">Watchlist</a>
+                    <a href="/login.html" class="dropdown-links">Login</a>
+                    <a href="/register.html" class="dropdown-links">Register</a>
+                </div>
+            </nav>
+            <form  class="search" id="search">
+                <input type="search" placeholder="Search">
+            </form>
+            <a href="/add_coin.html">
+                <button class="submit header-submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.38948 8.984H6.45648C4.42148 8.984 2.77148 10.634 2.77148 12.669V17.544C2.77148 19.578 4.42148 21.228 6.45648 21.228H17.5865C19.6215 21.228 21.2715 19.578 21.2715 17.544V12.659C21.2715 10.63 19.6265 8.984 17.5975 8.984L16.6545 8.984" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.0215 2.19051V14.2315" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.10645 5.1188L12.0214 2.1908L14.9374 5.1188" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>List coin</button>
+            </a>
+            
+
+        </div>
+        </div>
+        <div class="burger">
+            <span></span><span></span><span></span>
+        </div>
+        <div id="tablet-menu" class="tablet-menu">
+            <div class="tablet-menu-columns__wrapper">
+                <form  class="search" id="search">
+                    <input type="search" placeholder="Search">
+                </form>
+                <div class="tablet-menu-column">
+                    <div class="tablet-menu-column--title">
+                        Coins
+                    </div>
+                    <div class="tablet-menu-column--list">
+                        <a href="/" class="tablet-menu-column--list__item">
+                            Today
+                        </a><a href="" class="tablet-menu-column--list__item">All Time</a>
+                        <a href="/new.html" class="tablet-menu-column--list__item">New</a>
+                        <a href="" class="tablet-menu-column--list__item">Marketcap</a>
+                        <a href="" class="tablet-menu-column--list__item">Presales</a>
+                    </div>
+                </div>
+                <div class="tablet-menu-column">
+                    <div class="tablet-menu-column--title">
+                        Account
+                    </div>
+                    <div class="tablet-menu-column--list">
+                       <a href="/personal.html" class="tablet-menu-column--list__item">Watchlist</a>
+                        <a href="/login.html" class="tablet-menu-column--list__item">Login</a>
+                        <a href="/register.html" class="tablet-menu-column--list__item">Register</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="close-btn">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="56" height="56" rx="28" fill="#F84469"/>
+                    <line x1="1" y1="-1" x2="30.0539" y2="-1" transform="matrix(0.708333 -0.705879 0.708333 0.705879 18.0035 38.96)" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="1" y1="-1" x2="30.0539" y2="-1" transform="matrix(0.708333 0.705879 -0.708333 0.705879 17 17)" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+
+            </div>
+        </div>
+    </header>
+</div>
+
+
+  <main class="main">
+    <div class="container">
+      <div class="breadcrumbs">
+    <a class="breadcrumbs-links" href="/">Home</a>
+    <a class="breadcrumbs-links" href="#">Top-coins</a>
+    <a class="breadcrumbs-links last" href="#">Cardence</a>
+</div>
+      <section class="coin-card">
+        <div class="coin-card--left">
+          <div class="coin-card-header">
+            <div class="coin-card-info">
+              <div class="coin-card-info--left">
+                <img src="./img/logo.svg" alt="coin image" class="coin-card-image">
+                <div class="coin-card-info--text">
+                  <p class="coin-card-info--name">Cardence</p>
+                  <p class="coin-card-info-type">CRDN</p>
+                </div>
+              </div>
+              <div class="coin-card-info--right">
+                <div class="coin-card-info--right_images">
+                  <a href=""> <img src="./img/coinMarketCap.svg" alt="image">
+                  </a>
+                  <a href=""> <img src="./img/coinMarketCap.svg" alt="image">
+                  </a>
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11 1.23607L12.7431 6.60081C13.0109 7.42486 13.7788 7.98278 14.6452 7.98278H20.2861L15.7225 11.2984C15.0216 11.8077 14.7282 12.7104 14.996 13.5344L16.7391 18.8992L12.1756 15.5836C11.4746 15.0743 10.5254 15.0743 9.82443 15.5836L5.2609 18.8992L7.00402 13.5344C7.27176 12.7104 6.97845 11.8077 6.27747 11.2984L1.71395 7.98278L7.35477 7.98278C8.22123 7.98278 8.98914 7.42486 9.25689 6.60081L11 1.23607Z" stroke="#F7DE3B" stroke-width="2"/>
+										</svg>
+                </div>
+                <div class="coin-card-info--right_adress">
+                  <p>BSC Contract Address</p>
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M13 1H5C4.44772 1 4 1.44772 4 2V10C4 10.5523 4.44772 11 5 11H13C13.5523 11 14 10.5523 14 10V2C14 1.44772 13.5523 1 13 1ZM5 0C3.89543 0 3 0.895431 3 2V10C3 11.1046 3.89543 12 5 12H13C14.1046 12 15 11.1046 15 10V2C15 0.895431 14.1046 0 13 0H5ZM10 3H2C1.44772 3 1 3.44772 1 4V12C1 12.5523 1.44772 13 2 13H10C10.5523 13 11 12.5523 11 12V4C11 3.44772 10.5523 3 10 3ZM2 2C0.895431 2 0 2.89543 0 4V12C0 13.1046 0.895431 14 2 14H10C11.1046 14 12 13.1046 12 12V4C12 2.89543 11.1046 2 10 2H2Z" fill="#222222"/>
+										</svg>
+
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="coin-card-panel flex">
+              <div class="сoin-panel-item coin-card-panel-status">
+                <p class="status">Status</p>
+                <p class="status">Listed</p>
+              </div>
+              <div class="сoin-panel-item coin-card-panel-votes-listening">
+                <p class="votes-listening">Votes for listing</p>
+                <p class="votes-listening">500/500</p>
+              </div>
+              <div class="сoin-panel-item coin-card-panel-votes">
+                <p class="coin-votes">Votes</p>
+                <p class="coin-votes">82515</p>
+              </div>
+              <div class="сoin-panel-item coin-card-panel-today">
+                <p class="today">Votes Today</p>
+                <p class="today">152</p>
+              </div>
+              <div class="сoin-panel-item coin-card-panel-network">
+                <p class="network">Network</p>
+                <p class="network">BSC</p>
+              </div>
+            </div>
+          </div>
+          <div class="coin-info">
+            <p> 1. Cardence is World's first decentralised launchpad to offer release of token as per vesting schedule, create presale only for whitelisted wallet, affiliate marketing option for projects, liquidity locking, smart mint features, staking, assured
+              IDOs , guaranteed participation for everyone all at one place.
+            </p>
+            <p>2. Smart contract audited by techrate and can be seen here -https://github.com/TechRate/Smart-Contract-Audits
+            </p>
+            <p>3.Doxed dev and reputed advisors, all info is public and can be seen on cardence.io
+            </p>
+            <p>4. Cardence is featured on yahoo finance, yahoo news , Benzinga, Menafn, azcentral and in almost 400 online publications, whole list will be added on website, soon you will see us on other major crypto news portal.
+            </p>
+            <p>5. We are already listed on CMC <a href="https://coinmarketcap.com/currencies/cardence-io/ico/">https://coinmarketcap.com<br>/currencies/cardence-io/ico/</a>
+            </p>
+            <p>6. Cardence MVP is ready and is on testnet https://cardence-sale.netlify.app/ , will be live on mainnet before listing.
+            </p>
+            <p>Presale : https://presale.cardence.io
+            </p>
+          </div>
+          <div class="coin-card--vote-block">
+            <div class="vote-block--title">Vote for Cardence</div>
+            <div class="vote-block--subtitle">Vote for Cardence</div>
+            <a href="/login.html" class="vote-block--btn">Please login to vote</a>
+            <p class="vote-block--subinfo">You can vote once every 24 hours.</p>
+          </div>
+          <div class="coin-card-footer">
+            <p>Information incorrect? Please report it to <a href="mailto:info@cryptoshark.net">info@cryptoshark.net</a></p>
+          </div>
+        </div>
+        <div class="coin-card--right">
+          <div class="coin-card-right--infoblock">
+            <div class="coin-card-right-row">
+              <div class="adv -media--adv">
+                <a href="/contacts_us.html" class="adv-title">Advertise with us!</a>
+                <a href="">
+                  <div class="promo-block">
+                    <img class="adv_image" src="./img/adv-image.png" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="coin-card-right-row">
+              <div class="row-header">
+                Popularity
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Watchlists</div>
+                <div class="watchlist row-info-right"><svg width="36" height="36" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11 1.23607L12.7431 6.60081C13.0109 7.42486 13.7788 7.98278 14.6452 7.98278H20.2861L15.7225 11.2984C15.0216 11.8077 14.7282 12.7104 14.996 13.5344L16.7391 18.8992L12.1756 15.5836C11.4746 15.0743 10.5254 15.0743 9.82443 15.5836L5.2609 18.8992L7.00402 13.5344C7.27176 12.7104 6.97845 11.8077 6.27747 11.2984L1.71395 7.98278L7.35477 7.98278C8.22123 7.98278 8.98914 7.42486 9.25689 6.60081L11 1.23607Z" stroke="#F7DE3B" stroke-width="2"/>
+									</svg> on <span>1773</span>watchlists</div>
+              </div>
+            </div>
+            <div class="coin-card-right-row">
+              <div class="row-header">
+                Links
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Website</div>
+                <div class="row-info-right">
+                  <a href=""><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5ZM18.7155 16.251H11.2844C11.4231 18.7554 11.9739 21.0353 12.8166 22.7208C13.6015 24.2905 14.4402 25 15 25C15.5598 25 16.3985 24.2905 17.1833 22.7208C18.0261 21.0353 18.5769 18.7554 18.7155 16.251ZM24.9225 16.2512L21.2191 16.2516C21.0678 19.294 20.3712 22.0154 19.3274 24.019C22.3252 22.577 24.4939 19.6844 24.9225 16.2512ZM8.78095 16.2516L5.07753 16.2512C5.50607 19.6844 7.67491 22.5769 10.6733 24.0181C9.6942 22.1404 9.02064 19.6313 8.81565 16.8182L8.78095 16.2516ZM10.6726 5.98095L10.6399 5.99806C7.65852 7.44479 5.50407 10.329 5.07743 13.7498L8.78091 13.7497C8.93201 10.7068 9.62871 7.98492 10.6726 5.98095ZM15 5L14.8984 5.0074C14.3417 5.08644 13.5553 5.80181 12.8166 7.2792C11.9738 8.96494 11.4229 11.2454 11.2844 13.7503H18.7156C18.5771 11.2454 18.0262 8.96494 17.1833 7.2792C16.3985 5.70947 15.5598 5 15 5ZM19.3267 5.98191L19.3549 6.03405C20.3837 8.03307 21.0695 10.7341 21.2192 13.7506L24.9226 13.75C24.4945 10.3163 22.3255 7.42328 19.3267 5.98191Z" fill="#222222"/>
+										</svg>
+										Visit Website</a></div>
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Telegram</div>
+                <div class="row-info-right">
+                  <a href=""><svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M26.9216 2.77729L22.8475 21.457C22.5402 22.7753 21.7386 23.1035 20.5995 22.4824L14.392 18.0351L11.3966 20.8359C11.0652 21.1581 10.7879 21.4277 10.1491 21.4277L10.5951 15.2812L22.1002 5.17377C22.6004 4.74018 21.9917 4.49994 21.3228 4.93354L7.09955 13.6406L0.976332 11.7773C-0.355588 11.373 -0.379695 10.4824 1.25356 9.86127L25.204 0.890568C26.3129 0.486272 27.2833 1.1308 26.9216 2.77729Z" fill="#222222"/>
+										</svg>
+										Join Telegram</a></div>
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Twitter</div>
+                <div class="row-info-right">
+                  <a href=""><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M27.5629 2.60279C26.549 3.04462 25.4601 3.34332 24.3152 3.47757C25.4837 2.79037 26.3789 1.70141 26.8015 0.405353C25.6916 1.05283 24.4768 1.50865 23.21 1.75302C22.1792 0.673796 20.7091 0 19.0827 0C15.961 0 13.4293 2.48552 13.4293 5.55329C13.4293 5.98796 13.4791 6.41203 13.575 6.81917C8.87562 6.58721 4.70934 4.37637 1.92064 1.017C1.43369 1.83746 1.15497 2.79138 1.15497 3.80917C1.15497 5.73558 2.15331 7.43526 3.67028 8.4309C2.77226 8.40357 1.89395 8.16551 1.10877 7.73661V7.80678C1.10877 10.4977 3.0575 12.7414 5.64434 13.2517C5.16914 13.3796 4.67044 13.4464 4.15452 13.4464C3.78975 13.4464 3.43585 13.4125 3.09013 13.3486C3.80967 15.5541 5.89788 17.1596 8.37145 17.2049C6.43628 18.6948 3.9979 19.5829 1.34954 19.5829C0.893393 19.5829 0.442573 19.5562 0 19.5038C2.50268 21.0799 5.47421 22 8.66747 22C19.0673 22 24.7551 13.538 24.7551 6.19964C24.7551 5.95872 24.7497 5.71959 24.7379 5.48133C25.846 4.6941 26.8026 3.71938 27.5629 2.60279Z" fill="#222222"/>
+										</svg>
+										Follow Twitter</a></div>
+              </div>
+
+            </div>
+            <div class="coin-card-right-row">
+              <div class="row-header">
+                Price
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Marketcap</div>
+                <div class="row-info-right">
+
+                  $ 5,316,277</div>
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Price (USD)</div>
+                <div class="row-info-right">
+
+                  $ 0.1063255429606700</div>
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Price (BNB)</div>
+                <div class="row-info-right">
+
+                  0.000250148319 BNB</div>
+              </div>
+
+            </div>
+            <div class="coin-card-right-row">
+              <div class="row-header">
+                Charts / Swap
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">CoinMarketCap</div>
+                <div class="row-info-right">
+                  <a href="">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<rect width="30" height="30" rx="15" fill="#222222"/>
+											<rect x="3" y="3" width="24" height="24" fill="url(#pattern0)"/>
+											<defs>
+											<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+											<use xlink:href="#image0" transform="scale(0.005)"/>
+											</pattern>
+											<image id="image0" width="200" height="200" xlink:href="data:image/png;base64,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"/>
+											</defs>
+											</svg> CoinMarketCap
+                  </a>
+                </div>
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">CoinGecko</div>
+                <div class="row-info-right">
+                  <a href=""><img src="./img/coinGecko.svg" alt="CoinGecko"> CoinGecko
+                  </a>
+                </div>
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Poocoin</div>
+                <div class="row-info-right">
+                  <a href="">
+                    <img src="./img/poopcoin.svg" alt="Poocoin"> Poocoin
+                  </a>
+                </div>
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Bogged</div>
+                <div class="row-info-right">
+                  <a href=""><img src="./img/booged.svg" alt="Bogged.Finance"> Bogged.Finance
+
+
+                  </a>
+                </div>
+              </div>
+              <div class="row-info buyNow--row">
+                <div class="row-info-left">Buy Now</div>
+                <div class="row-info-right buyNow">
+                  <a href="">
+                    <img src="./img/pancake.svg" alt="pancakeSwap"> PancakeSwap
+                  </a>
+                  <a href="">
+                    <img src="./img/pancake2.svg" alt="pancakeSwap"> PancakeSwap
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="coin-card-right-row">
+              <div class="row-header">
+                Information
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Added</div>
+                <div class="row-info-right">
+                  July 25th 2021</div>
+              </div>
+              <div class="row-info">
+                <div class="row-info-left">Launch</div>
+                <div class="row-info-right">
+                  August 24th 2021</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+    </div>
+    </section>
+
+    </div>
+    <section class="promoted">
+      <div class="container">
+        <div class="promoted-header">
+          <p class="promoted-title">
+            Promoted
+          </p>
+          <a href="/contact_us.html" class="adv-title">Your coin here? Contact us!</a>
+        </div>
+        <div class="coins-table--header">
+          <div class="coins-table-col">
+            <a href="" class="coins-table--link">#</a>
+            <a href="" class="name coins-table--link">Name</a>
+          </div>
+          <div class="coins-table-col">
+            <a href="" class="chain coins-table--link">Chain</a>
+            <a href="" class="symbol coins-table--link">Symbol</a>
+            <a href="" class="cap coins-table--link">Market Cap</a>
+            <a href="" class="price coins-table--link">Price</a>
+            <a href="" class="launch coins-table--link">Launch</a>
+            <a href="" class="votes coins-table--link">Votes</a>
+            <a href="" class="vote coins-table--link">Vote</a>
+          </div>
+        </div>
+        <div class="coins-table">
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+          <div class="coins-table-row">
+            <div class="coins-table-col">
+              <a href="/single.html" class="number">1 <img class="coin-image" src="./img/middle-round.webp" alt="coin photo"></a>
+              <a href="/single.html" class="name ">Cardence</a>
+            </div>
+            <div class="coins-table-col">
+              <div class="coins-table-symbols">
+                <a href="" class="chain ">BSC</a>
+                <a href="" class="symbol ">CRDN</a>
+              </div>
+              <a href="" class="cap ">$ 6,217,091</a>
+              <a href="" class="price ">$ 0,146435352</a>
+              <a href="" class="launch ">1 month</a>
+              <div class="coins-table-votings">
+                <a href="" class="votes ">740386</a>
+                <a href="" class="vote ">Vote</a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+        <a class="footer-logo" href="/"><img class="cripto-logo" src="../../img/logo.svg" alt="Logo"></a>
+        <p class="footer-title"><span>TOP</span>  Crypto Sharks</p>
+        <div class="links-wrapper">
+            <div class="social-wrapper">
+                <a class="footer-social" href="/"><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.5629 2.60279C26.549 3.04462 25.4601 3.34332 24.3152 3.47757C25.4837 2.79037 26.3789 1.70141 26.8015 0.405353C25.6916 1.05283 24.4768 1.50865 23.21 1.75302C22.1792 0.673796 20.7091 0 19.0827 0C15.961 0 13.4293 2.48552 13.4293 5.55329C13.4293 5.98796 13.4791 6.41203 13.575 6.81917C8.87562 6.58721 4.70934 4.37637 1.92064 1.017C1.43369 1.83746 1.15497 2.79138 1.15497 3.80917C1.15497 5.73558 2.15331 7.43526 3.67028 8.4309C2.77226 8.40357 1.89395 8.16551 1.10877 7.73661V7.80678C1.10877 10.4977 3.0575 12.7414 5.64434 13.2517C5.16914 13.3796 4.67044 13.4464 4.15452 13.4464C3.78975 13.4464 3.43585 13.4125 3.09013 13.3486C3.80967 15.5541 5.89788 17.1596 8.37145 17.2049C6.43628 18.6948 3.9979 19.5829 1.34954 19.5829C0.893393 19.5829 0.442573 19.5562 0 19.5038C2.50268 21.0799 5.47421 22 8.66747 22C19.0673 22 24.7551 13.538 24.7551 6.19964C24.7551 5.95872 24.7497 5.71959 24.7379 5.48133C25.846 4.6941 26.8026 3.71938 27.5629 2.60279Z" fill="#FEFEFE"/>
+                    </svg>
+                     Follow us on Twitter</a>
+                <a class="footer-social" href="/"><svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.9216 2.77738L22.8475 21.4571C22.5402 22.7754 21.7386 23.1035 20.5995 22.4825L14.392 18.0352L11.3966 20.836C11.0652 21.1582 10.7879 21.4278 10.1491 21.4278L10.5951 15.2813L22.1002 5.17386C22.6004 4.74027 21.9917 4.50003 21.3228 4.93363L7.09955 13.6407L0.976332 11.7774C-0.355588 11.3731 -0.379695 10.4825 1.25356 9.86136L25.204 0.89066C26.3129 0.486363 27.2833 1.13089 26.9216 2.77738Z" fill="#245DEE"/>
+                    </svg>
+                    Join our Telegram Group</a>
+
+            </div>
+            <nav class="footer-menu">
+                <a href="" class="footer-links">All Time Rankings</a>
+                <a href="" class="footer-links">Daily Ranking</a>
+                <a href="/new.html" class="footer-links">New Listings</a>
+                <a href="/add_coin.html" class="footer-links">List Coin</a>
+                <a href="/terms.html" class="footer-links">Terms & Conditions</a>
+                <a href="/privacy.html" class="footer-links">Privacy Policy</a>
+                <a href="/contact_us.html" class="footer-links">Contact Us</a>
+                <a href="/contact_us.html" class="footer-links">Advertise </a>
+            </nav>
+        </div>
+        <a class="footer-logo" href="/"><img src="../../img/dmca.svg" alt="dmca Logo"></a>
+
+    </div>
+</footer>
+ <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
