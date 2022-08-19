@@ -32,7 +32,7 @@
 			<nav class="header__nav">
 				<ul class="nav__list">
 					<li class="nav__item mobile-logo">
-						<a href="/"><i class="icon-logo"></i></a>
+						<a title="Home" href="/"><i class="icon-logo"></i></a>
 					</li>
 					<li class="nav__item"><a title="Features" href="#features">Features</a></li>
 					<li class="nav__item"><a title="Warranty" href="#warranty">Warranty</a></li>
@@ -81,7 +81,7 @@
                 </div>
                 <p class="intro__tooltip">*with 30 day return</p>
             </div>
-            <div class="intro__scroll-to-bottom scroll-to-bottom">
+            <a href="#personal" class="js-scroll-to intro__scroll-to-bottom scroll-to-bottom">
                 <div class="intro__scroll-to-field scroll-to-bottom-field">
                     <span class="intro__scroll-to-dot scroll-to-bottom-dot">
 
@@ -90,7 +90,7 @@
                 <p class="intro__scroll-to-text scroll-to-bottom-text">
                     Scroll down to explore
                 </p>
-            </div>
+            </a>
         </div>
     </div>
 </section>
@@ -117,18 +117,18 @@
         </div>
     </div>
 </section>
-		<section class="personal black-bg">
+		<section  class="personal black-bg">
   <div class="container">
     <div class="personal__inner">
       <div class="personal__inner-bg">
         <img class="lozad" data-src="./img/personal-section.png" height="1340" width="1340" alt="Lazy Bot H10">
       </div>
-      <div class="personal__content">
+      <div id="personal" class="personal__content">
         <div class="personal__content-col"><h2 class="personal__content-title js-title">
           I’m your personal electric transport
         </h2>
-          <div class="personal__content-scroll-to">
-            <div class="scroll-to-bottom-field white-border">
+          <a href="#distance" class="personal__content-scroll-to js-scroll-to">
+            <div  class="scroll-to-bottom-field white-border">
                     <span class="scroll-to-bottom-arr">
                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_162_450)">
@@ -148,7 +148,7 @@
             <p class="scroll-to-bottom-text">
               Detail information
             </p>
-          </div></div>
+          </a></div>
         <div class="personal__content-col"><p class="personal__content-p">
           Forget the traffic jams: I’ll drive you to work. Or let’s have a two-hours ride in a park.
         </p></div>
@@ -161,7 +161,7 @@
 
 
 
-		<section class="road black-bg">
+		<section id="distance" class="road black-bg">
 
       <div class="road__title">
         <h5>Or anywhere else for <span class="color-green">30 km</span> distance</h5>

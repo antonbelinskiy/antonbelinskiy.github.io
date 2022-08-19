@@ -1,21 +1,27 @@
 'use strict';
 
 $(document).ready(function () {
+  //scroll
+  // var Scrollbar = window.Scrollbar;
+  // const scrollbar = Scrollbar.init(document.querySelector('html'));
   // mobile nav
   $(document).on('click', '.js-nav-toggle', function (evt) {
     $(this).toggleClass('nav-open');
-    $('body').toggleClass('lock');
+    $('.scroll-content').toggleClass('lock');
     $('.header__nav').toggleClass('open');
   }); //anchors
 
   function anchor(link) {
     let anchor = link.attr('href');
-    $('html, body').animate({
+    $('html').animate({
       scrollTop: $(anchor).offset().top
     }, 2500);
   }
 
   $(document).on('click', '.header__nav a', function () {
+    anchor($(this));
+  });
+  $(document).on('click', '.js-scroll-to', function () {
     anchor($(this));
   });
   $(document).on('click', '.footer__menu a', function () {
@@ -69,33 +75,6 @@ $(document).ready(function () {
     } else if (this_.hasClass('toggler__btn-right')) {
       overlay.css('left', '50%');
     }
-  });
-  SmoothScroll({
-    // Scrolling Core
-    animationTime: 2000,
-    // [ms]
-    stepSize: 100,
-    // [px]
-    // Acceleration
-    accelerationDelta: 20,
-    // 50
-    accelerationMax: 3,
-    // 3
-    // Keyboard Settings
-    keyboardSupport: true,
-    // option
-    arrowScroll: 50,
-    // [px]
-    // Pulse (less tweakable)
-    // ratio of "tail" to "acceleration"
-    pulseAlgorithm: true,
-    pulseScale: 4,
-    pulseNormalize: 1,
-    // Other
-    touchpadSupport: true,
-    // ignore touchpad by default
-    fixedBackground: true,
-    excluded: ''
   });
 });
 //# sourceMappingURL=app.js.map
