@@ -2,9 +2,9 @@
 
 $(document).ready(function () {
   //scroll
-  // var Scrollbar = window.Scrollbar;
-  // const scrollbar = Scrollbar.init(document.querySelector('html'));
-  // mobile nav
+  var Scrollbar = window.Scrollbar;
+  const scrollbar = Scrollbar.init(document.querySelector('html')); // mobile nav
+
   $(document).on('click', '.js-nav-toggle', function (evt) {
     $(this).toggleClass('nav-open');
     $('.scroll-content').toggleClass('lock');
