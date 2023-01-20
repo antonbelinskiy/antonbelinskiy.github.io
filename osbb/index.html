@@ -32,21 +32,28 @@
         <div class="header__inner-left flex --align-center">
             <div class="header__logo">
                 <a href="/">
-                    <img src="./img/logo-transparent.svg" alt="Logo">
+                    <img src="./img/logo-white.svg" class="white-logo" alt="Logo">
+                    <img src="./img/logo-filled.svg" class="black-logo" alt="Logo">
                 </a>
             </div>
-            <ul class="header__menu">
-                <li><a href="">Про ОСББ</a></li>
+            <ul class="header__menu desktop-show">
+                <li><a href="">Головна</a></li>
+                <li><a href="">Про компанію</a></li>
                 <li><a href="">Послуги</a></li>
                 <li><a href="">Новини</a></li>
-                <li><a href="">Оголошення</a></li>
-                <li><a href="">Документи</a></li>
-                <li><a href="">Галерея</a></li>
                 <li><a href="">Контакти</a></li>
             </ul>
         </div>
         <div class="header__inner-right  flex --align-center">
-            <div class="header__contact">
+            <div class="mobile-show">
+                <button class="js-header-button header-mobile-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="header__contact desktop-show">
                 <a href="tel:380973792079">
                     <div class="--svg__phone">
                     </div>
@@ -55,7 +62,7 @@
                     </span>
                 </a>
             </div>
-            <div class="header__button">
+            <div class="header__button desktop-show">
                 <button class="header__button-wrap btn-default">
                     <span>
                     Отримати консультацію
@@ -65,26 +72,53 @@
         </div>
     </div>
 </header>
+<div class="header__mobile">
+    <div class="header__mobile-inner">
+        <ul>
+            <li><a href="">Головна</a></li>
+            <li><a href="">Про компанію</a></li>
+            <li><a href="">Послуги</a></li>
+            <li><a href="">Новини</a></li>
+            <li><a href="">Контакти</a></li>
+        </ul>
+        <div class="header__mobile-bottom">
+            <div class="header__bottom-link">
+                <a href=""><div class="--svg__phone">
+                </div>
+                    <span>
+                        +38 (097) 379-20-79
+                    </span></a>
+
+            </div>
+
+            <button class="header__button-wrap btn-default">
+                    <span>
+                    Отримати консультацію
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
 
 	<section style="background-image: url('./img/intro.jpg')" class="intro">
     <div class="container">
         <div class="intro__inner">
             <div class="intro__text">
-                <h1 class="intro__text-title">
-                    Надання якісних послуг з утримання будинків та прилеглих територій
+                <h1 class="intro__text-title animate-on-start">
+                    Сучасний підхід з управління ОСББ
                 </h1>
-                <div class="intro__text-desc">
+                <div class="intro__text-desc animate-on-start">
                     <p>
                         Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от анализа существующих паттернов поведения.
                     </p>
                 </div>
-                <div class="intro__text-btn">
+                <div class="intro__text-btn animate-on-start">
                     <button class="intro__btn-wrap btn-default">
                         Детально про ОСББ
                     </button>
                 </div>
             </div>
-            <div class="intro__bottom">
+            <div class="intro__bottom animate-on-start">
                 <div class="intro__bottom-list flex">
                     <div class="intro__bottom-item">
                         <div class="intro__bottom-item--icon">
@@ -143,21 +177,56 @@
 </section>
 	<main class="main">
 		<div class="container">
+			<div class="trust">
+  <div class="trust__inner">
+    <div class="section__title animate-on-scroll trust__title">
+      Нам довіряють
+    </div>
+    <div class="section__body trust__body">
+      <div class="trust__list --just-space --align-center flex">
+        <div class="trust__item">
+          <div class="trust__item-title animate-on-scroll">
+            <span class="counter" data-count="10832">0</span> м2
+          </div>
+          <div class="trust__item-desc animate-on-scroll">
+            Загальної житлової та нежитлової площі
+          </div>
+        </div>
+        <div class="trust__item">
+          <div class="trust__item-title animate-on-scroll">
+            <span class="counter" data-count="350">0</span>
+          </div>
+          <div class="trust__item-desc animate-on-scroll">
+            мешканців
+          </div>
+        </div>
+        <div class="trust__item">
+          <div class="trust__item-title animate-on-scroll">
+            <span data-count="179" class="counter">0</span>
+          </div>
+          <div class="trust__item-desc animate-on-scroll">
+            квартир
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 			<section class="schema">
   <div class="schema__inner">
-    <div class="section__title schema__title">
+    <div class="section__title animate-on-scroll schema__title">
       Схема співпраці
     </div>
     <div class="section__body schema__body">
       <div class="schema__list flex">
         <div class="schema__list-item item__linked">
-          <div class="schema__item-num">
+          <div class="schema__item-num animate-on-scroll">
             01
           </div>
-          <div class="schema__item-title">
+          <div class="schema__item-title animate-on-scroll">
             Знайомство
           </div>
-          <div class="schema__item-desc">
+          <div class="schema__item-desc animate-on-scroll">
             Ознайомлееня співпраці, підбір послуг, прорахунок кошторису
           </div>
           <div class="schema__item-link link__default-wrap" >
@@ -167,35 +236,35 @@
           </div>
         </div>
         <div class="schema__list-item">
-          <div class="schema__item-num">
+          <div class="schema__item-num animate-on-scroll">
             02
           </div>
-          <div class="schema__item-title">
+          <div class="schema__item-title animate-on-scroll">
             Знайомство
           </div>
-          <div class="schema__item-desc">
+          <div class="schema__item-desc animate-on-scroll">
             Ознайомлееня співпраці, підбір послуг, прорахунок кошторису
           </div>
         </div>
         <div class="schema__list-item">
-          <div class="schema__item-num">
+          <div class="schema__item-num animate-on-scroll">
             03
           </div>
-          <div class="schema__item-title">
+          <div class="schema__item-title animate-on-scroll">
             Знайомство
           </div>
-          <div class="schema__item-desc">
+          <div class="schema__item-desc animate-on-scroll">
             Ознайомлееня співпраці, підбір послуг, прорахунок кошторису
           </div>
         </div>
         <div class="schema__list-item">
-          <div class="schema__item-num">
+          <div class="schema__item-num animate-on-scroll">
             04
           </div>
-          <div class="schema__item-title">
+          <div class="schema__item-title animate-on-scroll">
             Знайомство
           </div>
-          <div class="schema__item-desc">
+          <div class="schema__item-desc animate-on-scroll">
             Ознайомлееня співпраці, підбір послуг, прорахунок кошторису
           </div>
         </div>
@@ -203,143 +272,166 @@
     </div>
   </div>
 </section>
-			<div class="trust">
-  <div class="trust__inner">
-    <div class="section__title trust__title">
-      Нам довіряють
-    </div>
-    <div class="section__body trust__body">
-      <div class="trust__list --just-space --align-center flex">
-        <div class="trust__item">
-          <div class="trust__item-title">
-            10 832 м2
-          </div>
-          <div class="trust__item-desc">
-            Загальної житлової та нежитлової площі
-          </div>
-        </div>
-        <div class="trust__item">
-          <div class="trust__item-title">
-            350
-          </div>
-          <div class="trust__item-desc">
-            мешканців
-          </div>
-        </div>
-        <div class="trust__item">
-          <div class="trust__item-title">
-            179
-          </div>
-          <div class="trust__item-desc">
-            квартир
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 			<div class="reviews">
   <div class="reviews__inner">
-    <div class="reviews__body">
-      <div class="reviews__img">
-        <picture>
-          <source srcset="./img/reviews-img.webp"  type="image/webp">
-          <img  src="./img/reviews-img.jpg" alt="Reviewer">
-        </picture>
-      </div>
-      <div class="reviews__text">
-        <div class="section__title reviews__title">
-          Відгуки наших клієнтів
+            <div class="section__title animate-on-scroll reviews__title">
+              Що ми пропонуємо?
+            </div>
+    <div class="reviews__slider reviews__list">
+      <div class="reviews__slider-item">
+        <div class="reviews__body">
+          <div class="reviews__img animate-on-scroll">
+            <picture>
+              <source srcset="./img/reviews-img.webp"  type="image/webp">
+              <img width="500" height="500" src="./img/reviews-img.jpg" alt="Reviewer">
+            </picture>
+          </div>
+          <div class="reviews__text">
+            <!--        <div class="section__title reviews__title">-->
+            <!--          Відгуки наших клієнтів-->
+            <!--        </div>-->
+            <div class="reviews__desc animate-on-scroll">
+              <p>
+                Кстати, интерактивные прототипы описаны максимально подробно. Повседневная практика показывает, что укрепление и развитие внутренней структуры говорит о возможностях соответствующих условий активизации. Внезапно, независимые государства, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут подвергнуты целой серии независимых исследований. С учётом сложившейся международной обстановки, синтетическое тестирование выявляет срочную потребность системы массового участия.
+              </p>
+              <p>
+                А ещё действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в значительной степени обусловливает важность дальнейших направлений развития.
+              </p>
+            </div>
+            <!--        <div class="reviews__link link__default-wrap">-->
+            <!--          <a href="#">Подробнее о компании</a>-->
+            <!--        </div>-->
+          </div>
         </div>
-        <div class="reviews__desc">
-          <p>
-            Кстати, интерактивные прототипы описаны максимально подробно. Повседневная практика показывает, что укрепление и развитие внутренней структуры говорит о возможностях соответствующих условий активизации. Внезапно, независимые государства, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут подвергнуты целой серии независимых исследований. С учётом сложившейся международной обстановки, синтетическое тестирование выявляет срочную потребность системы массового участия.
-          </p>
-          <p>
-            А ещё действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в значительной степени обусловливает важность дальнейших направлений развития.
-          </p>
+      </div><div class="reviews__slider-item">
+        <div class="reviews__body">
+          <div class="reviews__img animate-on-scroll">
+            <picture>
+              <source srcset="./img/reviews-img.webp"  type="image/webp">
+              <img width="500" height="500" src="./img/reviews-img.jpg" alt="Reviewer">
+            </picture>
+          </div>
+          <div class="reviews__text">
+            <!--        <div class="section__title reviews__title">-->
+            <!--          Відгуки наших клієнтів-->
+            <!--        </div>-->
+            <div class="reviews__desc animate-on-scroll">
+              <p>
+                Кстати, интерактивные прототипы описаны максимально подробно. Повседневная практика показывает, что укрепление и развитие внутренней структуры говорит о возможностях соответствующих условий активизации. Внезапно, независимые государства, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут подвергнуты целой серии независимых исследований. С учётом сложившейся международной обстановки, синтетическое тестирование выявляет срочную потребность системы массового участия.
+              </p>
+              <p>
+                А ещё действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в значительной степени обусловливает важность дальнейших направлений развития.
+              </p>
+            </div>
+            <!--        <div class="reviews__link link__default-wrap">-->
+            <!--          <a href="#">Подробнее о компании</a>-->
+            <!--        </div>-->
+          </div>
         </div>
-        <div class="reviews__link link__default-wrap">
-          <a href="#">Подробнее о компании</a>
+      </div><div class="reviews__slider-item">
+        <div class="reviews__body">
+          <div class="reviews__img animate-on-scroll">
+            <picture>
+              <source srcset="./img/reviews-img.webp"  type="image/webp">
+              <img width="500" height="500" src="./img/reviews-img.jpg" alt="Reviewer">
+            </picture>
+          </div>
+          <div class="reviews__text ">
+            <!--        <div class="section__title reviews__title">-->
+            <!--          Відгуки наших клієнтів-->
+            <!--        </div>-->
+            <div class="reviews__desc animate-on-scroll">
+              <p>
+                Кстати, интерактивные прототипы описаны максимально подробно. Повседневная практика показывает, что укрепление и развитие внутренней структуры говорит о возможностях соответствующих условий активизации. Внезапно, независимые государства, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут подвергнуты целой серии независимых исследований. С учётом сложившейся международной обстановки, синтетическое тестирование выявляет срочную потребность системы массового участия.
+              </p>
+              <p>
+                А ещё действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в значительной степени обусловливает важность дальнейших направлений развития.
+              </p>
+            </div>
+            <!--        <div class="reviews__link link__default-wrap">-->
+            <!--          <a href="#">Подробнее о компании</a>-->
+            <!--        </div>-->
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 			<section class="news">
   <div class="news__inner">
-    <div class="section__title news__title">
+    <div class="section__title animate-on-scroll news__title">
       Новини
     </div>
     <div class="seciton__body news__body">
-      <div class="news__list">
+      <div class="news__list news__slider">
         <div class="news__item">
-          <div class="news__img">
+          <div class="news__img animate-on-scroll">
             <picture>
               <source srcset="./img/news-item.webp">
               <img src="./img/news-item.jpg" alt="News item">
             </picture>
           </div>
-          <div class="news__title">
+          <div class="news__title animate-on-scroll">
             <a href="#">Не з утеплення мала б розпочатися Велика термомодернізація</a>
           </div>
-          <div class="news__date">
+          <div class="news__date animate-on-scroll">
             17.02.2022
           </div>
-          <div class="news__desc">
+          <div class="news__desc animate-on-scroll">
             З огляду на нещодавно презентовану програму «Велика термомодернізація», спеціалісти Асоціації енергоаудиторів України проаналізували досвід подібних програм в житловій та громадській сферах. Причому з огляду на свій досвід
           </div>
         </div>
         <div class="news__item">
-          <div class="news__img">
+          <div class="news__img animate-on-scroll">
             <picture>
               <source srcset="./img/news-item.webp">
               <img src="./img/news-item.jpg" alt="News item">
             </picture>
           </div>
-          <div class="news__title">
+          <div class="news__title animate-on-scroll">
             <a href="#">Не з утеплення мала б розпочатися Велика термомодернізація</a>
           </div>
-          <div class="news__date">
+          <div class="news__date animate-on-scroll">
             17.02.2022
           </div>
-          <div class="news__desc">
-            З огляду на нещодавно презентовану програму «Велика термомодернізація», спеціалісти Асоціації енергоаудиторів України проаналізували досвід подібних програм в житловій та громадській сферах. Причому з огляду на свій досвід
-          </div>
-        </div>
-
-        <div class="news__item">
-          <div class="news__img">
-            <picture>
-              <source srcset="./img/news-item.webp">
-              <img src="./img/news-item.jpg" alt="News item">
-            </picture>
-          </div>
-          <div class="news__title">
-            <a href="#">Не з утеплення мала б розпочатися Велика термомодернізація</a>
-          </div>
-          <div class="news__date">
-            17.02.2022
-          </div>
-          <div class="news__desc">
+          <div class="news__desc animate-on-scroll">
             З огляду на нещодавно презентовану програму «Велика термомодернізація», спеціалісти Асоціації енергоаудиторів України проаналізували досвід подібних програм в житловій та громадській сферах. Причому з огляду на свій досвід
           </div>
         </div>
 
         <div class="news__item">
-          <div class="news__img">
+          <div class="news__img animate-on-scroll">
             <picture>
               <source srcset="./img/news-item.webp">
               <img src="./img/news-item.jpg" alt="News item">
             </picture>
           </div>
-          <div class="news__title">
+          <div class="news__title animate-on-scroll">
             <a href="#">Не з утеплення мала б розпочатися Велика термомодернізація</a>
           </div>
-          <div class="news__date">
+          <div class="news__date animate-on-scroll">
             17.02.2022
           </div>
-          <div class="news__desc">
+          <div class="news__desc animate-on-scroll">
+            З огляду на нещодавно презентовану програму «Велика термомодернізація», спеціалісти Асоціації енергоаудиторів України проаналізували досвід подібних програм в житловій та громадській сферах. Причому з огляду на свій досвід
+          </div>
+        </div>
+
+        <div class="news__item">
+          <div class="news__img animate-on-scroll">
+            <picture>
+              <source srcset="./img/news-item.webp">
+              <img src="./img/news-item.jpg" alt="News item">
+            </picture>
+          </div>
+          <div class="news__title animate-on-scroll">
+            <a href="#">Не з утеплення мала б розпочатися Велика термомодернізація</a>
+          </div>
+          <div class="news__date animate-on-scroll">
+            17.02.2022
+          </div>
+          <div class="news__desc animate-on-scroll">
             З огляду на нещодавно презентовану програму «Велика термомодернізація», спеціалісти Асоціації енергоаудиторів України проаналізували досвід подібних програм в житловій та громадській сферах. Причому з огляду на свій досвід
           </div>
         </div>
@@ -350,24 +442,24 @@
 </section>
 			<div class="ads">
   <div class="ads__inner">
-    <div class="ads__title section__title">
+    <div class="ads__title animate-on-scroll section__title">
       Оголошення
     </div>
     <div class="ads__body section__body">
       <div class="ads__list ads__slider">
         <div>
           <div class="ads__item">
-            <div class="ads__item-bg">
+            <div class="ads__item-bg animate-on-scroll">
               <picture>
                 <source srcset="./img/slider-item-1.webp">
                 <img src="slider-item-1.jpg" alt="item">
               </picture>
             </div>
            <div class="ads__item-text">
-             <div class="ads__item-title">
+             <div class="ads__item-title animate-on-scroll">
                Косметичний ремонт під’їздів по вул. Романа Шухевича 2/1Б
              </div>
-             <div class="ads__item-desc">
+             <div class="ads__item-desc animate-on-scroll">
                З 10.05.2022 р будуть проводитись ремонтні роботи по вул. Романа Шухевича 2/1Б.
              </div>
            </div>
@@ -375,17 +467,17 @@
         </div>
         <div>
           <div class="ads__item">
-            <div class="ads__item-bg">
+            <div class="ads__item-bg animate-on-scroll">
               <picture>
                 <source srcset="./img/slider-item-2.webp">
                 <img src="slider-item-2.jpg" alt="item">
               </picture>
             </div>
             <div class="ads__item-text">
-              <div class="ads__item-title">
+              <div class="ads__item-title animate-on-scroll">
                 Планова дизенфекція будинку
               </div>
-              <div class="ads__item-desc">
+              <div class="ads__item-desc animate-on-scroll">
                 21.05.2022 р буде проведена планова дизенфекція будинку по вул. Романа Шухевича 2.
               </div>
             </div>
@@ -393,17 +485,17 @@
         </div>
         <div>
           <div class="ads__item">
-            <div class="ads__item-bg">
+            <div class="ads__item-bg animate-on-scroll">
               <picture>
                 <source srcset="./img/slider-item-2.webp">
                 <img src="slider-item-2.jpg" alt="item">
               </picture>
             </div>
             <div class="ads__item-text">
-              <div class="ads__item-title">
+              <div class="ads__item-title animate-on-scroll">
                 Планова дизенфекція будинку
               </div>
-              <div class="ads__item-desc">
+              <div class="ads__item-desc animate-on-scroll">
                 21.05.2022 р буде проведена планова дизенфекція будинку по вул. Романа Шухевича 2.
               </div>
             </div>
@@ -411,17 +503,17 @@
         </div>
         <div>
           <div class="ads__item">
-            <div class="ads__item-bg">
+            <div class="ads__item-bg animate-on-scroll">
               <picture>
                 <source srcset="./img/slider-item-2.webp">
                 <img src="slider-item-2.jpg" alt="item">
               </picture>
             </div>
             <div class="ads__item-text">
-              <div class="ads__item-title">
+              <div class="ads__item-title animate-on-scroll">
                 Планова дизенфекція будинку
               </div>
-              <div class="ads__item-desc">
+              <div class="ads__item-desc animate-on-scroll">
                 21.05.2022 р буде проведена планова дизенфекція будинку по вул. Романа Шухевича 2.
               </div>
             </div>
@@ -435,13 +527,13 @@
 </div>
 			<div class="media">
   <div class="media__inner">
-    <div class="section__title media__title">
+    <div class="section__title animate-on-scroll media__title">
       Документи
     </div>
     <div class="section__body media__body">
       <div class="media__list media__slider">
         <div>
-          <div class="js-media-item media__slide">
+          <div class="js-media-item animate-on-scroll media__slide">
             <picture>
               <source srcset="./img/slide-image-3.webp" type="image/webp">
               <img src="./img/slide-image-3.png" alt="Slide">
@@ -449,7 +541,7 @@
           </div>
         </div>
         <div>
-          <div class="js-media-item media__slide">
+          <div class="js-media-item animate-on-scroll media__slide">
             <picture>
               <source srcset="./img/news-item.webp" type="image/webp">
               <img src="./img/news-item.jpg" alt="Slide">
@@ -457,7 +549,7 @@
           </div>
         </div>
         <div>
-          <div class="js-media-item media__slide">
+          <div class="js-media-item animate-on-scroll media__slide">
             <picture>
               <source srcset="./img/slide-image-3.webp" type="image/webp">
               <img src="./img/slide-image-3.png" alt="Slide">
@@ -465,7 +557,7 @@
           </div>
         </div>
         <div>
-          <div class="js-media-item media__slide">
+          <div class="js-media-item animate-on-scroll media__slide">
             <picture>
               <source srcset="./img/news-item.webp" type="image/webp">
               <img src="./img/news-item.jpg" alt="Slide">
@@ -473,7 +565,7 @@
           </div>
         </div>
         <div>
-          <div class="js-media-item media__slide">
+          <div class="js-media-item animate-on-scroll media__slide">
             <picture>
               <source srcset="./img/slide-image-3.webp" type="image/webp">
               <img src="./img/slide-image-3.png" alt="Slide">
@@ -489,13 +581,13 @@
 </div>
 			<div class="media">
   <div class="media__inner">
-    <div class="section__title media__title">
+    <div class="section__title animate-on-scroll media__title">
       Галерея
     </div>
     <div class="section__body media__body">
       <div class="media__list media__slider">
         <div>
-          <div class="js-media-item media__slide">
+          <div class="js-media-item animate-on-scroll media__slide">
             <picture>
               <source srcset="./img/slider-item-1.webp" type="image/webp">
               <img src="./img/slider-item-1.jpg" alt="Slide">
@@ -503,7 +595,7 @@
           </div>
         </div>
         <div>
-          <div class="js-media-item media__slide">
+          <div class="js-media-item animate-on-scroll media__slide">
             <picture>
               <source srcset="./img/news-item.webp" type="image/webp">
               <img src="./img/news-item.jpg" alt="Slide">
@@ -511,7 +603,7 @@
           </div>
         </div>
         <div>
-          <div class="js-media-item media__slide">
+          <div class="js-media-item animate-on-scroll media__slide">
             <picture>
               <source srcset="./img/slider-item-1.webp" type="image/webp">
               <img src="./img/slider-item-1.jpg" alt="Slide">
@@ -519,7 +611,7 @@
           </div>
         </div>
         <div>
-          <div class="js-media-item media__slide">
+          <div class="js-media-item animate-on-scroll media__slide">
             <picture>
               <source srcset="./img/news-item.webp" type="image/webp">
               <img src="./img/news-item.jpg" alt="Slide">
@@ -527,7 +619,7 @@
           </div>
         </div>
         <div>
-          <div class="js-media-item media__slide">
+          <div class="js-media-item animate-on-scroll media__slide">
             <picture>
               <source srcset="./img/slider-item-1.webp" type="image/webp">
               <img src="./img/slider-item-1.jpg" alt="Slide">
@@ -552,27 +644,27 @@
 		</div>
 		<div class="form__section">
   <div class="form__section-inner">
-    <div class="form__section-img">
+    <div class="form__section-img animate-on-scroll">
       <picture>
-        <source srcset="./img/form.webp" type="image/webp">
-        <img src="./img/form.png" alt="Form image">
+        <source srcset="./img/house.webp" type="image/webp">
+        <img width="500" height="600" src="./img/house.png" alt="Form image">
       </picture>
     </div>
     <div class="form__section-wrapper">
-      <div class="form__section-title">
+      <div class="form__section-title animate-on-scroll section__title">
         Для співпраці
       </div>
-      <div class="form__section-desc">
+      <div class="form__section-desc animate-on-scroll">
         Залиште  за’явку, наш менеджер зв’яжиться з Вами в найближчий час і відповість на всі запитання стосовно ОСББ!
       </div>
       <form action="" method="post" class="form">
         <div class="field__wrapper">
-          <div class="field">
+          <div class="field animate-on-scroll">
             <input id="nameInput" data-focus="false"
                    type="text">
             <label class="field__label" for="nameInput">Ваше ім'я</label>
           </div>
-          <div class="field">
+          <div class="field animate-on-scroll">
             <input type="tel"
                    data-focus="false"
                    inputmode="numeric"
@@ -582,7 +674,7 @@
             <label class="field__label" for="phoneInput">Ваш телефон</label>
           </div>
         </div>
-        <div class="form__button">
+        <div class="form__button animate-on-scroll">
           <button class="btn-default" type="submit">
             Відправити за’явку
           </button>
@@ -597,65 +689,76 @@
     <div class="container">
         <div class="footer__inner">
             <div class="footer__top">
-                    <a class="footer__logo" href="/">
-                        <img src="./img/logo-filled.svg" alt="Logo">
-                    </a>
-                    <a href="tel:+30973792079" class="footer__phone">
+                    <div class="footer__logo-wrap animate-on-scroll">
+                        <a class="footer__logo" href="/">
+                            <img src="./img/logo-filled.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <a href="tel:+30973792079" class="footer__phone animate-on-scroll">
                         <div class="--svg__phone">
                         </div>
                         <span>
                         +38 (097) 379-20-79
                         </span>
                         </a>
-                    <a class="footer__location" href="#">
+                    <a class="footer__location animate-on-scroll" href="#">
                         <div class="--svg__mark">
                         </div>
                         <span>м. Хмельницький</span>
                     </a>
-                    <a class="footer__location" href="mailto:test@gmail.com">
+                    <a class="footer__location animate-on-scroll" href="mailto:test@gmail.com">
                         <div class="--svg__mail">
 
                         </div>
                         <span>test@gmail.com</span>
                     </a>
             </div>
-            <div class="footer__main">
-                <ul class="footer__main-col">
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                </ul>
-                <ul class="footer__main-col">
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                </ul>
-                <ul class="footer__main-col">
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                </ul>
-                <ul class="footer__main-col">
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                    <li><a href="#">Test</a></li>
-                </ul>
-            </div>
+<!--            <div class="footer__main">-->
+<!--                <ul class="footer__main-col">-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                </ul>-->
+<!--                <ul class="footer__main-col">-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                </ul>-->
+<!--                <ul class="footer__main-col">-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                </ul>-->
+<!--                <ul class="footer__main-col">-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                    <li><a href="#">Test</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
             <div class="footer__bottom">
-                <p>&copy; 2022 «ОСББ Шухевича». Усі права захищенні.</p>
-                <a href="#">Політика конфіденційності</a>
+                <p class="animate-on-scroll">&copy; 2022 «ОСББ Шухевича». Усі права захищенні.</p>
+                <a class="animate-on-scroll" href="#">Політика конфіденційності</a>
             </div>
         </div>
     </div>
 </footer>
 
-	<script src="js/libs.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
+
+	<div class="preloader">
+		<div class="inner">
+			<span class="percentage"><span id="percentage">15</span>%</span>
+		</div>
+		<div class="loader-progress" id="loader-progress"> </div>
+	</div>
+	<div class="transition-overlay"></div>
 </body>
 
 </html>
