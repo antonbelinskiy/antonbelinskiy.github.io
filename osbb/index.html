@@ -37,11 +37,11 @@
                 </a>
             </div>
             <ul class="header__menu desktop-show">
-                <li><a href="">Головна</a></li>
-                <li><a href="">Про компанію</a></li>
-                <li><a href="">Послуги</a></li>
-                <li><a href="">Новини</a></li>
-                <li><a href="">Контакти</a></li>
+                <li><a class="anchor--link home--anchor" href="javascript:void(0)">Головна</a></li>
+                <li><a class="anchor--link" href="#about">Про компанію</a></li>
+                <li><a class="anchor--link" href="#deal">Послуги</a></li>
+                <li><a class="anchor--link" href="#news">Новини</a></li>
+                <li><a class="anchor--link" href="#footer">Контакти</a></li>
             </ul>
         </div>
         <div class="header__inner-right  flex --align-center">
@@ -63,7 +63,7 @@
                 </a>
             </div>
             <div class="header__button desktop-show">
-                <button class="header__button-wrap btn-default">
+                <button class="header__button-wrap js-show-form-popup btn-default">
                     <span>
                     Отримати консультацію
                 </span>
@@ -75,11 +75,11 @@
 <div class="header__mobile">
     <div class="header__mobile-inner">
         <ul>
-            <li><a href="">Головна</a></li>
-            <li><a href="">Про компанію</a></li>
-            <li><a href="">Послуги</a></li>
-            <li><a href="">Новини</a></li>
-            <li><a href="">Контакти</a></li>
+            <li><a class="anchor--link home--anchor" href="javascript:void(0)">Головна</a></li>
+            <li><a class="anchor--link" href="#about">Про компанію</a></li>
+            <li><a class="anchor--link" href="#deal">Послуги</a></li>
+            <li><a class="anchor--link" href="#news">Новини</a></li>
+            <li><a class="anchor--link" href="#footer">Контакти</a></li>
         </ul>
         <div class="header__mobile-bottom">
             <div class="header__bottom-link">
@@ -91,7 +91,7 @@
 
             </div>
 
-            <button class="header__button-wrap btn-default">
+            <button class="header__button-wrap js-show-form-popup btn-default">
                     <span>
                     Отримати консультацію
                 </span>
@@ -100,7 +100,7 @@
     </div>
 </div>
 
-	<section style="background-image: url('./img/intro.jpg')" class="intro">
+	<section id="intro" style="background-image: url('./img/intro.jpg')" class="intro">
     <div class="container">
         <div class="intro__inner">
             <div class="intro__text">
@@ -113,9 +113,9 @@
                     </p>
                 </div>
                 <div class="intro__text-btn animate-on-start">
-                    <button class="intro__btn-wrap btn-default">
+                    <a href="#about" class="anchor--link intro__btn-wrap btn-default">
                         Детально про ОСББ
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="intro__bottom animate-on-start">
@@ -177,7 +177,7 @@
 </section>
 	<main class="main">
 		<div class="container">
-			<div class="trust">
+			<div id="about" class="trust">
   <div class="trust__inner">
     <div class="section__title animate-on-scroll trust__title">
       Нам довіряють
@@ -229,7 +229,7 @@
           <div class="schema__item-desc animate-on-scroll">
             Ознайомлееня співпраці, підбір послуг, прорахунок кошторису
           </div>
-          <div class="schema__item-link link__default-wrap" >
+          <div class="schema__item-link animate-on-scroll link__default-wrap" >
             <a class="link" href="#">
               Залишити за’явку
             </a>
@@ -272,7 +272,7 @@
     </div>
   </div>
 </section>
-			<div class="reviews">
+			<div id="deal" class="reviews">
   <div class="reviews__inner">
             <div class="section__title animate-on-scroll reviews__title">
               Що ми пропонуємо?
@@ -358,7 +358,7 @@
 
   </div>
 </div>
-			<section class="news">
+			<section id="news" class="news">
   <div class="news__inner">
     <div class="section__title animate-on-scroll news__title">
       Новини
@@ -665,7 +665,9 @@
             <label class="field__label" for="nameInput">Ваше ім'я</label>
           </div>
           <div class="field animate-on-scroll">
-            <input type="tel"
+            <input
+                    maxlength="13"
+                    type="tel"
                    data-focus="false"
                    inputmode="numeric"
                    id="phoneInput"
@@ -685,7 +687,7 @@
 </div>
 
 	</main>
-	<footer class="footer">
+	<footer id="footer" class="footer">
     <div class="container">
         <div class="footer__inner">
             <div class="footer__top">
@@ -740,13 +742,53 @@
 <!--                </ul>-->
 <!--            </div>-->
             <div class="footer__bottom">
-                <p class="animate-on-scroll">&copy; 2022 «ОСББ Шухевича». Усі права захищенні.</p>
-                <a class="animate-on-scroll" href="#">Політика конфіденційності</a>
+                <p class="">&copy; 2022 «УК ОСББ». Усі права захищенні.</p>
+                <a class="" href="#">Політика конфіденційності</a>
             </div>
         </div>
     </div>
 </footer>
 
+	<div class="form__popup popup">
+  <div class="popup__inner">
+    <div class="popup__title section__title">
+      Залишіть заявку
+    </div>
+    <div class="popup__subtitle form__section-desc">
+      І ми як найшвидше з вами зв'яжемось.
+    </div>
+    <div class="popup__form">
+      <form action="" method="post" class="form">
+        <div class="field__wrapper">
+          <div class="field animate-on-scroll">
+            <input id="nameInput" data-focus="false"
+                   type="text">
+            <label class="field__label" for="nameInput">Ваше ім'я</label>
+          </div>
+          <div class="field animate-on-scroll">
+            <input type="tel"
+                   maxlength="13"
+                   data-focus="false"
+                   inputmode="numeric"
+                   id="phoneInput"
+                   name="phone"
+                   required>
+            <label class="field__label" for="phoneInput">Ваш телефон</label>
+          </div>
+        </div>
+        <div class="form__button animate-on-scroll">
+          <button class="btn-default" type="submit">
+            Відправити заявку
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup--overlay">
+
+</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
@@ -759,6 +801,8 @@
 		<div class="loader-progress" id="loader-progress"> </div>
 	</div>
 	<div class="transition-overlay"></div>
+
+
 </body>
 
 </html>
