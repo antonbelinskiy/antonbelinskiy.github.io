@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: pink;
+    font-family: sans-serif;
+}
+.main {
+    padding-top: 50px;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.desc {
+
+    font-size: 18px;
+}
+.desc span {
+    color: crimson;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+.img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.img-grid img {
+    width: 100%;
+    object-fit: contain;
+}
+.end {
+    font-size: 24px;
+    color: darkred;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 700;
+}
