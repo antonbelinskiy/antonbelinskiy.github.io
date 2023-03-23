@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+}
+.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#canvas1 {
+    position: absolute;
+}
+.controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    z-index: 23;
+}
+img {
+    display: none;
+}
+button {
+    padding: 10px;
+    font-size: 40px;
+    margin: 20px;
+    font-family: 'Bangers', cursive;
+    color: white;
+    background-color: black;
+    transition: 0.2s all ease-in-out;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
