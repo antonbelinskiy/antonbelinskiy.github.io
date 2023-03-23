@@ -16,8 +16,8 @@ window.addEventListener("load", function (evt) {
             this.size = this.effect.gap;
             this.vx = 0;
             this.vy = 0;
-            this.ease = .6;
-            this.friction = .3;
+            this.ease = 0.5;
+            this.friction = 0.9;
             this.dx = 0;
             this.dy = 0;
             this.distance = 0;
@@ -48,7 +48,7 @@ window.addEventListener("load", function (evt) {
         warp() {
             this.x = Math.random() * this.effect.width;
             this.y = Math.random() * this.effect.height;
-            this.ease = 0.08;
+            this.ease = 2;
         }
     }
     class Effect {
