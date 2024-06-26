@@ -23,7 +23,7 @@ body{
     padding: 0 20px;
 }
 .title {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1;
     font-weight: 700;
     text-align: center;
@@ -73,4 +73,17 @@ button:hover {
 }
 .hide {
     display: none;
+}
+.counter {
+    margin: 20px 0 0 0;
+    padding: 0 20px;
+}
+button:disabled {
+    opacity: .7;
+}
+.counter {
+    display: none;
+}
+.counter p {
+    display: inline-block;
 }
