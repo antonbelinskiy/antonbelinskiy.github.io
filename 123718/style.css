@@ -20,6 +20,7 @@ body{
 }
 .box {
     max-width: 500px;
+    padding: 0 20px;
 }
 .title {
     font-size: 48px;
